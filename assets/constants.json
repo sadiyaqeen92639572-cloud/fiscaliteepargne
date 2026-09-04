@@ -1,0 +1,36 @@
+{
+  "version": "2026-FR-v1",
+  "verifie_le": "2026-09-04",
+  "source_principale": "LFSS 2026, adoptée 16/12/2025 — entreprendre.service-public.gouv.fr",
+  "pfu": {
+    "ir_flat": 0.128,
+    "ps_standard": 0.186,
+    "ps_assurance_vie": 0.172,
+    "global_pea_cto": 0.314,
+    "global_av_avant_8_ans": 0.300
+  },
+  "pea": {
+    "plafond_versements": 150000,
+    "plafond_pea_pme": 225000,
+    "duree_exoneration_ir": 5,
+    "ps_applicable": "ps_standard",
+    "hypothese_calculateur": "PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques",
+    "avertissement_pre_2018": "Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."
+  },
+  "assurance_vie": {
+    "abattement_annuel_seul": 4600,
+    "abattement_annuel_couple": 9200,
+    "seuil_anciennete_ans": 8,
+    "seuil_primes_taux_reduit": 150000,
+    "taux_avant_8_ans": 0.300,
+    "taux_apres_8_ans_sous_seuil": 0.075,
+    "taux_apres_8_ans_au_dela_seuil": 0.128,
+    "date_charniere_versements": "2017-09-27",
+    "ps_applicable": "ps_assurance_vie",
+    "hypothese_calculateur": "Simule un versement unique effectué à la date du calcul (régime post-27/09/2017 PFU). Le seuil de 150 000 € est appliqué selon une proratisation simplifiée. Les contrats existants et versements multiples peuvent produire un résultat différent."
+  },
+  "cto": {
+    "pfu_applicable": "global_pea_cto",
+    "abattement_dividendes_bareme": 0.40
+  }
+}

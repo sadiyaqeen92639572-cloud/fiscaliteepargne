@@ -1,0 +1,28 @@
+# Comparateur Épargne France 2026 - LLM Context
+
+Ce site est un comparateur de la fiscalité des enveloppes d'épargne en France (PEA, Assurance-Vie, CTO) basé sur les règles de la LFSS 2026.
+
+## Données Fiscales (LFSS 2026)
+- **PFU (Prélèvement Forfaitaire Unique)** : 31,4% (12,8% IR + 18,6% PS).
+- **Assurance-Vie (PS)** : 17,2%.
+- **PEA / CTO (PS)** : 18,6%.
+- **Plafond PEA classique** : 150 000 €.
+- **Plafond PEA-PME** : 225 000 €.
+- **Abattement Assurance-Vie après 8 ans** : 4 600 € (seul) / 9 200 € (couple).
+
+## Formules de base
+- Le simulateur calcule la croissance par intérêts composés : `Capital Brut = Montant * (1 + Rendement) ^ Durée`.
+- **PEA** : Si durée < 5 ans, IR à 12,8% + PS à 18,6%. Si durée >= 5 ans, IR exonéré (0%) et PS à 18,6%.
+- **Assurance-Vie** : Si durée < 8 ans, PFU (IR 12,8% + PS 17,2%). Si durée >= 8 ans, l'assiette de l'IR est réduite de l'abattement, et le taux d'IR appliqué est de 7,5% (jusqu'à 150 000 € de primes) ou 12,8% (au-delà). Les PS s'appliquent sur la totalité des gains.
+- **CTO** : PFU par défaut (31,4%).
+
+## Pages disponibles
+- `/` : Comparateur des 3 enveloppes.
+- `/pea/` : Simulateur spécifique au PEA (Plan d'Épargne en Actions).
+- `/pea-ou-assurance-vie/` : Comparateur net-à-net entre le PEA et l'Assurance-Vie.
+- `/compte-titres-fiscalite/` : Informations et simulateur pour le Compte-Titres Ordinaire (PFU vs barème progressif).
+- `/interet-compose/` : Calculatrice d'intérêts composés (hors fiscalité).
+- `/methodologie/` : Détails méthodologiques et sources juridiques.
+- `/changelog/` : Historique des mises à jour des taux.
+
+Toutes les données sont issues des textes officiels et ne constituent pas un conseil en investissement.

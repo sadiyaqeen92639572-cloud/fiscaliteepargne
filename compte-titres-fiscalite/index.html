@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiscalité du Compte-Titres (CTO) 2026 : PFU ou Barème ?</title>
+<meta name="description" content="Découvrez la fiscalité du Compte-Titres Ordinaire (CTO) en 2026. Simulation PFU à 31,4% et analyse de l'option au barème progressif.">
+<link rel="canonical" href="https://fiscaliteepargne.fr/compte-titres-fiscalite/">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/calculators.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fiscaliteepargne.fr/#org",
+      "name": "Comparateur Épargne France"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Simulateur Fiscalité CTO",
+      "url": "https://fiscaliteepargne.fr/compte-titres-fiscalite/",
+      "applicationCategory": "FinanceApplication",
+      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Compte-Titres (CTO)", "item": "https://fiscaliteepargne.fr/compte-titres-fiscalite/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Qu'est-ce que le PFU ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PFU (Prélèvement Forfaitaire Unique), ou flat tax, est le mode d'imposition par défaut des revenus du capital (dividendes et plus-values) sur un compte-titres ordinaire. Il englobe une part d'impôt sur le revenu et une part de prélèvements sociaux." } },
+        { "@type": "Question", "name": "Quel est le taux du PFU en 2026 ?", "acceptedAnswer": { "@type": "Answer", "text": "Sur un compte-titres ordinaire, le taux global du PFU applicable aux gains et dividendes s'élève à 31,4% (incluant l'impôt sur le revenu et les prélèvements sociaux)." } },
+        { "@type": "Question", "name": "Peut-on renoncer au PFU ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, il est possible d'opter pour l'imposition au barème progressif de l'impôt sur le revenu. Cette option est globale : elle s'applique à l'ensemble de vos revenus de capitaux mobiliers pour l'année concernée." } },
+        { "@type": "Question", "name": "Quel est l'avantage du barème progressif sur un CTO ?", "acceptedAnswer": { "@type": "Answer", "text": "Opter pour le barème progressif permet de bénéficier d'un abattement de 40% sur les dividendes perçus d'actions éligibles, ce qui peut être avantageux si vous êtes faiblement imposé." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <span class="flag">🇫🇷</span>
+    <h1>Fiscalité du Compte-Titres (CTO) 2026</h1>
+    <p>Simulez le rendement de votre CTO soumis au Prélèvement Forfaitaire Unique (PFU).</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="disclaimer-banner">⚠️ Le calculateur simule une imposition par défaut au PFU. L'option pour le barème progressif n'est pas modélisée dynamiquement ici.</div>
+
+  <div class="card">
+    <h2>Calculateur de rendement net CTO</h2>
+    <label for="montant">Montant investi (€)</label>
+    <input type="number" id="montant" value="10000" min="0">
+    
+    <label for="duree">Durée d'investissement (années)</label>
+    <input type="number" id="duree" value="10" min="1">
+    
+    <label for="rendement">Rendement annuel estimé (%)</label>
+    <input type="number" id="rendement" value="7" min="0" step="0.1">
+    
+    <button class="calc-btn" onclick="runCTO()">Calculer le gain net au PFU</button>
+    
+    <div class="result" id="cto-result">
+      <div class="result-hero">
+        <div class="amount" id="cto-net-val"></div>
+        <div class="amount-label">Capital final net (après Impôt et Prélèvements Sociaux)</div>
+      </div>
+      <div class="result-grid">
+        <div class="stat"><div class="val" id="cto-brut-val"></div><div class="lbl">Capital Brut</div></div>
+        <div class="stat"><div class="val" id="cto-gains-val"></div><div class="lbl">Gains générés</div></div>
+        <div class="stat"><div class="val" id="cto-ps-val"></div><div class="lbl">Prélèvements Sociaux</div></div>
+        <div class="stat"><div class="val" id="cto-ir-val"></div><div class="lbl">Impôt sur le Revenu</div></div>
+      </div>
+      <div class="result-note">Imposition modélisée : <strong id="cto-pfu-rate"></strong> (PFU global appliqué sur les plus-values).</div>
+    </div>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Le Prélèvement Forfaitaire Unique (PFU)</h2>
+    <p>Le PFU, aussi appelé "flat tax", est le régime d'imposition par défaut appliqué aux revenus et aux plus-values générés sur un Compte-Titres Ordinaire (CTO).</p>
+    <p>Ce prélèvement global se décompose en deux parties :</p>
+    <ul>
+      <li>Une part d'Impôt sur le Revenu (IR) : <strong id="pfu-ir-rate">[chargement...]</strong></li>
+      <li>Une part de Prélèvements Sociaux (PS) : <strong id="pfu-ps-rate">[chargement...]</strong></li>
+    </ul>
+    <p>Soit un taux global de <strong id="pfu-total-rate">[chargement...]</strong> retenu par défaut sur vos gains réalisés.</p>
+
+    <h3>L'option pour le barème progressif</h3>
+    <p>Si vous y trouvez un intérêt, vous pouvez renoncer au PFU et opter pour l'imposition au <strong>barème progressif</strong> de l'impôt sur le revenu. Attention, cette option est globale et irrévocable pour l'année fiscale en cours, elle s'appliquera à tous vos revenus de capitaux mobiliers.</p>
+    
+    <h3>L'abattement de 40% sur les dividendes</h3>
+    <p>Le principal intérêt d'opter pour le barème progressif est qu'il permet d'appliquer un <strong>abattement de 40%</strong> sur les revenus distribués (dividendes) provenant d'actions d'entreprises éligibles. L'imposition (selon votre tranche marginale d'imposition) ne portera alors que sur 60% du montant du dividende. Les prélèvements sociaux, eux, restent dus sur la totalité (100%) du gain ou du dividende.</p>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Ouvrir un Compte-Titres : Notre sélection de courtiers</h2>
+    <p>Voici des courtiers compétitifs pour ouvrir un CTO :</p>
+    <div class="affiliate-block">
+      <div class="broker-card">
+        <h4>BoursoBank</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Une offre complète de banque en ligne avec un CTO accessible.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Fortuneo</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Des tarifs avantageux pour trader sur les places boursières.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Trade Republic</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">L'idéal pour l'investissement programmé (ETF) à frais très bas.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+    </div>
+    
+    <div class="transparency-banner">
+      <strong>Transparence & Risques :</strong> Les liens ci-dessus sont des liens d'affiliation. Ce site peut percevoir une rémunération si vous ouvrez un compte. Ceci n'est pas un conseil personnalisé en investissement. L'investissement en bourse présente un risque de perte en capital.
+    </div>
+  </div>
+
+  <div class="cross-link">✨ Prêt à simuler l'impact des intérêts composés sur le long terme ? <a href="/interet-compose/">Testez notre calculatrice d'intérêts composés →</a></div>
+</main>
+
+<footer>
+  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
+  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+</footer>
+
+<script>
+function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+
+async function runCTO() {
+  const montant = parseFloat(document.getElementById('montant').value) || 0;
+  const duree = parseFloat(document.getElementById('duree').value) || 0;
+  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
+  
+  const cto = await calculCTO(montant, duree, rendement);
+  
+  document.getElementById('cto-net-val').innerText = fmt(cto.net);
+  document.getElementById('cto-brut-val').innerText = fmt(cto.brut);
+  document.getElementById('cto-gains-val').innerText = fmt(cto.gains);
+  document.getElementById('cto-ps-val').innerText = fmt(cto.ps);
+  document.getElementById('cto-ir-val').innerText = fmt(cto.ir);
+  
+  document.getElementById('cto-result').classList.add('show');
+}
+
+window.onload = async function() {
+  const C = await loadConstants();
+  const ir = (C.pfu.ir_flat * 100).toFixed(1) + "%";
+  const ps = (C.pfu.ps_standard * 100).toFixed(1) + "%";
+  const total = (C.pfu.global_pea_cto * 100).toFixed(1) + "%";
+  
+  document.getElementById('pfu-ir-rate').innerText = ir;
+  document.getElementById('pfu-ps-rate').innerText = ps;
+  document.getElementById('pfu-total-rate').innerText = total;
+  document.getElementById('cto-pfu-rate').innerText = total;
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Méthodologie du Comparateur : Sources et Formules</title>
+<meta name="description" content="Découvrez la méthodologie, les sources juridiques et les limites du comparateur d'enveloppes fiscales.">
+<link rel="canonical" href="https://fiscaliteepargne.fr/methodologie/">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Méthodologie & Sources</h1>
+    <p>Transparence totale sur les calculs fiscaux de nos simulateurs.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="disclaimer-banner">
+    ⚠️ <strong>Avertissement Légal :</strong> Les calculs fournis par ce site constituent des estimations à visée strictement pédagogique et informative. Ils ne sauraient se substituer à une consultation avec un conseiller en gestion de patrimoine, un avocat fiscaliste ou un professionnel habilité (ORIAS). Les règles fiscales peuvent comporter des exceptions liées à des situations particulières non modélisées par ce calculateur (handicap, primes historiques, transferts).
+  </div>
+
+  <div class="eeat-section">
+    <h2>Nos sources et données en vigueur</h2>
+    <p>Toutes les données de ce site (taux, abattements, plafonds) ont été validées selon les éléments suivants :</p>
+    <ul>
+      <li><strong>Source primaire :</strong> entreprendre.service-public.gouv.fr et Légifrance.</li>
+      <li><strong>Texte de référence :</strong> Projet de Loi de Financement de la Sécurité Sociale (LFSS) 2026, adopté définitivement le 16/12/2025.</li>
+      <li><strong>Date de dernière vérification :</strong> 04 Septembre 2026.</li>
+      <li><strong>Version interne de la base de constantes :</strong> 2026-FR-v1.</li>
+    </ul>
+    
+    <h3>Hypothèses globales du calculateur</h3>
+    <p>Le calculateur modélise exclusivement des <strong>nouveaux versements</strong> effectués à la date du calcul. Par conséquent :</p>
+    <ul>
+      <li><strong>Assurance-vie :</strong> Le simulateur ne s'applique qu'au régime dit "post-27/09/2017" (PFU). Les contrats détenant des primes versées avant cette date charnière suivent un régime distinct (PFL) qui n'est pas modélisé ici.</li>
+      <li><strong>PEA :</strong> Les calculs s'appliquent à un plan ouvert à partir de 2018. Pour un plan ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux. Ce cas particulier, devenu résiduel, n'est pas modélisé.</li>
+    </ul>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Formules de calcul</h2>
+    <h3>Compte-Titres Ordinaire (CTO)</h3>
+    <p>Les plus-values sont soumises par défaut au Prélèvement Forfaitaire Unique (PFU). Le calcul est direct sur la base des gains réalisés : 12,8 % au titre de l'Impôt sur le Revenu + 18,6 % au titre des prélèvements sociaux (taux LFSS 2026), soit un taux global de 31,4 %.</p>
+
+    <h3>PEA (Plan d'Épargne en Actions)</h3>
+    <p>En supposant aucun retrait avant 5 ans, l'Impôt sur le Revenu est de 0 %. Seuls les prélèvements sociaux s'appliquent sur la plus-value constatée lors du retrait. Le taux appliqué par le simulateur est de 18,6 %.</p>
+    <p>En cas de simulation sur une durée inférieure à 5 ans, l'imposition repasse à un alignement sur le CTO (PFU 31,4 %).</p>
+
+    <h3>Assurance-Vie</h3>
+    <p>Le calcul applique l'abattement annuel en fonction de la situation de famille (4 600 € pour un célibataire, 9 200 € pour un couple) uniquement lorsque la durée de placement excède 8 ans. L'assiette imposable est réduite d'autant. Les prélèvements sociaux (17,2 % sur l'assurance-vie) s'appliquent quant à eux sur l'intégralité de la plus-value avant tout abattement.</p>
+    <p><strong>Avertissement sur le calcul du seuil de 150 000 € :</strong> Le calculateur simule un versement unique effectué à la date du calcul. Le seuil de 150 000 € est appliqué selon une proratisation simplifiée. Les contrats existants, les versements multiples et les situations fiscales particulières peuvent produire un résultat différent. Cette modélisation ne constitue pas un calcul fiscal exhaustif de la situation du contribuable.</p>
+  </div>
+</main>
+
+<footer>
+  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
+  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited.</p>
+</footer>
+</body>
+</html>
