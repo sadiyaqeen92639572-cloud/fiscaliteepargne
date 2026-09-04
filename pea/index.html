@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiscalité du PEA 2026 : Simulateur et Plafonds</title>
+<meta name="description" content="Simulez la fiscalité de votre PEA en 2026. Découvrez les plafonds (150 000 € et 225 000 €), l'exonération d'IR après 5 ans et les prélèvements sociaux.">
+<link rel="canonical" href="https://fiscaliteepargne.fr/pea/">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/calculators.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fiscaliteepargne.fr/#org",
+      "name": "Comparateur Épargne France"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Simulateur PEA",
+      "url": "https://fiscaliteepargne.fr/pea/",
+      "applicationCategory": "FinanceApplication",
+      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "PEA", "item": "https://fiscaliteepargne.fr/pea/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Quel est le plafond du PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Le plafond des versements sur un PEA classique est de 150 000 €. Pour un PEA-PME, il est de 225 000 €. Cumulés, la limite reste de 225 000 € au total par contribuable." } },
+        { "@type": "Question", "name": "Quand le PEA est-il exonéré d'impôt ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PEA bénéficie d'une exonération totale d'impôt sur le revenu (IR) sur les gains générés si vous ne faites aucun retrait avant le 5ème anniversaire du plan." } },
+        { "@type": "Question", "name": "Que se passe-t-il en cas de retrait avant 5 ans ?", "acceptedAnswer": { "@type": "Answer", "text": "Tout retrait avant 5 ans entraîne généralement la clôture du plan. Les gains sont alors soumis au prélèvement forfaitaire unique (PFU) ou à l'IR selon l'option choisie, en plus des prélèvements sociaux." } },
+        { "@type": "Question", "name": "Faut-il déclarer un PEA aux impôts ?", "acceptedAnswer": { "@type": "Answer", "text": "Les gains d'un PEA ne sont imposables que lors d'un retrait. Si vous ne retirez rien, vous n'avez pas de gains à déclarer annuellement, sauf règles spécifiques liées à l'ISF/IFI ou aux dividendes de titres non cotés." } },
+        { "@type": "Question", "name": "Quels sont les prélèvements sociaux sur un PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Lors d'un retrait après 5 ans, les gains sont exonérés d'impôt sur le revenu mais restent soumis aux prélèvements sociaux, qui s'appliquent au taux en vigueur au moment du retrait (sauf PEA très anciens)." } },
+        { "@type": "Question", "name": "Puis-je ouvrir plusieurs PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, il n'est possible d'ouvrir qu'un seul PEA classique par personne majeure (et un PEA jeune pour les rattachés de 18 à 25 ans). Vous pouvez toutefois cumuler un PEA classique et un PEA-PME." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <span class="flag">🇫🇷</span>
+    <h1>Fiscalité du PEA 2026</h1>
+    <p>Simulateur des gains nets et de l'impact des prélèvements sociaux après 5 ans.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="disclaimer-banner">⚠️ Le calculateur suppose un PEA ouvert après le 01/01/2018. Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire.</div>
+
+  <div class="card">
+    <h2>Calculateur de rendement net PEA</h2>
+    <label for="montant">Montant investi (€)</label>
+    <input type="number" id="montant" value="150000" min="0" max="150000">
+    
+    <label for="duree">Durée d'investissement (années)</label>
+    <input type="number" id="duree" value="15" min="1">
+    
+    <label for="rendement">Rendement annuel estimé (%)</label>
+    <input type="number" id="rendement" value="5" min="0" step="0.1">
+    
+    <button class="calc-btn" onclick="runPEA()">Calculer le gain net</button>
+    
+    <div class="result" id="pea-result">
+      <div class="result-hero">
+        <div class="amount" id="pea-net-val"></div>
+        <div class="amount-label">Capital final net (après Prélèvements Sociaux)</div>
+      </div>
+      <div class="result-grid">
+        <div class="stat"><div class="val" id="pea-brut-val"></div><div class="lbl">Capital Brut</div></div>
+        <div class="stat"><div class="val" id="pea-gains-val"></div><div class="lbl">Gains générés</div></div>
+        <div class="stat"><div class="val" id="pea-ps-val"></div><div class="lbl">Prélèvements Sociaux</div></div>
+        <div class="stat"><div class="val" id="pea-ir-val"></div><div class="lbl">Impôt sur le Revenu</div></div>
+      </div>
+      <div class="result-note" id="pea-note"></div>
+    </div>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Les règles fiscales du PEA</h2>
+    <h3>L'exonération d'impôt sur le revenu</h3>
+    <p>Le grand avantage du PEA réside dans son exonération totale d'Impôt sur le Revenu (IR) sur les plus-values et dividendes. Cette exonération est acquise à condition qu'aucun retrait ne soit effectué avant le 5ème anniversaire de l'ouverture du plan. Seuls les prélèvements sociaux restent dus.</p>
+    
+    <h3>Les plafonds de versements</h3>
+    <p>Les versements sont plafonnés à :</p>
+    <ul>
+      <li id="text-plafond"><strong>PEA classique :</strong> [chargement...]</li>
+      <li id="text-plafond-pme"><strong>PEA-PME :</strong> [chargement...]</li>
+    </ul>
+    <p>Il est possible de cumuler un PEA classique et un PEA-PME, mais le total des versements sur les deux plans ne peut excéder le plafond maximum du PEA-PME (la mutualisation des plafonds).</p>
+
+    <h3>Conséquences d'un retrait anticipé</h3>
+    <p>Tout retrait effectué avant 5 ans entraîne la clôture du PEA. Les gains réalisés depuis l'ouverture sont alors soumis au Prélèvement Forfaitaire Unique (PFU) ou, sur option, au barème progressif de l'impôt sur le revenu, en plus des prélèvements sociaux.</p>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Ouvrir un PEA : Comparaison des courtiers</h2>
+    <p>Si vous souhaitez investir via un PEA, voici trois des offres en ligne les plus compétitives du marché :</p>
+    <div class="affiliate-block">
+      <div class="broker-card">
+        <h4>BoursoBank</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">PEA profil Découverte idéal pour débuter. Aucun frais de garde.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Fortuneo</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Tarifs très compétitifs sur Euronext. 100 ordres offerts.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Trade Republic</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Non éligible PEA mais CTO attractif et plans d'investissement.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+    </div>
+    
+    <div class="transparency-banner">
+      <strong>Transparence & Risques :</strong> Les liens ci-dessus sont des liens d'affiliation. Ce site peut percevoir une rémunération si vous ouvrez un compte. Ceci n'est pas un conseil personnalisé en investissement. L'investissement en bourse présente un risque de perte en capital.
+    </div>
+  </div>
+
+  <div class="cross-link">⚖️ Vous hésitez avec l'assurance-vie ? <a href="/pea-ou-assurance-vie/">Comparez PEA et Assurance-Vie →</a></div>
+</main>
+
+<footer>
+  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
+  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+</footer>
+
+<script>
+function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+
+async function runPEA() {
+  const montant = parseFloat(document.getElementById('montant').value) || 0;
+  const duree = parseFloat(document.getElementById('duree').value) || 0;
+  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
+  
+  const pea = await calculPEA(montant, duree, rendement);
+  
+  document.getElementById('pea-net-val').innerText = fmt(pea.net);
+  document.getElementById('pea-brut-val').innerText = fmt(pea.brut);
+  document.getElementById('pea-gains-val').innerText = fmt(pea.gains);
+  document.getElementById('pea-ps-val').innerText = fmt(pea.ps);
+  document.getElementById('pea-ir-val').innerText = fmt(pea.ir);
+  
+  if(pea.ir > 0) {
+    document.getElementById('pea-note').innerText = "Attention : La durée étant inférieure à 5 ans, les gains sont soumis à l'Impôt sur le Revenu.";
+  } else {
+    document.getElementById('pea-note').innerText = "Exonération d'Impôt sur le Revenu acquise (durée >= 5 ans).";
+  }
+  
+  document.getElementById('pea-result').classList.add('show');
+}
+
+window.onload = async function() {
+  const C = await loadConstants();
+  document.getElementById('text-plafond').innerHTML = `<strong>PEA classique :</strong> ${fmt(C.pea.plafond_versements)}`;
+  document.getElementById('text-plafond-pme').innerHTML = `<strong>PEA-PME :</strong> ${fmt(C.pea.plafond_pea_pme)}`;
+};
+</script>
+</body>
+</html>

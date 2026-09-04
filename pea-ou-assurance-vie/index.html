@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PEA ou Assurance-Vie : Comparateur Fiscal 2026</title>
+<meta name="description" content="Comparez le PEA et l'assurance-vie pour choisir la meilleure enveloppe fiscale en 2026. Calculez votre net après impôts et abattements (4600€/9200€).">
+<link rel="canonical" href="https://fiscaliteepargne.fr/pea-ou-assurance-vie/">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/calculators.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fiscaliteepargne.fr/#org",
+      "name": "Comparateur Épargne France"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Comparateur PEA vs Assurance-Vie",
+      "url": "https://fiscaliteepargne.fr/pea-ou-assurance-vie/",
+      "applicationCategory": "FinanceApplication",
+      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "PEA ou Assurance-Vie", "item": "https://fiscaliteepargne.fr/pea-ou-assurance-vie/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Faut-il choisir le PEA ou l'assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PEA est fiscalement plus intéressant (0% d'IR après 5 ans) mais se limite aux actions européennes. L'assurance-vie offre un abattement fiscal après 8 ans, des fonds garantis (fonds euros) et un avantage successoral majeur." } },
+        { "@type": "Question", "name": "Quel est l'abattement fiscal de l'assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "Après 8 ans, les gains retirés d'une assurance-vie bénéficient d'un abattement annuel sur l'impôt sur le revenu de 4 600 € pour une personne seule, et de 9 200 € pour un couple soumis à imposition commune." } },
+        { "@type": "Question", "name": "Quel est le taux des prélèvements sociaux sur l'assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "Le taux actuel des prélèvements sociaux sur les gains d'assurance-vie est de 17,2%. Contrairement au PEA qui est soumis à un taux différent selon les dernières lois de financement." } },
+        { "@type": "Question", "name": "Puis-je avoir un PEA et une assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, il est tout à fait possible et même recommandé de cumuler les deux enveloppes pour diversifier ses placements et profiter des avantages fiscaux et successoraux de chacune." } },
+        { "@type": "Question", "name": "Quelle est la fiscalité de l'assurance-vie avant 8 ans ?", "acceptedAnswer": { "@type": "Answer", "text": "Avant 8 ans, les gains sont soumis au PFU (12,8% d'IR + 17,2% de prélèvements sociaux) sans abattement, sauf si vous optez pour le barème progressif." } },
+        { "@type": "Question", "name": "Quand l'assurance-vie est-elle exonérée d'impôt ?", "acceptedAnswer": { "@type": "Answer", "text": "Elle n'est jamais totalement exonérée des prélèvements sociaux (17,2%). Cependant, pour l'IR, l'abattement de 4600€/9200€ après 8 ans permet souvent d'effacer totalement l'impôt sur les petits et moyens retraits." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <span class="flag">🇫🇷</span>
+    <h1>PEA ou Assurance-Vie ? (2026)</h1>
+    <p>Comparez les rendements nets après impôts pour choisir l'enveloppe la plus adaptée.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="disclaimer-banner">⚠️ Ce calculateur simule un <strong>versement unique</strong> effectué à la date du calcul. Le plafond d'abattement de 150 000 € est appliqué via une proratisation simplifiée relative à ce seul versement. Les contrats pré-existants et les versements multiples peuvent modifier l'imposition finale.</div>
+
+  <div class="card">
+    <h2>Comparateur Net à Net</h2>
+    <label for="montant">Montant du versement initial (€)</label>
+    <input type="number" id="montant" value="100000" min="0">
+    
+    <label for="duree">Durée d'investissement (années)</label>
+    <input type="number" id="duree" value="10" min="1">
+    
+    <label for="rendement">Rendement annuel estimé (%)</label>
+    <input type="number" id="rendement" value="5" min="0" step="0.1">
+
+    <label for="situation">Situation familiale (pour l'abattement Assurance-Vie)</label>
+    <select id="situation">
+      <option value="seul">Personne seule</option>
+      <option value="couple">Couple marié/pacsé</option>
+    </select>
+    
+    <button class="calc-btn" onclick="runComparison()">Comparer PEA et Assurance-Vie</button>
+    
+    <div class="result" id="comparison-result">
+      <div class="result-grid">
+        <div class="stat" style="border-top: 4px solid var(--brand)">
+          <h3 style="margin-top:0">PEA</h3>
+          <div class="amount" id="pea-net-val" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-dark)"></div>
+          <div class="lbl">Net après impôts</div>
+          <hr style="margin: 10px 0; border: none; border-top: 1px solid var(--border)">
+          <div style="font-size: 0.9rem;">IR : <strong id="pea-ir-val"></strong></div>
+          <div style="font-size: 0.9rem;">PS : <strong id="pea-ps-val"></strong></div>
+        </div>
+        
+        <div class="stat" style="border-top: 4px solid var(--gold)">
+          <h3 style="margin-top:0">Assurance-Vie</h3>
+          <div class="amount" id="av-net-val" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-dark)"></div>
+          <div class="lbl">Net après impôts</div>
+          <hr style="margin: 10px 0; border: none; border-top: 1px solid var(--border)">
+          <div style="font-size: 0.9rem;">IR : <strong id="av-ir-val"></strong></div>
+          <div style="font-size: 0.9rem;">PS : <strong id="av-ps-val"></strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eeat-section">
+    <h2>L'Assurance-Vie : Fiscalité à la loupe</h2>
+    <h3>L'abattement après 8 ans</h3>
+    <p>Le principal atout fiscal de l'assurance-vie se déclenche après 8 ans de détention du contrat. Lors d'un rachat, la part de gains retirée bénéficie d'un abattement annuel sur l'Impôt sur le Revenu :</p>
+    <ul>
+      <li id="text-abattement-seul">[chargement...] pour une personne seule</li>
+      <li id="text-abattement-couple">[chargement...] pour un couple marié ou pacsé</li>
+    </ul>
+
+    <h3>Prélèvements sociaux : un avantage pour l'Assurance-Vie</h3>
+    <p>Contrairement au PEA qui subit les prélèvements sociaux au taux standard, l'assurance-vie conserve un taux spécifique de Prélèvements Sociaux (généralement plus bas, actuellement de 17,2%). Sur un placement à long terme, cette différence de taux compense souvent l'impôt sur le revenu résiduel.</p>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Ouvrir une Assurance-Vie ou un PEA</h2>
+    <p>Retrouvez des offres compétitives pour ouvrir un PEA ou une assurance-vie :</p>
+    <div class="affiliate-block">
+      <div class="broker-card">
+        <h4>BoursoBank</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Assurance-vie en gestion libre ou pilotée, frais parmi les plus bas.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Fortuneo</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">PEA et Assurance-Vie performants. 0 frais d'entrée sur l'AV.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+      <div class="broker-card">
+        <h4>Trade Republic</h4>
+        <p style="font-size: 0.85rem; color: var(--muted);">Alternative : CTO avec investissement programmé à moindre coût.</p>
+        <a href="#" class="btn">Voir l'offre</a>
+      </div>
+    </div>
+    
+    <div class="transparency-banner">
+      <strong>Transparence & Risques :</strong> Les liens ci-dessus sont des liens d'affiliation. Ce site peut percevoir une rémunération si vous ouvrez un compte. Ceci n'est pas un conseil personnalisé en investissement.
+    </div>
+  </div>
+
+  <div class="cross-link">🏦 D'autres options d'investissement ? <a href="/compte-titres-fiscalite/">Découvrez la fiscalité du CTO →</a></div>
+</main>
+
+<footer>
+  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
+  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+</footer>
+
+<script>
+function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+
+async function runComparison() {
+  const montant = parseFloat(document.getElementById('montant').value) || 0;
+  const duree = parseFloat(document.getElementById('duree').value) || 0;
+  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
+  const situation = document.getElementById('situation').value;
+  
+  const pea = await calculPEA(montant, duree, rendement);
+  const av = await calculAssuranceVie(montant, duree, rendement, situation);
+  
+  document.getElementById('pea-net-val').innerText = fmt(pea.net);
+  document.getElementById('pea-ir-val').innerText = fmt(pea.ir);
+  document.getElementById('pea-ps-val').innerText = fmt(pea.ps);
+  
+  document.getElementById('av-net-val').innerText = fmt(av.net);
+  document.getElementById('av-ir-val').innerText = fmt(av.ir);
+  document.getElementById('av-ps-val').innerText = fmt(av.ps);
+  
+  document.getElementById('comparison-result').classList.add('show');
+}
+
+window.onload = async function() {
+  const C = await loadConstants();
+  document.getElementById('text-abattement-seul').innerHTML = `<strong>${fmt(C.assurance_vie.abattement_annuel_seul)}</strong> pour une personne seule`;
+  document.getElementById('text-abattement-couple').innerHTML = `<strong>${fmt(C.assurance_vie.abattement_annuel_couple)}</strong> pour un couple marié ou pacsé`;
+};
+</script>
+</body>
+</html>

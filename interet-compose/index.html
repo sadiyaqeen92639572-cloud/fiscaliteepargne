@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculatrice d'Intérêts Composés : Capitalisez sur le long terme</title>
+<meta name="description" content="Simulez l'effet magique des intérêts composés sur votre épargne avec ou sans versements réguliers. Calculez votre capital final brut en quelques secondes.">
+<link rel="canonical" href="https://fiscaliteepargne.fr/interet-compose/">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fiscaliteepargne.fr/#org",
+      "name": "Comparateur Épargne France"
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Calculatrice Intérêts Composés",
+      "url": "https://fiscaliteepargne.fr/interet-compose/",
+      "applicationCategory": "FinanceApplication",
+      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
+        { "@type": "ListItem", "position": 2, "name": "Intérêts Composés", "item": "https://fiscaliteepargne.fr/interet-compose/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Que sont les intérêts composés ?", "acceptedAnswer": { "@type": "Answer", "text": "Les intérêts composés sont le principe selon lequel les intérêts générés par un capital sont réinvestis pour générer à leur tour de nouveaux intérêts. C'est l'effet boule de neige de l'épargne sur le long terme." } },
+        { "@type": "Question", "name": "Pourquoi commencer à épargner tôt ?", "acceptedAnswer": { "@type": "Answer", "text": "Plus vous commencez tôt, plus l'effet des intérêts composés est puissant. Le temps est le facteur le plus important dans la formule des intérêts composés, bien plus que le capital initial investi." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <span class="flag">📊</span>
+    <h1>Calculatrice d'Intérêts Composés</h1>
+    <p>Calculez l'évolution de votre épargne dans le temps grâce à l'effet boule de neige.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Simulateur Brut</h2>
+    <label for="montant">Capital initial (€)</label>
+    <input type="number" id="montant" value="10000" min="0">
+    
+    <label for="versement">Versement mensuel régulier (€)</label>
+    <input type="number" id="versement" value="200" min="0">
+
+    <label for="duree">Durée du placement (années)</label>
+    <input type="number" id="duree" value="20" min="1">
+    
+    <label for="rendement">Rendement annuel estimé (%)</label>
+    <input type="number" id="rendement" value="5" min="0" step="0.1">
+    
+    <button class="calc-btn" onclick="runCompound()">Calculer le capital final</button>
+    
+    <div class="result" id="compound-result">
+      <div class="result-hero">
+        <div class="amount" id="cmp-total-val"></div>
+        <div class="amount-label">Capital final estimé (Brut)</div>
+      </div>
+      <div class="result-grid">
+        <div class="stat"><div class="val" id="cmp-versements-val"></div><div class="lbl">Total des versements</div></div>
+        <div class="stat"><div class="val" id="cmp-interets-val"></div><div class="lbl">Intérêts générés</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Qu'est-ce que la magie des intérêts composés ?</h2>
+    <p>Les intérêts composés interviennent lorsque les intérêts générés par votre placement sont réinvestis et s'ajoutent à votre capital initial. L'année suivante, ces intérêts génèrent eux-mêmes de nouveaux intérêts. C'est l'effet "boule de neige".</p>
+    <p>Sur le long terme, ce phénomène permet une croissance exponentielle de votre épargne.</p>
+    <h3>L'importance des versements réguliers</h3>
+    <p>Ajouter une somme chaque mois, même modeste, renforce considérablement la base sur laquelle les intérêts sont calculés, accélérant ainsi la croissance de votre portefeuille.</p>
+  </div>
+
+  <div class="eeat-section">
+    <h2>Quelle enveloppe fiscale choisir pour votre épargne ?</h2>
+    <p>Générer des intérêts bruts est une excellente première étape. Cependant, au moment de profiter de vos gains, la fiscalité viendra amputer une partie de votre rendement. Il est donc crucial d'optimiser votre enveloppe fiscale :</p>
+    <ul>
+      <li><a href="/pea/" style="font-weight:600; color:var(--brand-dark);">Le PEA</a> : L'arme fatale pour annuler l'impôt sur le revenu après 5 ans (investissement en actions européennes).</li>
+      <li><a href="/pea-ou-assurance-vie/" style="font-weight:600; color:var(--brand-dark);">L'Assurance-Vie</a> : Pour diversifier, sécuriser une partie de son épargne (fonds euros) et optimiser la transmission.</li>
+      <li><a href="/compte-titres-fiscalite/" style="font-weight:600; color:var(--brand-dark);">Le CTO</a> : Pour une liberté d'investissement totale (monde entier, tous types de produits), avec une fiscalité par défaut de 31,4%.</li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
+  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations brutes à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+</footer>
+
+<script>
+function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
+
+function runCompound() {
+  const montant = parseFloat(document.getElementById('montant').value) || 0;
+  const versement = parseFloat(document.getElementById('versement').value) || 0;
+  const duree = parseFloat(document.getElementById('duree').value) || 0;
+  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
+  
+  const totalVersements = montant + (versement * 12 * duree);
+  
+  // Calcul intérêts composés avec mensualités (fin de période)
+  const tauxMensuel = Math.pow(1 + rendement, 1/12) - 1;
+  const nbMois = duree * 12;
+  
+  const valeurCapital = montant * Math.pow(1 + tauxMensuel, nbMois);
+  const valeurVersements = versement > 0 && tauxMensuel > 0 
+    ? versement * ((Math.pow(1 + tauxMensuel, nbMois) - 1) / tauxMensuel) 
+    : versement * nbMois;
+    
+  const capitalFinalBrut = valeurCapital + valeurVersements;
+  const interets = capitalFinalBrut - totalVersements;
+  
+  document.getElementById('cmp-total-val').innerText = fmt(capitalFinalBrut);
+  document.getElementById('cmp-versements-val').innerText = fmt(totalVersements);
+  document.getElementById('cmp-interets-val').innerText = fmt(interets);
+  
+  document.getElementById('compound-result').classList.add('show');
+}
+</script>
+</body>
+</html>
