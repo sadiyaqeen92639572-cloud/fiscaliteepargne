@@ -1,0 +1,377 @@
+[
+  {
+    "slug": "",
+    "navLabel": "Comparateur d'enveloppes",
+    "title": "Comparateur fiscalité épargne 2026 : PEA vs assurance-vie vs CTO",
+    "desc": "Comparez la fiscalité du PEA, de l'assurance-vie et du compte-titres ordinaire (CTO) en 2026. Calculez votre gain net après impôt et prélèvements sociaux (LFSS 2026).",
+    "h1": "Comparateur PEA vs assurance-vie vs CTO 2026",
+    "heroSub": "Simulez vos gains nets d'impôt et de prélèvements sociaux selon la durée de placement. 100 % gratuit, instantané, sans inscription.",
+    "wide": true,
+    "calc": "compare3",
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-06",
+    "priority": "1.0",
+    "disclaimer": "⚠️ Estimateur pédagogique (non personnalisé). Simule un <strong>versement unique</strong> capitalisé annuellement. Les contrats existants, versements multiples, frais et le plafond de 150 000 € de primes en assurance-vie modifient l'imposition réelle — voir <a href='/methodologie/'>méthodologie</a>.",
+    "sections": [
+      "<div class='eeat-section'><h2>Trois enveloppes, trois fiscalités</h2><div class='eeat-grid'><div class='eeat-item'><h4><a href='/pea/'>PEA</a></h4><p>Exonération d'impôt sur le revenu après 5 ans. Plafond de versements 150 000 €. Univers restreint aux actions et fonds européens. Prélèvements sociaux 18,6 % (LFSS 2026).</p></div><div class='eeat-item'><h4><a href='/assurance-vie-fiscalite/'>Assurance-vie</a></h4><p>Abattement annuel de 4 600 € / 9 200 € sur l'IR après 8 ans, taux d'IR réduit à 7,5 %. Prélèvements sociaux maintenus à 17,2 %. Avantage successoral (art. 990 I).</p></div><div class='eeat-item'><h4><a href='/compte-titres-fiscalite/'>Compte-titres (CTO)</a></h4><p>Prélèvement forfaitaire unique de 31,4 % par défaut, ou barème progressif sur option (abattement 40 % sur dividendes). Aucun plafond, aucune contrainte géographique.</p></div></div></div>",
+      "@CONST_TABLE@",
+      "<div class='eeat-section'><h2>Comment lire le résultat</h2><p>Le comparateur applique à un même versement la fiscalité propre à chaque enveloppe à l'échéance choisie : capital brut capitalisé au taux annuel saisi, puis retrait de l'impôt sur le revenu et des prélèvements sociaux dus <em>au moment du retrait</em>. Sur le PEA, l'IR tombe à zéro dès 5 ans de détention ; sur l'assurance-vie, l'abattement des 8 ans réduit l'assiette de l'IR mais jamais celle des prélèvements sociaux ; sur le CTO, la totalité du gain est taxée à 31,4 % sauf option pour le barème. Le net affiché n'intègre pas les frais de gestion propres à chaque contrat, qui pèsent eux aussi sur le rendement composé — voir la <a href='/interet-compose/'>calculatrice d'intérêts composés</a>.</p></div>"
+    ],
+    "faq": [
+      { "q": "Quelle enveloppe est la plus avantageuse fiscalement en 2026 ?", "a": "<p>Pour un placement en actions détenu plus de 5 ans, le PEA est le plus efficace : 0 % d'impôt sur le revenu, seulement 18,6 % de prélèvements sociaux sur le gain. L'assurance-vie devient compétitive après 8 ans grâce à l'abattement de 4 600 € / 9 200 € et au taux d'IR de 7,5 %, avec des prélèvements sociaux plus bas (17,2 %) et un cadre successoral privilégié. Le compte-titres, taxé à 31,4 %, se justifie pour investir hors zone euro ou sur des produits inéligibles au PEA.</p>" },
+      { "q": "Les prélèvements sociaux ont-ils augmenté en 2026 ?", "a": "<p>Oui. La loi de financement de la Sécurité sociale pour 2026 relève la CSG sur les revenus du capital de 9,2 % à 10,6 %, portant le taux global des prélèvements sociaux de 17,2 % à 18,6 %. Cette hausse s'applique au PEA, au compte-titres et aux plus-values mobilières. L'assurance-vie, le PEL, le CEL et les revenus fonciers restent au taux de 17,2 %.</p>" },
+      { "q": "Le PFU est-il passé à 31,4 % ?", "a": "<p>Oui, mécaniquement : le prélèvement forfaitaire unique combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Ces derniers passant à 18,6 %, le PFU global atteint 31,4 % en 2026 (contre 30 % jusqu'en 2025) pour les dividendes, les intérêts et les plus-values de cession de valeurs mobilières. Le PFU spécifique à l'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %).</p>" },
+      { "q": "Le calcul tient-il compte des frais ?", "a": "<p>Non. Le comparateur applique uniquement la fiscalité. Les frais de gestion (souvent 0,5 % à 1 % par an sur une assurance-vie en unités de compte, quasi nuls sur un PEA en titres vifs) réduisent le rendement composé et peuvent inverser le classement sur longue durée. Comparez toujours le couple fiscalité + frais.</p>" },
+      { "q": "Peut-on cumuler les trois enveloppes ?", "a": "<p>Oui, et c'est la situation la plus courante : un PEA pour les actions européennes, une assurance-vie pour la poche sécurisée (fonds euros) et la transmission, un compte-titres pour tout le reste. Chaque enveloppe a son plafond et ses règles propres ; il n'existe aucune limite globale de détention.</p>" },
+      { "q": "Ce comparateur remplace-t-il un conseil fiscal ?", "a": "<p>Non. Les calculs sont déterministes et pédagogiques. Ils ne prennent pas en compte votre taux marginal d'imposition, vos autres revenus, votre situation patrimoniale ni les cas particuliers (primes avant le 27/09/2017, PEA ouvert avant 2018, non-résidents). Pour une décision, consultez un conseiller en gestion de patrimoine ou un avocat fiscaliste.</p>" }
+    ]
+  },
+
+  {
+    "slug": "assurance-vie-fiscalite",
+    "navLabel": "Fiscalité assurance-vie",
+    "published": false,
+    "title": "Fiscalité de l'assurance-vie 2026 : imposition des rachats, abattement 8 ans, succession",
+    "desc": "Comment est imposée l'assurance-vie en 2026 : PFU 12,8 %, taux réduit 7,5 % après 8 ans, abattement 4 600 € / 9 200 €, prélèvements sociaux 17,2 %, transmission (art. 990 I). Calculateur de rachat.",
+    "h1": "Fiscalité de l'assurance-vie 2026",
+    "heroSub": "Comment est imposé un rachat sur votre contrat : avant 8 ans, après 8 ans, et au décès.",
+    "flag": "🇫🇷",
+    "calc": "avRachat",
+    "about": "Fiscalité de l'assurance-vie",
+    "datePublished": "2026-09-07",
+    "dateModified": "2026-09-07",
+    "priority": "0.9",
+    "crumbs": [["Accueil", "/"], ["Fiscalité de l'assurance-vie"]],
+    "disclaimer": "⚠️ Estimateur pédagogique. Le calculateur ci-dessous modélise l'imposition d'un rachat sur un <strong>contrat existant</strong> : il applique la proratisation simplifiée du seuil de 150 000 € de primes et ne remplace pas le décompte de votre assureur.",
+    "sections": [
+      "<div class='eeat-section'><h2>Quand et comment l'assurance-vie est-elle imposée ?</h2><p>Un contrat d'assurance-vie n'est jamais imposé tant que vous n'y touchez pas. L'imposition n'intervient qu'au moment d'un <strong>rachat</strong> (retrait partiel ou total) ou du <strong>dénouement</strong> du contrat. Et seule la part de <strong>produits</strong> — les gains — comprise dans la somme retirée est taxée : le capital que vous avez versé ressort en franchise d'impôt.</p><p>Cette part de produits se calcule au prorata : <code>produits = rachat − (primes versées × rachat ÷ valeur du contrat)</code>. Exemple : contrat de 120 000 € alimenté par 100 000 € de primes, rachat de 30 000 € → produits imposables = 30 000 − (100 000 × 30 000 ÷ 120 000) = 30 000 − 25 000 = <strong>5 000 €</strong>. L'impôt et les prélèvements sociaux ne portent que sur ces 5 000 €.</p><p>L'imposition comporte deux étages : l'<strong>impôt sur le revenu</strong>, dont le taux dépend de l'ancienneté du contrat et du montant total des primes ; et les <strong>prélèvements sociaux à 17,2 %</strong>, dus dans tous les cas, sans abattement.</p></div>",
+      "<div class='eeat-section'><h2>Avant 8 ans : PFU de 30 %</h2><p>Pour un rachat effectué sur un contrat de moins de 8 ans, les produits (issus de primes versées depuis le 27 septembre 2017) sont soumis au <strong>prélèvement forfaitaire unique</strong> : 12,8 % d'impôt sur le revenu + 17,2 % de prélèvements sociaux, soit <strong>30 %</strong> au total. Aucun abattement ne s'applique.</p><p>Vous pouvez renoncer au PFU et opter pour le <strong>barème progressif</strong> de l'impôt sur le revenu (case 2OP de la déclaration). Cette option est globale — elle vaut pour l'ensemble de vos revenus de capitaux mobiliers de l'année — et n'a d'intérêt que si votre taux marginal d'imposition est de 0 % ou 11 %.</p><p>Exemple : rachat contenant 8 000 € de produits sur un contrat de 3 ans → IR 12,8 % = 1 024 €, PS 17,2 % = 1 376 €, soit 2 400 € d'imposition, 5 600 € nets.</p></div>",
+      "<div class='eeat-section'><h2 id='apres-8-ans'>Après 8 ans : abattement et taux réduit de 7,5 %</h2><p>Le cap des 8 ans de détention déclenche deux avantages, uniquement sur l'impôt sur le revenu :</p><ul><li>un <strong>abattement annuel</strong> sur l'assiette de l'IR : 4 600 € pour une personne seule, 9 200 € pour un couple marié ou pacsé soumis à imposition commune. Il se recharge chaque 1<sup>er</sup> janvier, ce qui rend les rachats fractionnés très efficaces ;</li><li>un <strong>taux d'IR réduit à 7,5 %</strong> (au lieu de 12,8 %) sur la fraction de produits correspondant aux primes versées jusqu'à 150 000 €. Au-delà de ce seuil, la fraction correspondante reste taxée à 12,8 %.</li></ul><p>Les prélèvements sociaux de 17,2 % restent dus sur la totalité des produits, avant tout abattement.</p><p>Exemple (couple, contrat de 10 ans, 120 000 € de primes) : rachat contenant 12 000 € de produits → abattement 9 200 € → assiette IR 2 800 € → IR à 7,5 % = 210 € ; PS 17,2 % sur 12 000 € = 2 064 €. Imposition totale 2 274 €. Le détail est développé sur la page <a href='/assurance-vie-fiscalite/apres-8-ans/'>imposition de l'assurance-vie après 8 ans</a>.</p></div>",
+      "<div class='eeat-section'><h2>Le seuil de 150 000 € de primes</h2><p>Le taux réduit de 7,5 % après 8 ans ne s'applique qu'à la part de produits rattachée aux <strong>150 000 premiers euros de primes nettes</strong> versées, tous contrats confondus et après le 27 septembre 2017. La fraction de produits correspondant aux primes qui dépassent ce seuil reste imposée à 12,8 %.</p><p>Le partage se fait au prorata : si vous avez versé 200 000 € de primes, 75 % des produits imposables bénéficient du 7,5 % et 25 % sont taxés à 12,8 %. Le seuil s'apprécie au niveau du foyer fiscal et il est <strong>net des rachats déjà effectués</strong>. Le calculateur applique une proratisation simplifiée à partir du total de primes que vous saisissez ; l'assureur, lui, tient le compte exact contrat par contrat.</p></div>",
+      "<div class='eeat-section'><h2>Prélèvements sociaux : 17,2 % maintenus</h2><p>Alors que la LFSS 2026 porte les prélèvements sociaux sur le capital de 17,2 % à 18,6 % (PEA, compte-titres, plus-values mobilières), l'<strong>assurance-vie reste à 17,2 %</strong>. Elle figure sur la liste limitative des placements épargnés par la hausse, aux côtés du PEL, du CEL et des revenus fonciers. La plupart des comparateurs concurrents n'ont pas encore intégré cette distinction et affichent encore 30 % / 17,2 % partout.</p><p>Sur un contrat, les prélèvements sociaux sont prélevés différemment selon le support : <strong>au fil de l'eau</strong> chaque année sur les intérêts du fonds en euros, et <strong>au moment du rachat</strong> sur les plus-values des unités de compte. En cas de trop-perçu (moins-value au rachat après des prélèvements annuels sur fonds euros), l'assureur restitue l'excédent.</p></div>",
+      "<div class='eeat-section'><h2 id='deces'>Fiscalité en cas de décès</h2><p>L'assurance-vie est dénouée par le décès de l'assuré et le capital revient aux bénéficiaires désignés, <strong>hors succession civile</strong>. Le régime fiscal dépend de l'âge de l'assuré au moment des versements :</p><ul><li><strong>Primes versées avant 70 ans</strong> (art. 990 I du CGI) : chaque bénéficiaire profite d'un abattement de <strong>152 500 €</strong> sur le capital transmis (primes + produits). Au-delà, prélèvement de 20 % jusqu'à 700 000 € puis 31,25 %.</li><li><strong>Primes versées après 70 ans</strong> (art. 757 B du CGI) : un abattement global de <strong>30 500 €</strong>, tous bénéficiaires confondus, s'applique aux seules primes ; au-delà, les primes réintègrent l'actif successoral et suivent le barème des droits de succession. Les produits (intérêts et plus-values) restent, eux, totalement exonérés.</li></ul><p>Le <strong>conjoint ou partenaire de PACS</strong> bénéficiaire est totalement exonéré (loi TEPA), quel que soit le montant et l'âge des versements.</p></div>",
+      "<div class='eeat-section'><h2>Barème progressif ou PFU : que choisir ?</h2><p>Par défaut, les produits sont soumis au PFU (30 % avant 8 ans, ou 7,5 % / 12,8 % + 17,2 % après). L'<strong>option pour le barème progressif</strong> (case 2OP) est globale et annuelle : elle s'applique à tous vos revenus de capitaux mobiliers. Elle n'est avantageuse que si votre taux marginal d'imposition est inférieur au taux forfaitaire — en pratique, foyers non imposables ou dans la tranche à 11 %. Après 8 ans, l'abattement de 4 600 € / 9 200 € s'impute quelle que soit l'option retenue.</p></div>"
+    ],
+    "faq": [
+      { "q": "Quelle est la fiscalité de l'assurance-vie en 2026 ?", "a": "<p>Seuls les gains contenus dans un rachat sont imposés. Avant 8 ans : PFU de 30 % (12,8 % d'IR + 17,2 % de prélèvements sociaux). Après 8 ans : abattement annuel de 4 600 € (seul) ou 9 200 € (couple) sur l'assiette de l'IR, puis IR à 7,5 % jusqu'à 150 000 € de primes et 12,8 % au-delà ; les prélèvements sociaux de 17,2 % restent dus sur la totalité des gains.</p>" },
+      { "q": "Quel est le taux d'imposition de l'assurance-vie après 8 ans ?", "a": "<p>Après un abattement annuel de 4 600 € (personne seule) ou 9 200 € (couple), les gains sont imposés à 7,5 % d'impôt sur le revenu pour la part correspondant aux primes versées jusqu'à 150 000 €, et à 12,8 % au-delà. S'y ajoutent 17,2 % de prélèvements sociaux sur l'ensemble des gains, sans abattement. Soit un taux effectif souvent compris entre 17,2 % et 24,7 %.</p>" },
+      { "q": "L'abattement de 4 600 € réduit-il aussi les prélèvements sociaux ?", "a": "<p>Non. L'abattement de 4 600 € / 9 200 € après 8 ans ne s'impute que sur l'assiette de l'impôt sur le revenu. Les prélèvements sociaux de 17,2 % s'appliquent sur la totalité des produits contenus dans le rachat, avant tout abattement.</p>" },
+      { "q": "Comment calculer la part imposable d'un rachat partiel ?", "a": "<p>La part de gains imposables se calcule au prorata : produits = montant du rachat − (total des primes versées × montant du rachat ÷ valeur totale du contrat). Seuls ces produits sont soumis à l'impôt et aux prélèvements sociaux ; la fraction correspondant au capital versé sort en franchise.</p>" },
+      { "q": "Que se passe-t-il si j'ai versé plus de 150 000 € de primes ?", "a": "<p>Le taux d'IR réduit de 7,5 % après 8 ans ne s'applique qu'à la fraction de gains rattachée aux 150 000 premiers euros de primes (nets de rachats, tous contrats confondus, versés depuis le 27/09/2017). La fraction au-delà est imposée à 12,8 %. Le partage est proportionnel : avec 200 000 € de primes, 75 % des gains bénéficient du 7,5 %.</p>" },
+      { "q": "Les prélèvements sociaux de l'assurance-vie passent-ils à 18,6 % en 2026 ?", "a": "<p>Non. La hausse de la LFSS 2026 (17,2 % → 18,6 %) épargne l'assurance-vie, qui figure sur la liste limitative des placements maintenus à 17,2 %, avec le PEL, le CEL et les revenus fonciers. Le PEA et le compte-titres, eux, passent à 18,6 %.</p>" },
+      { "q": "Quelle fiscalité au décès pour une assurance-vie ?", "a": "<p>Pour les primes versées avant 70 ans (art. 990 I du CGI), chaque bénéficiaire a droit à un abattement de 152 500 €, puis prélèvement de 20 % jusqu'à 700 000 € et 31,25 % au-delà. Pour les primes versées après 70 ans (art. 757 B), un abattement global de 30 500 € s'applique aux primes uniquement, le surplus étant soumis aux droits de succession ; les gains restent exonérés.</p>" },
+      { "q": "Le conjoint paie-t-il des droits sur l'assurance-vie ?", "a": "<p>Non. Le conjoint marié et le partenaire de PACS bénéficiaire d'un contrat d'assurance-vie sont totalement exonérés depuis la loi TEPA de 2007, sans limite de montant et quel que soit l'âge de l'assuré au moment des versements.</p>" },
+      { "q": "Faut-il déclarer les rachats d'assurance-vie aux impôts ?", "a": "<p>Oui. L'assureur transmet à l'administration le montant des produits et applique le prélèvement forfaitaire. Vous reportez ces montants sur votre déclaration (formulaire 2042, cases 2CH et suivantes) ; l'impôt déjà prélevé est déduit et, après 8 ans, l'abattement de 4 600 € / 9 200 € est appliqué automatiquement lors du calcul.</p>" },
+      { "q": "L'assurance-vie entre-t-elle dans l'assiette de l'IFI ?", "a": "<p>Seulement pour sa fraction représentative d'actifs immobiliers imposables (SCPI, OPCI, parts de sociétés immobilières logées dans le contrat). La part investie en fonds euros, actions ou obligations n'est pas soumise à l'impôt sur la fortune immobilière.</p>" }
+    ],
+    "related": [
+      ["/assurance-vie-fiscalite/apres-8-ans/", "Imposition de l'assurance-vie après 8 ans"],
+      ["/pea-ou-assurance-vie/", "PEA ou assurance-vie : comment choisir"],
+      ["/compte-titres-fiscalite/", "Fiscalité du compte-titres (CTO)"],
+      ["/pea/", "Fiscalité du PEA 2026"],
+      ["/interet-compose/", "Calculatrice d'intérêts composés"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ],
+    "sources": ["sp_av_rachat", "sp_av_deces", "bofip_rcm", "lfss_2026"]
+  },
+
+  {
+    "slug": "assurance-vie-fiscalite/apres-8-ans",
+    "navLabel": "Assurance-vie après 8 ans",
+    "navHide": true,
+    "published": false,
+    "title": "Imposition de l'assurance-vie après 8 ans : abattement et taux 7,5 %",
+    "desc": "Après 8 ans, l'assurance-vie ouvre droit à un abattement annuel de 4 600 € / 9 200 € et à un taux d'IR de 7,5 %. Calculateur de l'impôt après abattement, exemples chiffrés.",
+    "h1": "Imposition de l'assurance-vie après 8 ans",
+    "heroSub": "Abattement annuel, taux réduit de 7,5 % et prélèvements sociaux : ce qui change au 8ᵉ anniversaire du contrat.",
+    "calc": "av8ans",
+    "about": "Imposition de l'assurance-vie après 8 ans",
+    "datePublished": "2026-09-07",
+    "dateModified": "2026-09-07",
+    "priority": "0.7",
+    "crumbs": [["Accueil", "/"], ["Fiscalité de l'assurance-vie", "/assurance-vie-fiscalite/"], ["Après 8 ans"]],
+    "sections": [
+      "<div class='eeat-section'><h2>Ce qui change à 8 ans</h2><p>Au 8ᵉ anniversaire du contrat — décompté depuis sa date d'ouverture, pas depuis chaque versement — la fiscalité des rachats devient nettement plus douce. Deux mécanismes se combinent, exclusivement sur l'impôt sur le revenu : un abattement annuel sur l'assiette imposable, et un taux d'IR abaissé à 7,5 %. Les prélèvements sociaux de 17,2 %, eux, ne bougent pas.</p></div>",
+      "<div class='eeat-section'><h2>L'abattement de 4 600 € / 9 200 €</h2><p>Chaque année civile, les produits contenus dans vos rachats bénéficient d'un abattement sur l'assiette de l'impôt sur le revenu :</p><ul><li><strong>4 600 €</strong> pour une personne seule ;</li><li><strong>9 200 €</strong> pour un couple marié ou pacsé soumis à imposition commune.</li></ul><p>Cet abattement est <strong>annuel et se recharge au 1<sup>er</sup> janvier</strong>, tous contrats confondus. En fractionnant vos retraits sur plusieurs années, vous pouvez sortir chaque année jusqu'à 4 600 € (ou 9 200 €) de gains sans aucun impôt sur le revenu — les prélèvements sociaux de 17,2 % restant dus.</p></div>",
+      "<div class='eeat-section'><h2>Le taux de 7,5 %</h2><p>Après application de l'abattement, la part de gains restante est imposée à <strong>7,5 %</strong> au titre de l'impôt sur le revenu, pour la fraction correspondant aux <strong>primes versées jusqu'à 150 000 €</strong> (nettes de rachats, tous contrats confondus, versées depuis le 27/09/2017). Au-delà de ce seuil, la fraction correspondante est taxée à 12,8 %.</p><p>En pratique, l'assureur applique un <strong>prélèvement forfaitaire libératoire</strong> de 7,5 % à la source lors du rachat, puis l'administration régularise l'année suivante en tenant compte de l'abattement : l'excédent éventuellement prélevé vous est restitué.</p></div>",
+      "<div class='eeat-section'><h2>Les prélèvements sociaux restent dus</h2><p>Le passage des 8 ans ne change rien aux prélèvements sociaux : <strong>17,2 % sur la totalité des produits</strong> contenus dans le rachat, sans abattement. Sur le fonds en euros, ils ont généralement déjà été prélevés chaque année ; sur les unités de compte, ils le sont au moment du rachat.</p></div>",
+      "<div class='eeat-section'><h2>Exemple chiffré complet</h2><p>Contrat de 10 ans, valeur 200 000 €, primes versées 140 000 €, rachat total, couple marié.</p><ul><li>Produits contenus dans le rachat : 200 000 − 140 000 = <strong>60 000 €</strong>.</li><li>Abattement couple : 9 200 € → assiette IR = 50 800 €.</li><li>Primes (140 000 €) sous le seuil de 150 000 € → IR à 7,5 % : 50 800 × 7,5 % = <strong>3 810 €</strong>.</li><li>Prélèvements sociaux : 60 000 × 17,2 % = <strong>10 320 €</strong>.</li><li>Imposition totale : 14 130 € — soit un taux effectif de 23,6 % sur les gains.</li></ul><p>À comparer aux 30 % (18 000 €) qu'aurait coûté le même rachat avant 8 ans.</p></div>"
+    ],
+    "faq": [
+      { "q": "Peut-on tout retirer sans impôt après 8 ans ?", "a": "<p>Non, mais l'abattement annuel de 4 600 € / 9 200 € permet d'effacer l'impôt sur le revenu sur cette part de gains chaque année. Les prélèvements sociaux de 17,2 % restent toujours dus, et la fraction de gains au-delà de l'abattement est taxée à 7,5 % (ou 12,8 % au-delà de 150 000 € de primes).</p>" },
+      { "q": "L'abattement non utilisé se reporte-t-il l'année suivante ?", "a": "<p>Non. L'abattement de 4 600 € / 9 200 € est annuel : s'il n'est pas consommé une année, il est perdu. Il se recharge intégralement au 1<sup>er</sup> janvier suivant.</p>" },
+      { "q": "Faut-il exactement 8 ans de détention ?", "a": "<p>Le contrat doit avoir plus de 8 ans révolus à la date du rachat. L'ancienneté se compte depuis la date d'ouverture du contrat (premier versement), pas depuis chaque versement ultérieur.</p>" },
+      { "q": "Est-ce la date d'ouverture ou celle des versements qui compte ?", "a": "<p>C'est la date d'ouverture du contrat qui fixe l'ancienneté et donc l'accès au régime des 8 ans. La date des versements n'intervient que pour distinguer les primes d'avant et d'après le 27 septembre 2017 (régime PFL historique) et pour apprécier le seuil de 150 000 €.</p>" },
+      { "q": "Que se passe-t-il si mes gains dépassent l'abattement ?", "a": "<p>La fraction de gains qui excède 4 600 € (ou 9 200 €) est imposée à l'impôt sur le revenu au taux de 7,5 % pour la part rattachée aux primes ≤ 150 000 €, et 12,8 % au-delà. Les prélèvements sociaux de 17,2 % s'appliquent sur l'intégralité des gains.</p>" },
+      { "q": "Le taux de 7,5 % est-il automatique ?", "a": "<p>L'assureur applique un prélèvement forfaitaire de 7,5 % à la source lors du rachat, pour la part sous le seuil de 150 000 € de primes. L'abattement de 4 600 € / 9 200 € est ensuite appliqué par l'administration lors du calcul de l'impôt, avec restitution de l'éventuel trop-prélevé.</p>" },
+      { "q": "Quelle case cocher sur la déclaration ?", "a": "<p>Les produits soumis au prélèvement forfaitaire après 8 ans sont pré-remplis en cases 2DH et 2CH de la déclaration 2042. L'abattement de 4 600 € / 9 200 € est appliqué automatiquement. La case 2OP permet d'opter globalement pour le barème progressif si c'est plus favorable.</p>" },
+      { "q": "L'abattement double-t-il pour un couple ?", "a": "<p>Oui. L'abattement annuel est de 4 600 € pour une personne seule et de 9 200 € pour un couple marié ou pacsé soumis à imposition commune, quel que soit le nombre de contrats détenus dans le foyer.</p>" }
+    ],
+    "related": [
+      ["/assurance-vie-fiscalite/", "Fiscalité de l'assurance-vie 2026 (page complète)"],
+      ["/pea-ou-assurance-vie/", "PEA ou assurance-vie : comment choisir"],
+      ["/compte-titres-fiscalite/", "Fiscalité du compte-titres (CTO)"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ],
+    "sources": ["sp_av_rachat", "bofip_rcm"]
+  },
+
+  {
+    "slug": "pea",
+    "navLabel": "Fiscalité du PEA",
+    "title": "Fiscalité du PEA 2026 : plafonds, exonération après 5 ans, prélèvements sociaux",
+    "desc": "Fiscalité du plan d'épargne en actions en 2026 : plafond de 150 000 €, exonération d'impôt sur le revenu après 5 ans, prélèvements sociaux 18,6 %, retrait anticipé. Simulateur de gain net.",
+    "h1": "Fiscalité du PEA 2026",
+    "heroSub": "Plafonds, exonération d'impôt après 5 ans, prélèvements sociaux et conséquences d'un retrait anticipé.",
+    "calc": "pea",
+    "about": "Fiscalité du plan d'épargne en actions",
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.9",
+    "crumbs": [["Accueil", "/"], ["Fiscalité du PEA"]],
+    "disclaimer": "⚠️ Le calculateur suppose un PEA ouvert après le 01/01/2018. Pour un plan ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici.",
+    "sections": [
+      "<div class='eeat-section'><h2>L'exonération d'impôt sur le revenu après 5 ans</h2><p>L'atout central du PEA est l'exonération totale d'<strong>impôt sur le revenu</strong> sur les plus-values et les dividendes, acquise dès lors qu'aucun retrait n'est effectué avant le 5<sup>e</sup> anniversaire du plan. Seuls les prélèvements sociaux restent dus.</p><p>Deux précisions : les dividendes de <strong>titres non cotés</strong> logés dans le PEA ne sont exonérés que dans la limite de 10 % par an de la valeur d'inscription de ces titres ; au-delà, la fraction excédentaire est imposable. Et depuis la loi PACTE, un <strong>retrait partiel après 5 ans n'entraîne plus la clôture</strong> du plan ni le blocage des versements — vous pouvez continuer à alimenter le PEA après avoir retiré.</p></div>",
+      "<div class='eeat-section'><h2>Les plafonds de versements</h2><p>Les plafonds portent sur les <strong>versements cumulés</strong>, pas sur la valeur atteinte par le plan : un PEA de 150 000 € de primes qui vaut 400 000 € reste parfaitement régulier.</p><ul><li id='text-plafond'><strong>PEA classique :</strong> 150 000 €</li><li id='text-plafond-pme'><strong>PEA + PEA-PME (cumulé) :</strong> 225 000 €</li><li><strong>PEA jeune</strong> (18-25 ans rattachés au foyer fiscal) : 20 000 €, transformé en PEA classique à la sortie du rattachement.</li></ul><p>On ne peut détenir qu'un seul PEA classique par personne. Un couple peut donc cumuler deux PEA, soit 300 000 € de versements. Le PEA-PME peut se cumuler avec le PEA classique, dans la limite globale de 225 000 €.</p></div>",
+      "<div class='eeat-section'><h2>Les prélèvements sociaux : 18,6 % depuis 2026</h2><p>Après 5 ans, l'impôt sur le revenu est nul mais les gains restent soumis aux <strong>prélèvements sociaux</strong>. La LFSS 2026 a porté leur taux de 17,2 % à <strong>18,6 %</strong> (relèvement de la CSG de 9,2 % à 10,6 %). Le PEA ne figure pas sur la liste des placements maintenus à 17,2 % — contrairement à l'assurance-vie.</p><p>Pour les PEA ouverts <strong>avant 2018</strong>, un régime de « taux historiques » s'applique : chaque fraction de gain est figée au taux de prélèvements sociaux en vigueur l'année où elle a été acquise (10 %, 12,1 %, 15,5 %, etc.), jusqu'au 5<sup>e</sup> anniversaire du plan ; au-delà, c'est le taux courant qui s'applique. Ce mécanisme, devenu résiduel, n'est pas modélisé par le calculateur — votre établissement gestionnaire le calcule automatiquement.</p></div>",
+      "<div class='eeat-section'><h2>Retrait ou clôture avant 5 ans</h2><p>Tout retrait avant le 5<sup>e</sup> anniversaire entraîne en principe la <strong>clôture du plan</strong>. Les gains constatés depuis l'ouverture sont alors soumis au <strong>prélèvement forfaitaire unique de 31,4 %</strong> (12,8 % d'IR + 18,6 % de prélèvements sociaux), ou au barème progressif sur option.</p><p>Certains événements permettent un retrait anticipé <strong>sans clôture ni imposition des gains à l'IR</strong> : décès du titulaire, invalidité (2<sup>e</sup> ou 3<sup>e</sup> catégorie) du titulaire ou de son conjoint, mise à la retraite anticipée, ou création / reprise d'entreprise dans les trois mois avec réemploi des fonds. Les prélèvements sociaux restent dus dans ces cas.</p></div>",
+      "<div class='eeat-section'><h2>Transfert, décès et expatriation</h2><p><strong>Transfert entre banques :</strong> le PEA se transfère d'un établissement à un autre en conservant son antériorité fiscale (la date d'ouverture ne change pas). Des frais de transfert plafonnés s'appliquent.</p><p><strong>Décès du titulaire :</strong> le PEA est clôturé. Les gains sont exonérés d'impôt sur le revenu quelle que soit l'ancienneté, mais les prélèvements sociaux restent dus. Les titres et liquidités intègrent la succession.</p><p><strong>Départ à l'étranger :</strong> le transfert du domicile fiscal hors de France n'entraîne plus la clôture du PEA (sauf transfert vers un État ou territoire non coopératif). Le plan continue de fonctionner ; l'imposition des retraits dépend de la convention fiscale applicable.</p></div>"
+    ],
+    "faq": [
+      { "q": "Quel est le plafond du PEA en 2026 ?", "a": "<p>150 000 € de versements pour un PEA classique. Le PEA-PME permet 225 000 € supplémentaires, mais le total cumulé PEA + PEA-PME reste plafonné à 225 000 € par personne. Le PEA jeune (18-25 ans rattachés) est plafonné à 20 000 €. Ces plafonds portent sur les versements, jamais sur la valeur du plan.</p>" },
+      { "q": "Quand le PEA est-il exonéré d'impôt ?", "a": "<p>L'exonération d'impôt sur le revenu sur les plus-values et dividendes est acquise dès lors qu'aucun retrait n'est effectué avant le 5<sup>e</sup> anniversaire du plan. Les prélèvements sociaux (18,6 % en 2026) restent dus lors des retraits.</p>" },
+      { "q": "Que se passe-t-il en cas de retrait avant 5 ans ?", "a": "<p>Le retrait entraîne la clôture du plan. Les gains sont soumis au PFU de 31,4 % (12,8 % d'IR + 18,6 % de prélèvements sociaux), ou au barème progressif sur option. Font exception le décès, l'invalidité, la mise à la retraite anticipée et la création/reprise d'entreprise, qui permettent un retrait sans imposition des gains à l'IR.</p>" },
+      { "q": "Peut-on encore verser sur un PEA après un retrait ?", "a": "<p>Oui, depuis la loi PACTE, à condition que le retrait ait lieu après le 5<sup>e</sup> anniversaire du plan. Un retrait avant 5 ans entraîne la clôture et interdit donc tout nouveau versement. Le plafond de 150 000 € de versements cumulés reste la limite.</p>" },
+      { "q": "Quel est le taux des prélèvements sociaux sur un PEA ?", "a": "<p>18,6 % depuis le 1<sup>er</sup> janvier 2026 (contre 17,2 % auparavant), à la suite du relèvement de la CSG par la LFSS 2026. Le PEA n'est pas concerné par le maintien à 17,2 % réservé à l'assurance-vie, au PEL et au CEL. Les PEA ouverts avant 2018 relèvent d'un régime de taux historiques.</p>" },
+      { "q": "Comment sont imposés les prélèvements sociaux d'un PEA ouvert avant 2018 ?", "a": "<p>Selon la règle des « taux historiques » : chaque part de gain acquise avant le 5<sup>e</sup> anniversaire du plan est figée au taux de prélèvements sociaux de son année d'acquisition (10 %, 12,1 %, 13,5 %, 15,5 %…). Les gains acquis après le 5<sup>e</sup> anniversaire suivent le taux courant. Le calcul est fait automatiquement par la banque.</p>" },
+      { "q": "Peut-on avoir plusieurs PEA ?", "a": "<p>Non : un seul PEA classique par personne majeure. Un couple peut détenir deux PEA (un chacun). Il est possible de cumuler un PEA classique et un PEA-PME, dans la limite globale de 225 000 € de versements.</p>" },
+      { "q": "Quels titres sont éligibles au PEA ?", "a": "<p>Les actions de sociétés ayant leur siège dans l'Union européenne ou l'Espace économique européen, les parts d'OPCVM (fonds, ETF) investis à 75 % au moins en titres éligibles, y compris certains ETF synthétiques répliquant des indices hors zone euro. Les obligations, les produits dérivés et les actions hors EEE en direct sont exclus.</p>" },
+      { "q": "Le transfert d'un PEA vers une autre banque fait-il perdre l'antériorité ?", "a": "<p>Non. Le transfert conserve la date d'ouverture d'origine et donc l'antériorité fiscale. Seuls des frais de transfert, plafonds réglementairement, sont facturés par l'établissement d'origine.</p>" }
+    ],
+    "related": [
+      ["/pea-ou-assurance-vie/", "PEA ou assurance-vie : comment choisir"],
+      ["/assurance-vie-fiscalite/", "Fiscalité de l'assurance-vie 2026"],
+      ["/compte-titres-fiscalite/", "Fiscalité du compte-titres (CTO)"],
+      ["/interet-compose/", "Calculatrice d'intérêts composés"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ],
+    "sources": ["sp_pea", "lfss_2026", "bofip_rcm"]
+  },
+
+  {
+    "slug": "pea-ou-assurance-vie",
+    "navLabel": "PEA ou assurance-vie",
+    "title": "PEA ou assurance-vie : quel placement choisir en 2026 ? (comparatif)",
+    "desc": "PEA ou assurance-vie en 2026 : comparatif fiscalité, plafonds, univers d'investissement, succession, frais et disponibilité. Simulateur net à net et 4 profils types.",
+    "h1": "PEA ou assurance-vie : comment choisir ?",
+    "heroSub": "Comparatif complet 2026 : fiscalité des gains, univers d'investissement, transmission, frais et disponibilité.",
+    "calc": "compareAV",
+    "about": "Comparaison PEA et assurance-vie",
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.9",
+    "crumbs": [["Accueil", "/"], ["PEA ou assurance-vie"]],
+    "disclaimer": "⚠️ Le comparateur simule un <strong>versement unique effectué aujourd'hui</strong> (assurance-vie : régime post-27/09/2017). Pour l'imposition d'un contrat déjà ouvert, utilisez le <a href='/assurance-vie-fiscalite/'>calculateur de rachat</a>.",
+    "sections": [
+      "<div class='eeat-section'><h2>Tableau comparatif express</h2><div class='overflow-wrap'><table class='const-table'><thead><tr><th>Critère</th><th>PEA</th><th>Assurance-vie</th></tr></thead><tbody><tr><td>Plafond de versements</td><td>150 000 €</td><td>Aucun</td></tr><tr><td>Univers d'investissement</td><td>Actions et fonds européens, ETF éligibles</td><td>Fonds euros, unités de compte (actions, obligations, immobilier, monde entier)</td></tr><tr><td>Impôt sur le revenu (gains)</td><td>0 % après 5 ans</td><td>7,5 % après 8 ans (après abattement), 12,8 % avant</td></tr><tr><td>Prélèvements sociaux</td><td>18,6 %</td><td>17,2 %</td></tr><tr><td>Abattement annuel</td><td>Aucun</td><td>4 600 € / 9 200 € après 8 ans</td></tr><tr><td>Disponibilité</td><td>Retrait libre après 5 ans</td><td>Rachat possible à tout moment</td></tr><tr><td>Transmission</td><td>Succession classique</td><td>Hors succession, abattement 152 500 € / bénéficiaire (art. 990 I)</td></tr></tbody></table></div></div>",
+      "<div class='eeat-section'><h2>Fiscalité des gains : le match</h2><p>Sur un placement 100 % actions détenu plus de 5 ans, le <strong>PEA gagne nettement</strong> : 0 % d'impôt sur le revenu, seulement 18,6 % de prélèvements sociaux sur le gain. L'assurance-vie, même après 8 ans, conserve un étage d'IR (7,5 % au-delà de l'abattement) mais compense partiellement avec des prélèvements sociaux plus bas (17,2 %) et l'abattement annuel de 4 600 € / 9 200 €.</p><p>Le détail des règles est développé sur les pages dédiées : <a href='/pea/'>fiscalité du PEA</a> et <a href='/assurance-vie-fiscalite/'>fiscalité de l'assurance-vie</a>. En synthèse : PEA pour la performance nette sur les actions européennes ; assurance-vie pour la souplesse, la poche sécurisée et la transmission.</p></div>",
+      "<div class='eeat-section'><h2>Univers d'investissement</h2><p>Le PEA est <strong>cantonné aux actions de l'Union européenne / EEE</strong> et aux fonds investis à 75 % au moins en titres éligibles. On peut toutefois s'exposer au marché mondial via des ETF synthétiques éligibles (réplication indirecte du S&P 500, du MSCI World, etc.).</p><p>L'assurance-vie donne accès à un <strong>univers beaucoup plus large</strong> : fonds en euros à capital garanti, unités de compte actions et obligations internationales, SCPI et OPCI immobiliers, fonds datés, produits structurés. En contrepartie, les frais y sont généralement plus élevés.</p></div>",
+      "<div class='eeat-section'><h2 id='succession'>Transmission et succession</h2><p>C'est l'avantage décisif de l'assurance-vie. Le capital transmis aux bénéficiaires désignés est <strong>hors succession civile</strong>. Pour les primes versées avant 70 ans, chaque bénéficiaire profite d'un abattement de <strong>152 500 €</strong> (art. 990 I du CGI) ; le conjoint ou partenaire de PACS est totalement exonéré. Le détail figure sur la section <a href='/assurance-vie-fiscalite/#deces'>fiscalité en cas de décès</a>.</p><p>Le PEA, lui, est clôturé au décès et ses avoirs rejoignent la succession dans les conditions de droit commun (avec toutefois exonération d'IR sur les gains).</p></div>",
+      "<div class='eeat-section'><h2>Frais</h2><p>Un PEA en titres vifs chez un courtier en ligne coûte quasiment rien : pas de droits de garde, quelques euros de courtage par ordre. Une assurance-vie facture des <strong>frais de gestion annuels</strong> (0,5 % à 1 % sur les unités de compte), parfois des frais de versement, et des frais d'arbitrage. Sur 20 ans, 0,8 % de frais annuels amputent le capital final d'environ 15 %. À fiscalité comparable, l'écart de frais peut inverser le classement.</p></div>",
+      "<div class='eeat-section'><h2>Quatre profils types</h2><ul><li><strong>Jeune actif, horizon long, 100 % actions</strong> → PEA en priorité : plafond suffisant pour des années, fiscalité imbattable après 5 ans.</li><li><strong>Épargnant prudent cherchant un fonds garanti</strong> → assurance-vie : le fonds en euros n'existe pas dans le PEA.</li><li><strong>Objectif transmission</strong> → assurance-vie : abattement de 152 500 € par bénéficiaire, hors succession.</li><li><strong>Patrimoine déjà constitué, PEA plein</strong> → assurance-vie puis compte-titres pour prolonger l'effort d'épargne au-delà de 150 000 €.</li></ul></div>",
+      "<div class='eeat-section'><h2>Faut-il choisir ?</h2><p>Non : les deux enveloppes sont complémentaires et le meilleur choix pour la plupart des épargnants est de <strong>détenir les deux</strong> — un PEA pour la poche actions européennes, une assurance-vie pour la sécurité, la diversification et la transmission. On ouvre souvent le PEA en premier (pour « prendre date » et démarrer le compteur des 5 ans), l'assurance-vie ensuite.</p></div>"
+    ],
+    "faq": [
+      { "q": "Faut-il choisir le PEA ou l'assurance-vie ?", "a": "<p>Pour un placement en actions européennes détenu plus de 5 ans, le PEA est fiscalement supérieur (0 % d'IR, 18,6 % de prélèvements sociaux). L'assurance-vie s'impose pour la poche sécurisée (fonds euros), la diversification internationale et la transmission (abattement de 152 500 € par bénéficiaire). L'idéal est de cumuler les deux.</p>" },
+      { "q": "Quel est l'abattement fiscal de l'assurance-vie ?", "a": "<p>Après 8 ans de détention, 4 600 € de gains par an pour une personne seule et 9 200 € pour un couple sont exonérés d'impôt sur le revenu (l'abattement porte sur l'assiette de l'IR uniquement, pas sur les prélèvements sociaux de 17,2 %).</p>" },
+      { "q": "Quel est le taux des prélèvements sociaux sur l'assurance-vie ?", "a": "<p>17,2 %, maintenu en 2026 (l'assurance-vie fait partie des placements exclus de la hausse de la LFSS 2026). Le PEA et le compte-titres, eux, sont passés à 18,6 %.</p>" },
+      { "q": "Peut-on avoir un PEA et une assurance-vie en même temps ?", "a": "<p>Oui, sans aucune restriction. La plupart des épargnants détiennent les deux : le PEA pour les actions européennes, l'assurance-vie pour la sécurité, la diversification et la transmission. Il n'existe pas de plafond global de détention.</p>" },
+      { "q": "Quelle est la fiscalité de l'assurance-vie avant 8 ans ?", "a": "<p>Les gains contenus dans un rachat sont soumis au PFU de 30 % (12,8 % d'IR + 17,2 % de prélèvements sociaux), sans abattement, sauf option pour le barème progressif. Après 8 ans, l'abattement de 4 600 € / 9 200 € et le taux d'IR de 7,5 % s'appliquent.</p>" },
+      { "q": "Le PEA a-t-il un intérêt successoral ?", "a": "<p>Non : au décès du titulaire, le PEA est clôturé et ses avoirs rejoignent la succession dans les conditions de droit commun (les gains sont exonérés d'impôt sur le revenu, mais pas de droits de succession). L'avantage successoral est propre à l'assurance-vie.</p>" },
+      { "q": "Que se passe-t-il si mon PEA atteint le plafond de 150 000 € ?", "a": "<p>Vous ne pouvez plus verser, mais le plan continue de fonctionner et de capitaliser sans limite de valeur. Pour poursuivre votre effort d'épargne, l'assurance-vie (sans plafond) puis le compte-titres prennent le relais.</p>" },
+      { "q": "Peut-on retirer de l'assurance-vie à tout moment ?", "a": "<p>Oui, un rachat partiel ou total est possible à tout moment, sans blocage. L'ancienneté du contrat détermine seulement la fiscalité applicable (30 % avant 8 ans, régime favorable après). Le PEA, lui, ne devient réellement disponible sans clôture qu'après 5 ans.</p>" }
+    ],
+    "related": [
+      ["/pea/", "Fiscalité du PEA 2026"],
+      ["/assurance-vie-fiscalite/", "Fiscalité de l'assurance-vie 2026"],
+      ["/assurance-vie-fiscalite/apres-8-ans/", "Assurance-vie après 8 ans"],
+      ["/compte-titres-fiscalite/", "Fiscalité du compte-titres (CTO)"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ],
+    "sources": ["sp_pea", "sp_av_rachat", "sp_av_deces"]
+  },
+
+  {
+    "slug": "compte-titres-fiscalite",
+    "navLabel": "Fiscalité du CTO",
+    "title": "Fiscalité du compte-titres (CTO) 2026 : PFU 31,4 % ou barème progressif ?",
+    "desc": "Fiscalité du compte-titres ordinaire en 2026 : prélèvement forfaitaire unique de 31,4 %, option barème progressif, abattement 40 % sur dividendes, plus-values de cession. Simulateur de rendement net.",
+    "h1": "Fiscalité du compte-titres (CTO) 2026",
+    "heroSub": "PFU de 31,4 %, option pour le barème progressif, abattement de 40 % sur les dividendes et traitement des plus-values.",
+    "calc": "cto",
+    "about": "Prélèvement forfaitaire unique",
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.9",
+    "crumbs": [["Accueil", "/"], ["Fiscalité du compte-titres (CTO)"]],
+    "disclaimer": "⚠️ Le calculateur applique le PFU par défaut. L'option pour le barème progressif, qui dépend de votre taux marginal d'imposition, n'est pas modélisée dynamiquement.",
+    "sections": [
+      "<div class='eeat-section'><h2 id='prelevement-forfaitaire-unique'>Le prélèvement forfaitaire unique (PFU / flat tax) en 2026</h2><p>Le <strong>prélèvement forfaitaire unique</strong>, ou flat tax, est le mode d'imposition par défaut des revenus du capital : dividendes, intérêts, et plus-values de cession de valeurs mobilières réalisées sur un compte-titres ordinaire. Il combine deux composantes :</p><ul><li>une part d'impôt sur le revenu au taux forfaitaire de <strong id='pfu-ir-rate'>12,8 %</strong> ;</li><li>une part de prélèvements sociaux de <strong id='pfu-ps-rate'>18,6 %</strong> (CSG 10,6 % + CRDS 0,5 % + prélèvement de solidarité 7,5 %).</li></ul><p>Soit un taux global de <strong id='pfu-total-rate'>31,4 %</strong> en 2026, contre 30 % jusqu'en 2025. La hausse vient du relèvement de la CSG sur les revenus du capital opéré par la LFSS 2026. <strong>L'assurance-vie n'est pas concernée</strong> : son PFU spécifique reste à 30 % (12,8 % + 17,2 %) avant 8 ans.</p><div class='overflow-wrap'><table class='const-table'><thead><tr><th>Type de revenu</th><th>Imposition par défaut 2026</th></tr></thead><tbody><tr><td>Dividendes d'actions (CTO)</td><td>PFU 31,4 %</td></tr><tr><td>Intérêts d'obligations, de comptes à terme</td><td>PFU 31,4 %</td></tr><tr><td>Plus-values de cession de valeurs mobilières</td><td>PFU 31,4 %</td></tr><tr><td>Gains d'assurance-vie &lt; 8 ans</td><td>PFU 30 % (12,8 % + 17,2 %)</td></tr><tr><td>Livret A, LDDS, LEP</td><td>Exonérés</td></tr></tbody></table></div><p>Un <strong>acompte d'impôt sur le revenu de 12,8 %</strong> est prélevé à la source par l'établissement payeur l'année de perception des dividendes et intérêts, puis régularisé l'année suivante lors de la déclaration. Les foyers dont le revenu fiscal de référence de l'avant-dernière année est inférieur à <strong>50 000 €</strong> (personne seule) ou <strong>75 000 €</strong> (couple) peuvent demander une <strong>dispense d'acompte</strong>, à formuler avant le 30 novembre auprès de la banque.</p></div>",
+      "<div class='eeat-section'><h2>Barème progressif : quand y opter</h2><p>Vous pouvez renoncer au PFU et soumettre l'ensemble de vos revenus de capitaux mobiliers au <strong>barème progressif de l'impôt sur le revenu</strong>, en cochant la case <strong>2OP</strong> de la déclaration. L'option est <strong>globale</strong> (tous les revenus concernés de l'année) et se reconduit tant que vous ne la révoquez pas.</p><p>Elle devient intéressante quand votre <strong>taux marginal d'imposition</strong> est bas :</p><ul><li>TMI 0 % → l'IR est nul, seuls les 18,6 % de prélèvements sociaux restent dus (contre 31,4 % au PFU) ;</li><li>TMI 11 % → 11 % d'IR + 18,6 % de PS ≈ 29,6 %, légèrement mieux que 31,4 %, et l'abattement de 40 % sur dividendes creuse l'écart ;</li><li>TMI 30 % ou plus → le PFU (31,4 %) est presque toujours plus favorable.</li></ul><p>Au barème, une fraction de la CSG (6,8 points) est <strong>déductible</strong> du revenu imposable de l'année suivante.</p></div>",
+      "<div class='eeat-section'><h2>L'abattement de 40 % sur les dividendes</h2><p>Réservé à l'option barème, l'abattement de <strong>40 %</strong> s'applique aux dividendes d'actions de sociétés soumises à l'impôt sur les sociétés (françaises ou étrangères éligibles). Seuls 60 % du dividende brut sont alors soumis au barème de l'IR. Les <strong>prélèvements sociaux de 18,6 % restent calculés sur 100 %</strong> du dividende. Cet abattement ne s'applique pas aux plus-values de cession ni aux intérêts.</p></div>",
+      "<div class='eeat-section'><h2>Plus-values de cession sur CTO</h2><p>La plus-value se calcule par différence entre le prix de cession et le <strong>prix moyen pondéré d'acquisition</strong> (PMP) des titres vendus. Elle est imposée au PFU de 31,4 %, ou au barème sur option.</p><p>Les <strong>abattements pour durée de détention</strong> (50 % à 65 %) ne subsistent que pour les titres <strong>acquis avant le 1<sup>er</sup> janvier 2018</strong> et uniquement en cas d'option pour le barème. Les <strong>moins-values</strong> s'imputent sur les plus-values de même nature de l'année, puis sont reportables pendant <strong>10 ans</strong>.</p></div>",
+      "<div class='eeat-section'><h2>Cas particuliers</h2><ul><li><strong>PEA clôturé avant 5 ans</strong> : les gains basculent au régime du compte-titres, imposés au PFU de 31,4 % (ou barème) — voir <a href='/pea/'>fiscalité du PEA</a>.</li><li><strong>Titres étrangers</strong> : les dividendes subissent d'abord une retenue à la source dans le pays d'origine (souvent 15 % avec les États-Unis via le formulaire W-8BEN). Un crédit d'impôt conventionnel, imputable sur l'IR français, évite la double imposition dans la limite prévue par la convention.</li><li><strong>Compte joint</strong> : les revenus sont réputés partagés entre les cotitulaires selon leur quote-part et déclarés par chaque foyer fiscal.</li><li><strong>Non-résidents</strong> : les plus-values de cession de valeurs mobilières sont en principe exonérées en France (hors participations substantielles) ; les dividendes de source française subissent une retenue à la source.</li></ul></div>",
+      "<div class='eeat-section'><h2>Exemple chiffré : PFU contre barème</h2><p>10 000 € investis, +7 %/an pendant 10 ans → capital brut ≈ 19 672 €, plus-value ≈ 9 672 € à la revente.</p><ul><li><strong>PFU 31,4 %</strong> : impôt ≈ 3 037 € → net ≈ 16 635 €.</li><li><strong>Barème, TMI 11 %</strong> : IR 11 % sur 9 672 € = 1 064 € + PS 18,6 % = 1 799 € → impôt ≈ 2 863 € → net ≈ 16 809 €.</li><li><strong>Barème, TMI 30 %</strong> : IR 2 902 € + PS 1 799 € = 4 701 € → net ≈ 14 971 €. Le PFU l'emporte largement.</li></ul></div>"
+    ],
+    "faq": [
+      { "q": "Qu'est-ce que le prélèvement forfaitaire unique (PFU) ?", "a": "<p>C'est le mode d'imposition par défaut des revenus du capital (dividendes, intérêts, plus-values mobilières). Il combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Sur un compte-titres, le taux global est de 31,4 % en 2026.</p>" },
+      { "q": "Quel est le taux du PFU en 2026 ?", "a": "<p>31,4 % sur un compte-titres (12,8 % d'IR + 18,6 % de prélèvements sociaux), contre 30 % jusqu'en 2025. Le PFU applicable aux gains d'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %).</p>" },
+      { "q": "Le PFU a-t-il augmenté en 2026 ?", "a": "<p>Oui, mécaniquement : les prélèvements sociaux sur les revenus du capital sont passés de 17,2 % à 18,6 % (relèvement de la CSG par la LFSS 2026), ce qui porte le PFU global de 30 % à 31,4 % sur le compte-titres, les dividendes et les plus-values mobilières.</p>" },
+      { "q": "Faut-il choisir le PFU ou le barème progressif ?", "a": "<p>Le PFU (31,4 %) est le plus souvent favorable. Le barème progressif n'a d'intérêt que si votre taux marginal d'imposition est de 0 % ou 11 %, notamment grâce à l'abattement de 40 % sur les dividendes et à la CSG partiellement déductible. L'option (case 2OP) est globale et vaut pour tous vos revenus de capitaux mobiliers de l'année.</p>" },
+      { "q": "Qu'est-ce que la dispense d'acompte de 12,8 % ?", "a": "<p>Un acompte d'IR de 12,8 % est prélevé à la source sur les dividendes et intérêts. Les foyers dont le revenu fiscal de référence de l'avant-dernière année est inférieur à 50 000 € (personne seule) ou 75 000 € (couple) peuvent en être dispensés, en le demandant à leur banque avant le 30 novembre.</p>" },
+      { "q": "Le PFU s'applique-t-il à l'assurance-vie ?", "a": "<p>Un PFU spécifique s'applique à l'assurance-vie, mais à un taux différent : 30 % (12,8 % + 17,2 %) avant 8 ans, et 7,5 % / 12,8 % + 17,2 % après 8 ans avec abattement. Le PFU de 31,4 % concerne le compte-titres, les dividendes et les plus-values mobilières. Voir la <a href='/assurance-vie-fiscalite/'>fiscalité de l'assurance-vie</a>.</p>" },
+      { "q": "Comment déclarer les revenus d'un compte-titres ?", "a": "<p>Les dividendes, intérêts et plus-values sont pré-remplis à partir de l'IFU transmis par la banque, sur la déclaration 2042 (revenus de capitaux mobiliers) et, pour les plus-values, sur la 2074 le cas échéant. L'acompte de 12,8 % déjà prélevé est déduit. La case 2OP permet d'opter pour le barème.</p>" },
+      { "q": "Comment imputer une moins-value de cession ?", "a": "<p>Les moins-values de cession de valeurs mobilières s'imputent d'abord sur les plus-values de même nature réalisées la même année, puis, en cas de reliquat, sont reportables sur les plus-values des 10 années suivantes. Elles ne s'imputent pas sur le revenu global.</p>" },
+      { "q": "La CSG est-elle déductible sur un compte-titres ?", "a": "<p>Uniquement en cas d'option pour le barème progressif : 6,8 points de CSG sur les 18,6 % de prélèvements sociaux sont alors déductibles du revenu imposable de l'année suivante. Au PFU, aucune fraction de CSG n'est déductible.</p>" },
+      { "q": "Les ETF capitalisants sont-ils imposés chaque année ?", "a": "<p>Non. Un ETF capitalisant ne distribue pas de dividende : il n'y a donc pas d'imposition annuelle. La plus-value latente n'est imposée qu'au moment de la revente des parts, au PFU de 31,4 % ou au barème.</p>" }
+    ],
+    "related": [
+      ["/pea/", "Fiscalité du PEA 2026"],
+      ["/assurance-vie-fiscalite/", "Fiscalité de l'assurance-vie 2026"],
+      ["/pea-ou-assurance-vie/", "PEA ou assurance-vie : comment choisir"],
+      ["/interet-compose/", "Calculatrice d'intérêts composés"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ],
+    "sources": ["sp_pfu", "impots_pv_mobilieres", "bofip_rcm", "lafinancepourtous_pfu"]
+  },
+
+  {
+    "slug": "interet-compose",
+    "navLabel": "Intérêts composés",
+    "title": "Calculatrice d'intérêts composés : capital final avec versements mensuels",
+    "desc": "Calculez l'effet des intérêts composés sur votre épargne, avec ou sans versements mensuels. Formule, règle des 72, effet des frais et de l'inflation, et lien avec la fiscalité de l'épargne.",
+    "h1": "Calculatrice d'intérêts composés",
+    "heroSub": "L'effet boule de neige : capital initial, versements réguliers et durée. Résultat brut, avant impôt et frais.",
+    "flag": "📊",
+    "calc": "compound",
+    "about": "Intérêts composés",
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.8",
+    "crumbs": [["Accueil", "/"], ["Intérêts composés"]],
+    "sections": [
+      "<div class='eeat-section'><h2>La formule des intérêts composés</h2><p>Les intérêts composés désignent le réinvestissement des intérêts, qui produisent à leur tour des intérêts. Pour un capital unique, le capital au bout de <em>n</em> années s'écrit <code>Cn = C0 × (1 + i)^n</code>, où <em>i</em> est le taux annuel.</p><p>Avec des <strong>versements mensuels réguliers</strong>, on ajoute la valeur acquise d'une suite de versements (annuité de fin de période) : <code>V = v × [ (1 + t)^N − 1 ] ÷ t</code>, où <em>t</em> est le taux mensuel équivalent <code>(1 + i)^(1/12) − 1</code> et <em>N</em> le nombre de mois. Cette calculatrice capitalise <strong>mensuellement</strong>, au plus près d'un versement programmé réel — à la différence des calculateurs fiscaux du site (<a href='/pea/'>PEA</a>, <a href='/assurance-vie-fiscalite/'>assurance-vie</a>, <a href='/compte-titres-fiscalite/'>CTO</a>), qui capitalisent annuellement sur un versement unique.</p></div>",
+      "<div class='eeat-section'><h2>Exemples chiffrés</h2><p>200 € versés chaque mois, rendement 5 % par an :</p><div class='overflow-wrap'><table class='const-table'><thead><tr><th>Durée</th><th>Total versé</th><th>Capital final brut</th><th>Dont intérêts</th></tr></thead><tbody><tr><td>10 ans</td><td>24 000 €</td><td>≈ 31 100 €</td><td>≈ 7 100 €</td></tr><tr><td>20 ans</td><td>48 000 €</td><td>≈ 82 800 €</td><td>≈ 34 800 €</td></tr><tr><td>30 ans</td><td>72 000 €</td><td>≈ 167 000 €</td><td>≈ 95 000 €</td></tr><tr><td>40 ans</td><td>96 000 €</td><td>≈ 306 000 €</td><td>≈ 210 000 €</td></tr></tbody></table></div><p>À 40 ans, les intérêts représentent plus des deux tiers du capital : commencer tôt pèse davantage que verser beaucoup.</p></div>",
+      "<div class='eeat-section'><h2>La règle des 72</h2><p>Pour estimer mentalement la durée de doublement d'un capital, divisez 72 par le taux de rendement annuel. À 6 %, un capital double en ≈ 12 ans ; à 3 %, en ≈ 24 ans ; à 9 %, en ≈ 8 ans. Approximation valable pour des taux compris entre 4 % et 10 %.</p></div>",
+      "<div class='eeat-section'><h2>Intérêts composés et fiscalité</h2><p>Ce qui compose réellement, c'est le rendement <strong>net d'impôt et de frais</strong>. Deux exemples de l'impact sur 30 ans :</p><ul><li><strong>Frais :</strong> 1 % de frais annuels sur un rendement brut de 6 % réduit le capital final d'environ 22 %.</li><li><strong>Fiscalité :</strong> une enveloppe qui prélève 30 % des gains à la sortie fait perdre presque un tiers des intérêts accumulés, d'où l'intérêt du <a href='/pea/'>PEA</a> (0 % d'IR après 5 ans) ou de l'<a href='/assurance-vie-fiscalite/'>assurance-vie</a> après 8 ans.</li></ul></div>",
+      "<div class='eeat-section'><h2>Rendements réalistes et inflation</h2><p>Ordres de grandeur historiques de long terme, hors garantie de reproduction : fonds en euros 2 % à 3 %, obligations 2 % à 4 %, actions internationales 6 % à 8 % en moyenne annualisée sur 20-30 ans, avec une forte volatilité. Raisonnez toujours en <strong>rendement réel</strong> : à 5 % de rendement et 2 % d'inflation, le pouvoir d'achat ne progresse que d'environ 3 % par an.</p></div>"
+    ],
+    "faq": [
+      { "q": "Que sont les intérêts composés ?", "a": "<p>C'est le principe selon lequel les intérêts générés par un capital sont réinvestis et produisent à leur tour des intérêts. Sur longue durée, l'effet est exponentiel : la part d'intérêts dans le capital final croît beaucoup plus vite que la part des versements.</p>" },
+      { "q": "Comment calculer les intérêts composés avec des versements mensuels ?", "a": "<p>On additionne deux termes : la valeur acquise du capital initial, C0 × (1 + i)^n, et la valeur acquise des versements, v × [(1 + t)^N − 1] ÷ t, où t est le taux mensuel équivalent (1 + i)^(1/12) − 1 et N le nombre de mois. La calculatrice ci-dessus effectue ce calcul automatiquement.</p>" },
+      { "q": "Qu'est-ce que la règle des 72 ?", "a": "<p>Une approximation : la durée en années pour doubler un capital est environ égale à 72 divisé par le taux de rendement annuel. À 6 %, doublement en 12 ans ; à 8 %, en 9 ans. Elle est fiable pour des taux entre 4 % et 10 %.</p>" },
+      { "q": "Pourquoi commencer à épargner tôt ?", "a": "<p>Parce que le temps est le facteur le plus puissant de la formule des intérêts composés. Verser 200 €/mois pendant 40 ans à 5 % produit environ 306 000 € ; commencer 10 ans plus tard (30 ans de versements) ne donne que 167 000 €, alors qu'on n'a versé que 24 000 € de moins.</p>" },
+      { "q": "Les intérêts composés sont-ils imposés chaque année ?", "a": "<p>Cela dépend de l'enveloppe. Dans un PEA ou une assurance-vie, la capitalisation est franche d'impôt tant qu'il n'y a pas de retrait. Sur un compte-titres, les dividendes distribués sont imposés chaque année, mais un ETF capitalisant n'est imposé qu'à la revente.</p>" },
+      { "q": "Quel rendement annuel retenir pour une simulation prudente ?", "a": "<p>Pour un horizon long et un portefeuille diversifié en actions, 5 % à 7 % brut est un ordre de grandeur raisonnable, à minorer des frais et de la fiscalité. Pour un fonds en euros, retenez plutôt 2 % à 3 %. Raisonnez toujours net d'inflation.</p>" },
+      { "q": "Quel est l'impact des frais sur le capital final ?", "a": "<p>Considérable sur longue durée : 1 % de frais annuels sur un rendement brut de 6 % ampute le capital final d'environ 22 % au bout de 30 ans. C'est souvent plus lourd que l'écart de fiscalité entre deux enveloppes.</p>" },
+      { "q": "Faut-il raisonner en rendement nominal ou réel ?", "a": "<p>En rendement réel, c'est-à-dire net d'inflation. Un placement à 5 % dans un environnement d'inflation à 2 % ne fait progresser le pouvoir d'achat que de 3 % par an. La calculatrice affiche un résultat nominal ; retranchez l'inflation anticipée pour juger du gain réel.</p>" }
+    ],
+    "related": [
+      ["/pea/", "Fiscalité du PEA 2026"],
+      ["/assurance-vie-fiscalite/", "Fiscalité de l'assurance-vie 2026"],
+      ["/compte-titres-fiscalite/", "Fiscalité du compte-titres (CTO)"],
+      ["/", "Comparateur PEA / assurance-vie / CTO"],
+      ["/methodologie/", "Méthodologie et sources"]
+    ]
+  },
+
+  {
+    "slug": "methodologie",
+    "navLabel": "Méthodologie",
+    "title": "Méthodologie : sources, formules et limites des calculateurs",
+    "desc": "Sources officielles, formules de calcul, hypothèses et cas non modélisés des simulateurs de fiscalité de l'épargne (PEA, assurance-vie, CTO, intérêts composés).",
+    "h1": "Méthodologie &amp; sources",
+    "heroSub": "Transparence totale sur les données, les formules et les limites de nos calculateurs.",
+    "flag": false,
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.5",
+    "crumbs": [["Accueil", "/"], ["Méthodologie"]],
+    "disclaimer": "⚠️ <strong>Avertissement.</strong> Les calculs de ce site sont des estimations pédagogiques. Ils ne se substituent pas à une consultation avec un conseiller en gestion de patrimoine, un avocat fiscaliste ou un professionnel habilité. Des exceptions existent (handicap, primes historiques, transferts, non-résidents) qui ne sont pas modélisées.",
+    "sections": [
+      "<div class='eeat-section'><h2>Sources et données en vigueur</h2><ul><li><strong>Source primaire :</strong> service-public.fr, impots.gouv.fr, BOFiP et Légifrance.</li><li><strong>Texte de référence :</strong> loi de financement de la Sécurité sociale (LFSS) 2026, adoptée définitivement le 16 décembre 2025, en vigueur au 1<sup>er</sup> janvier 2026.</li><li><strong>Dernière vérification des barèmes :</strong> 4 septembre 2026.</li><li><strong>Version de la base de constantes :</strong> 2026-FR-v1 (voir <a href='/changelog/'>changelog</a>).</li></ul><p>Chaque taux affiché dans le tableau « Taux &amp; constantes » de la <a href='/'>page d'accueil</a> est daté et lié à sa source. Les valeurs sont stockées dans un fichier unique (<code>constants.json</code>) : toute mise à jour se répercute simultanément sur l'ensemble des pages et des calculateurs.</p></div>",
+      "<div class='eeat-section'><h2>Formules de calcul</h2><h3>Compte-titres (CTO)</h3><p>Plus-value = capital brut − montant investi. Imposition par défaut au PFU : 12,8 % d'IR + 18,6 % de prélèvements sociaux = 31,4 % de la plus-value. L'option barème n'est pas modélisée dynamiquement.</p><h3>PEA</h3><p>Durée ≥ 5 ans : IR = 0, prélèvements sociaux = 18,6 % de la plus-value. Durée &lt; 5 ans : alignement sur le régime du CTO (PFU 31,4 %). Le régime des taux historiques (PEA ouverts avant 2018) n'est pas modélisé.</p><h3>Assurance-vie — calculateur prospectif (page « PEA ou assurance-vie »)</h3><p>Versement unique, capitalisation annuelle. Durée &lt; 8 ans : IR 12,8 % sur la totalité du gain. Durée ≥ 8 ans : abattement (4 600 € seul / 9 200 € couple) sur l'assiette IR, puis 7,5 % jusqu'à 150 000 € de primes et 12,8 % au-delà (prorata). Prélèvements sociaux 17,2 % sur l'intégralité du gain.</p><h3>Assurance-vie — calculateur diagnostique (page « Fiscalité de l'assurance-vie »)</h3><p>Modélise l'imposition d'un rachat sur un <strong>contrat existant</strong>. Part de produits imposables = rachat − primes × rachat ÷ valeur du contrat. Le toggle « date des versements » active, pour les primes antérieures au 27/09/2017, le régime PFL historique (7,5 % après 8 ans sans plafond de 150 000 € ; 35 % avant 4 ans, 15 % de 4 à 8 ans). Prélèvements sociaux 17,2 %.</p><h3>Intérêts composés</h3><p>Capitalisation <strong>mensuelle</strong> : taux mensuel équivalent (1 + i)^(1/12) − 1, versements traités en annuité de fin de période. Résultat brut, hors impôt et frais. Ce modèle diffère volontairement de la capitalisation annuelle des calculateurs fiscaux.</p></div>",
+      "<div class='eeat-section'><h2>Deux modèles de calculateur pour l'assurance-vie</h2><p>Le site propose deux outils distincts, avec des hypothèses différentes assumées :</p><ul><li><strong>« PEA ou assurance-vie »</strong> — modèle <strong>prospectif</strong> : un versement fait aujourd'hui, donc nécessairement postérieur au 27/09/2017. Pas de branche PFL historique.</li><li><strong>« Fiscalité de l'assurance-vie » et sa sous-page « après 8 ans »</strong> — modèle <strong>diagnostique</strong> : l'imposition d'un rachat sur un contrat que vous détenez déjà, avec toggle de la date des versements et branche PFL historique.</li></ul><p>Les deux outils peuvent donc afficher des résultats différents pour un même contrat : c'est voulu, chacun répond à une question différente.</p></div>",
+      "<div class='eeat-section'><h2>Le seuil de 150 000 € de primes</h2><p>Le taux d'IR réduit de 7,5 % après 8 ans ne s'applique qu'à la fraction de produits rattachée aux 150 000 premiers euros de primes nettes de rachats, tous contrats confondus, versées depuis le 27/09/2017. Les calculateurs appliquent une <strong>proratisation simplifiée</strong> à partir du total de primes saisi. Le décompte exact, contrat par contrat et net des rachats antérieurs, est tenu par l'assureur et l'administration ; il peut différer du résultat affiché.</p></div>",
+      "<div class='eeat-section'><h2>Cas non modélisés</h2><ul><li>PEA ouverts avant 2018 (taux historiques de prélèvements sociaux).</li><li>Assurance-vie : primes versées avant le 27/09/2017 pour le calculateur prospectif ; contrats DSK/NSK ; produits attachés à des primes versées avant 1998.</li><li>Option pour le barème progressif de l'impôt sur le revenu (calcul dépendant du taux marginal et des autres revenus du foyer).</li><li>Frais d'entrée, de gestion et d'arbitrage propres à chaque contrat.</li><li>Situations particulières : handicap, non-résidents, IFI, démembrement de la clause bénéficiaire, transferts.</li></ul></div>"
+    ],
+    "sources": ["lfss_2026", "sp_pea", "sp_av_rachat", "sp_pfu", "bofip_rcm"]
+  },
+
+  {
+    "slug": "changelog",
+    "navLabel": "Changelog",
+    "navHide": true,
+    "title": "Changelog des taux fiscaux — mises à jour 2026",
+    "desc": "Historique des mises à jour fiscales et des modifications de taux (LFSS, impôt sur le revenu, prélèvements sociaux) appliquées aux simulateurs de fiscalité de l'épargne.",
+    "h1": "Journal des mises à jour (changelog)",
+    "heroSub": "Suivi des modifications légales et des mises à jour des calculateurs.",
+    "flag": false,
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.5",
+    "crumbs": [["Accueil", "/"], ["Changelog"]],
+    "eeat": false,
+    "sections": [
+      "<div class='card'><h2>Version 2026-FR-v1</h2><div><span class='badge' style='background:var(--brand);color:#fff'>4 septembre 2026</span><h3 style='margin-top:8px'>Intégration de la LFSS 2026</h3><p>Les valeurs ci-dessous sont indiquées <em>à la date de cette entrée</em>. À la suite de la loi de financement de la Sécurité sociale pour 2026 (adoptée le 16 décembre 2025, en vigueur au 1<sup>er</sup> janvier 2026), les calculateurs ont été mis à jour :</p><ul><li><strong>CSG sur les revenus du capital :</strong> de 9,2 % à 10,6 %.</li><li><strong>Prélèvements sociaux — PEA, CTO, plus-values mobilières :</strong> de 17,2 % à 18,6 %.</li><li><strong>PFU global (compte-titres, dividendes, plus-values) :</strong> de 30 % à 31,4 % (12,8 % d'IR + 18,6 % de PS).</li><li><strong>Assurance-vie :</strong> prélèvements sociaux <strong>maintenus à 17,2 %</strong> (placement exclu de la hausse, avec le PEL, le CEL et les revenus fonciers).</li></ul><p>Paramètres appliqués sur l'ensemble des outils : <a href='/'>comparateur général</a>, <a href='/pea/'>PEA</a>, <a href='/assurance-vie-fiscalite/'>assurance-vie</a>, <a href='/pea-ou-assurance-vie/'>PEA ou assurance-vie</a> et <a href='/compte-titres-fiscalite/'>compte-titres</a>.</p></div></div>",
+      "<div class='eeat-section'><h2>Accès rapide</h2><div class='link-grid'><a href='/'>Comparateur PEA / assurance-vie / CTO</a><a href='/pea/'>Fiscalité et plafonds du PEA</a><a href='/assurance-vie-fiscalite/'>Fiscalité de l'assurance-vie</a><a href='/compte-titres-fiscalite/'>Imposition du compte-titres (PFU)</a><a href='/interet-compose/'>Calculatrice d'intérêts composés</a><a href='/methodologie/'>Méthodologie et formules</a></div></div>"
+    ]
+  },
+
+  {
+    "slug": "about",
+    "navLabel": "À propos",
+    "navHide": true,
+    "kind": "legal",
+    "eeat": false,
+    "title": "À propos — éditeur du site (Gesmine-Invest Limited)",
+    "desc": "Informations légales sur l'éditeur du site, sa mission, l'absence de statut de conseil en investissement et la politique d'affiliation.",
+    "h1": "À propos",
+    "heroSub": "Éditeur indépendant d'outils de calcul de fiscalité de l'épargne.",
+    "flag": false,
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.3",
+    "crumbs": [["Accueil", "/"], ["À propos"]],
+    "sections": [
+      "<div class='card'><h2>Mentions légales</h2><p>Ce site et l'ensemble de ses calculateurs sont édités et exploités par :</p><p><strong>Gesmine-Invest Limited</strong><br>Société enregistrée au Royaume-Uni sous le numéro <strong>14120136</strong><br>Siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ, Royaume-Uni.</p><p>Hébergement : Cloudflare, Inc.</p></div>",
+      "<div class='card' id='author'><h2>La rédaction</h2><div class='eeat-author'><div class='avatar'>FÉ</div><div><h4>La rédaction Fiscalité Épargne</h4><div class='role'>Équipe éditoriale — fiscalité de l'épargne</div><p>Les contenus sont rédigés et tenus à jour par l'équipe éditoriale du site à partir des textes officiels : loi de finances et LFSS, Code général des impôts, doctrine BOFiP, fiches service-public.fr. Les calculs sont déterministes et publiés en open source sur <a href='https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne' rel='noopener nofollow' target='_blank'>GitHub</a>. Nous ne rédigeons pas sous pseudonyme d'expert et n'affichons pas de titre professionnel que nous n'avons pas.</p></div></div></div>",
+      "<div class='card'><h2>Notre mission</h2><p>Fournir des outils rapides, gratuits et sans inscription pour évaluer l'impact de la fiscalité française sur les rendements des placements (PEA, assurance-vie, compte-titres). Les calculs s'appuient sur la législation en vigueur, en particulier la loi de financement de la Sécurité sociale.</p></div>",
+      "<div class='card'><h2>Absence de conseil en investissement</h2><p>Gesmine-Invest Limited n'a pas le statut de conseiller en investissements financiers (CIF) et n'est pas enregistré à l'ORIAS. Les simulations sont générées automatiquement et ne constituent ni une recommandation personnalisée d'investissement, ni un conseil fiscal individuel. Pour une décision, consultez un conseiller en gestion de patrimoine (annuaire <a href='https://www.cncgp.fr/trouver-un-conseiller/' rel='noopener nofollow' target='_blank'>CNCGP</a>) ou un avocat fiscaliste.</p></div>",
+      "<div class='card'><h2>Transparence et affiliation</h2><p>Pour maintenir les calculateurs gratuits et sans publicité intrusive, certaines pages contiennent des liens d'affiliation vers des courtiers ou des banques en ligne. Si vous ouvrez un compte via l'un de ces liens, Gesmine-Invest Limited peut percevoir une commission de l'établissement, sans coût supplémentaire pour vous. Ces liens n'influencent pas le contenu éditorial ni les résultats des calculs.</p></div>"
+    ]
+  },
+
+  {
+    "slug": "privacy",
+    "navLabel": "Confidentialité",
+    "navHide": true,
+    "kind": "legal",
+    "eeat": false,
+    "title": "Politique de confidentialité",
+    "desc": "Politique de confidentialité : les calculs sont réalisés localement dans votre navigateur, aucune donnée financière n'est transmise ni stockée sur nos serveurs.",
+    "h1": "Politique de confidentialité",
+    "heroSub": "Vos données financières restent dans votre navigateur.",
+    "flag": false,
+    "datePublished": "2026-09-04",
+    "dateModified": "2026-09-07",
+    "priority": "0.3",
+    "crumbs": [["Accueil", "/"], ["Confidentialité"]],
+    "sections": [
+      "<div class='card'><h2>1. Données financières</h2><p>Tous les calculs (PEA, assurance-vie, CTO, intérêts composés) sont exécutés <strong>localement dans votre navigateur</strong>, en JavaScript. Les montants, rendements et situations que vous saisissez ne sont ni transmis, ni sauvegardés, ni traités sur nos serveurs.</p></div>",
+      "<div class='card'><h2>2. Cookies et mesure d'audience</h2><p>Le site est statique et n'utilise aucun cookie de ciblage publicitaire ni de profilage. Une mesure d'audience respectueuse de la vie privée, sans cookie ou avec un cookie exempté de consentement selon les recommandations de la CNIL, peut être utilisée pour suivre la fréquentation globale.</p></div>",
+      "<div class='card'><h2>3. Liens externes et affiliation</h2><p>Le site contient des liens d'affiliation vers des plateformes de courtage tierces. En cliquant sur l'un de ces liens, un traceur d'affiliation peut être déposé par le site cible pour identifier la provenance. Dès que vous quittez notre domaine, c'est la politique de confidentialité du site cible qui s'applique.</p></div>",
+      "<div class='card'><h2>4. Contact</h2><p>Pour toute question relative à cette politique, écrivez à l'éditeur (Gesmine-Invest Limited) à l'adresse du siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ, Royaume-Uni.</p></div>"
+    ]
+  }
+]

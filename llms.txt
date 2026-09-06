@@ -1,28 +1,24 @@
-# Comparateur Épargne France 2026 - LLM Context
+# Fiscalité Épargne — contexte LLM
 
-Ce site est un comparateur de la fiscalité des enveloppes d'épargne en France (PEA, Assurance-Vie, CTO) basé sur les règles de la LFSS 2026.
+Comparateur de la fiscalité des enveloppes d'épargne françaises (PEA, assurance-vie, CTO), basé sur la LFSS 2026 (adoptée le 16/12/2025). Vérifié le 2026-09-04.
 
-## Données Fiscales (LFSS 2026)
-- **PFU (Prélèvement Forfaitaire Unique)** : 31,4% (12,8% IR + 18,6% PS).
-- **Assurance-Vie (PS)** : 17,2%.
-- **PEA / CTO (PS)** : 18,6%.
-- **Plafond PEA classique** : 150 000 €.
-- **Plafond PEA-PME** : 225 000 €.
-- **Abattement Assurance-Vie après 8 ans** : 4 600 € (seul) / 9 200 € (couple).
+## Taux 2026
+- PFU (flat tax) global CTO / dividendes / plus-values mobilières : 31,4 % (IR 12,8 % + PS 18,6 %).
+- Prélèvements sociaux PEA & CTO : 18,6 % (hausse LFSS 2026, ex-17,2 %).
+- Prélèvements sociaux assurance-vie : 17,2 % (maintenus — hors champ de la hausse).
+- Assurance-vie > 8 ans : abattement 4600 € (seul) / 9200 € (couple) ; IR 7,5 % jusqu'à 150 000 € de primes, 12,8 % au-delà.
+- Assurance-vie < 8 ans : PFU 30 % (IR 12,8 % + PS 17,2 %).
+- Plafond PEA : 150000 € ; PEA + PEA-PME cumulés : 225000 €.
 
-## Formules de base
-- Le simulateur calcule la croissance par intérêts composés : `Capital Brut = Montant * (1 + Rendement) ^ Durée`.
-- **PEA** : Si durée < 5 ans, IR à 12,8% + PS à 18,6%. Si durée >= 5 ans, IR exonéré (0%) et PS à 18,6%.
-- **Assurance-Vie** : Si durée < 8 ans, PFU (IR 12,8% + PS 17,2%). Si durée >= 8 ans, l'assiette de l'IR est réduite de l'abattement, et le taux d'IR appliqué est de 7,5% (jusqu'à 150 000 € de primes) ou 12,8% (au-delà). Les PS s'appliquent sur la totalité des gains.
-- **CTO** : PFU par défaut (31,4%).
+## Pages
+- / — Comparateur d'enveloppes
+- /pea/ — Fiscalité du PEA
+- /pea-ou-assurance-vie/ — PEA ou assurance-vie
+- /compte-titres-fiscalite/ — Fiscalité du CTO
+- /interet-compose/ — Intérêts composés
+- /methodologie/ — Méthodologie
+- /changelog/ — Changelog
+- /about/ — À propos
+- /privacy/ — Confidentialité
 
-## Pages disponibles
-- `/` : Comparateur des 3 enveloppes.
-- `/pea/` : Simulateur spécifique au PEA (Plan d'Épargne en Actions).
-- `/pea-ou-assurance-vie/` : Comparateur net-à-net entre le PEA et l'Assurance-Vie.
-- `/compte-titres-fiscalite/` : Informations et simulateur pour le Compte-Titres Ordinaire (PFU vs barème progressif).
-- `/interet-compose/` : Calculatrice d'intérêts composés (hors fiscalité).
-- `/methodologie/` : Détails méthodologiques et sources juridiques.
-- `/changelog/` : Historique des mises à jour des taux.
-
-Toutes les données sont issues des textes officiels et ne constituent pas un conseil en investissement.
+Toutes les données proviennent des textes officiels et ne constituent pas un conseil en investissement.

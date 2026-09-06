@@ -3,12 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comparateur Fiscalité Épargne 2026 : PEA vs Assurance-Vie vs CTO</title>
-<meta name="description" content="Comparez instantanément la fiscalité du PEA, de l'assurance-vie et du compte-titres ordinaire (CTO) pour 2026. Calculez votre net après impôts et prélèvements sociaux.">
+<title>Comparateur fiscalité épargne 2026 : PEA vs assurance-vie vs CTO</title>
+<meta name="description" content="Comparez la fiscalité du PEA, de l'assurance-vie et du compte-titres ordinaire (CTO) en 2026. Calculez votre gain net après impôt et prélèvements sociaux (LFSS 2026).">
 <meta name="google-site-verification" content="caSgQcg_w1P4XoH1sqJFEhnVhn2amES086r0kiv2MaU" />
 <link rel="canonical" href="https://fiscaliteepargne.fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Comparateur fiscalité épargne 2026 : PEA vs assurance-vie vs CTO">
+<meta property="og:description" content="Comparez la fiscalité du PEA, de l'assurance-vie et du compte-titres ordinaire (CTO) en 2026. Calculez votre gain net après impôt et prélèvements sociaux (LFSS 2026).">
+<meta property="og:url" content="https://fiscaliteepargne.fr/">
+<meta property="og:site_name" content="Fiscalité Épargne">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calculators.js"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<script>window.__CONSTS__={"version":"2026-FR-v1","verifie_le":"2026-09-04","source_principale":"LFSS 2026, adoptée le 16/12/2025 — service-public.fr / Légifrance","pfu":{"ir_flat":0.128,"ps_standard":0.186,"ps_assurance_vie":0.172,"global_pea_cto":0.314,"global_av_avant_8_ans":0.3},"pea":{"plafond_versements":150000,"plafond_pea_pme":225000,"plafond_pea_jeune":20000,"duree_exoneration_ir":5,"ps_applicable":"ps_standard","hypothese_calculateur":"PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques","avertissement_pre_2018":"Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."},"assurance_vie":{"abattement_annuel_seul":4600,"abattement_annuel_couple":9200,"seuil_anciennete_ans":8,"seuil_primes_taux_reduit":150000,"taux_avant_8_ans":0.3,"taux_apres_8_ans_sous_seuil":0.075,"taux_apres_8_ans_au_dela_seuil":0.128,"pfl_historique":{"avant_4_ans":0.35,"de_4_a_8_ans":0.15,"apres_8_ans":0.075},"abattement_deces_avant_70_ans":152500,"abattement_deces_apres_70_ans":30500,"date_charniere_versements":"2017-09-27","ps_applicable":"ps_assurance_vie","hypothese_calculateur":"Le calculateur diagnostique simule l'imposition d'un rachat sur un contrat détenu. Le seuil de 150 000 € est apprécié selon une proratisation simplifiée sur le total des primes saisi."},"cto":{"pfu_applicable":"global_pea_cto","abattement_dividendes_bareme":0.4,"csg_deductible_bareme":0.068},"sources":{"lfss_2026":["Légifrance — LFSS 2026","https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000"],"sp_pea":["service-public.fr — Plan d'épargne en actions (PEA)","https://www.service-public.fr/particuliers/vosdroits/F1662"],"sp_av_rachat":["service-public.fr — Assurance-vie : imposition en cas de rachat","https://www.service-public.fr/particuliers/vosdroits/F14204"],"sp_av_deces":["service-public.fr — Assurance-vie : décès de l'assuré","https://www.service-public.fr/particuliers/vosdroits/F15393"],"sp_pfu":["service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)","https://www.service-public.fr/particuliers/vosdroits/F34913"],"impots_pv_mobilieres":["impots.gouv.fr — Plus-values de cession de valeurs mobilières","https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux"],"bofip_rcm":["BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)","https://bofip.impots.gouv.fr/bofip/3806-PGP.html"],"lafinancepourtous_pfu":["La finance pour tous — Le prélèvement forfaitaire unique","https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/"]},"table":[{"label":"PFU — impôt sur le revenu (flat tax IR)","value":"12,8 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — PEA &amp; CTO","value":"18,6 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — assurance-vie (maintenus)","value":"17,2 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"PFU global — CTO, dividendes, plus-values mobilières","value":"31,4 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)","value":"30,0 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)","value":"7,5 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Plafond de versements — PEA classique","value":"150 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Plafond de versements — PEA + PEA-PME (cumulé)","value":"225 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Abattement annuel assurance-vie &gt; 8 ans","value":"4 600 € seul / 9 200 € couple","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Abattement dividendes au barème progressif","value":"40 %","revise_le":"2026-09-04","source":"sp_pfu"},{"label":"Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)","value":"152 500 € / bénéficiaire","revise_le":"2026-09-04","source":"sp_av_deces"},{"label":"Abattement transmission AV — primes après 70 ans (art. 757 B CGI)","value":"30 500 € global","revise_le":"2026-09-04","source":"sp_av_deces"}]};</script>
+<script src="/assets/calculators.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -16,201 +26,269 @@
     {
       "@type": "Organization",
       "@id": "https://fiscaliteepargne.fr/#org",
-      "name": "Comparateur Épargne France",
+      "name": "Fiscalité Épargne",
       "url": "https://fiscaliteepargne.fr/",
       "legalName": "Gesmine-Invest Limited",
-      "identifier": { "@type": "PropertyValue", "name": "UK Company Number", "value": "14120136" }
-    },
-    {
-      "@type": "WebApplication",
-      "name": "Comparateur PEA vs Assurance-Vie vs CTO 2026",
-      "url": "https://fiscaliteepargne.fr/",
-      "applicationCategory": "FinanceApplication",
-      "operatingSystem": "Any",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-      "areaServed": "FR",
-      "author": { "@id": "https://fiscaliteepargne.fr/#org" },
-      "publisher": { "@id": "https://fiscaliteepargne.fr/#org" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" }
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "UK Company Number",
+        "value": "14120136"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hardy House, 269 Poynders Gardens",
+        "addressLocality": "London",
+        "postalCode": "SW4 8PQ",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fiscaliteepargne.fr/#website",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://fiscaliteepargne.fr/#page",
+      "url": "https://fiscaliteepargne.fr/",
+      "name": "Comparateur fiscalité épargne 2026 : PEA vs assurance-vie vs CTO",
+      "headline": "Comparateur PEA vs assurance-vie vs CTO 2026",
+      "description": "Comparez la fiscalité du PEA, de l'assurance-vie et du compte-titres ordinaire (CTO) en 2026. Calculez votre gain net après impôt et prélèvements sociaux (LFSS 2026).",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://fiscaliteepargne.fr/#website"
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-06",
+      "author": {
+        "@type": "Organization",
+        "name": "La rédaction Fiscalité Épargne",
+        "url": "https://fiscaliteepargne.fr/about/"
+      },
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Quelle est la fiscalité du PEA en 2026 ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PEA est exonéré d'impôt sur le revenu après 5 ans de détention. Seuls les prélèvements sociaux s'appliquent sur les gains lors des retraits (taux applicable défini en LFSS)." } },
-        { "@type": "Question", "name": "Quelle est la différence entre PEA et assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PEA permet d'investir principalement en actions européennes avec une exonération d'IR après 5 ans. L'assurance-vie offre un univers d'investissement plus large (fonds euros, obligations) et bénéficie d'un abattement fiscal annuel après 8 ans." } },
-        { "@type": "Question", "name": "Qu'est-ce que le prélèvement forfaitaire unique (PFU) ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PFU (ou flat tax) est un taux d'imposition global appliqué aux revenus du capital (CTO, dividendes). Il comprend une part d'impôt sur le revenu et une part de prélèvements sociaux." } },
-        { "@type": "Question", "name": "Faut-il choisir le barème progressif ou le PFU pour un CTO ?", "acceptedAnswer": { "@type": "Answer", "text": "Par défaut, le PFU s'applique. L'option pour le barème progressif peut être avantageuse si vous êtes non imposable ou dans une tranche marginale basse, car elle permet notamment de bénéficier d'un abattement de 40% sur les dividendes." } },
-        { "@type": "Question", "name": "Comment sont calculés les prélèvements sociaux ?", "acceptedAnswer": { "@type": "Answer", "text": "Les prélèvements sociaux (CSG, CRDS, prélèvement de solidarité) s'appliquent sur la fraction de gain réalisée. Leur taux dépend de l'enveloppe fiscale et de la législation en vigueur au moment du fait générateur." } },
-        { "@type": "Question", "name": "Quelle est la durée minimum pour optimiser l'assurance-vie ?", "acceptedAnswer": { "@type": "Answer", "text": "L'assurance-vie bénéficie d'un abattement annuel sur l'impôt sur le revenu (4600€ pour une personne seule, 9200€ pour un couple) applicable sur la part de gains lors de retraits effectués après 8 ans d'ancienneté du contrat." } }
+        {
+          "@type": "Question",
+          "name": "Quelle enveloppe est la plus avantageuse fiscalement en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour un placement en actions détenu plus de 5 ans, le PEA est le plus efficace : 0 % d'impôt sur le revenu, seulement 18,6 % de prélèvements sociaux sur le gain. L'assurance-vie devient compétitive après 8 ans grâce à l'abattement de 4 600 € / 9 200 € et au taux d'IR de 7,5 %, avec des prélèvements sociaux plus bas (17,2 %) et un cadre successoral privilégié. Le compte-titres, taxé à 31,4 %, se justifie pour investir hors zone euro ou sur des produits inéligibles au PEA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les prélèvements sociaux ont-ils augmenté en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. La loi de financement de la Sécurité sociale pour 2026 relève la CSG sur les revenus du capital de 9,2 % à 10,6 %, portant le taux global des prélèvements sociaux de 17,2 % à 18,6 %. Cette hausse s'applique au PEA, au compte-titres et aux plus-values mobilières. L'assurance-vie, le PEL, le CEL et les revenus fonciers restent au taux de 17,2 %."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le PFU est-il passé à 31,4 % ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, mécaniquement : le prélèvement forfaitaire unique combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Ces derniers passant à 18,6 %, le PFU global atteint 31,4 % en 2026 (contre 30 % jusqu'en 2025) pour les dividendes, les intérêts et les plus-values de cession de valeurs mobilières. Le PFU spécifique à l'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le calcul tient-il compte des frais ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le comparateur applique uniquement la fiscalité. Les frais de gestion (souvent 0,5 % à 1 % par an sur une assurance-vie en unités de compte, quasi nuls sur un PEA en titres vifs) réduisent le rendement composé et peuvent inverser le classement sur longue durée. Comparez toujours le couple fiscalité + frais."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on cumuler les trois enveloppes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, et c'est la situation la plus courante : un PEA pour les actions européennes, une assurance-vie pour la poche sécurisée (fonds euros) et la transmission, un compte-titres pour tout le reste. Chaque enveloppe a son plafond et ses règles propres ; il n'existe aucune limite globale de détention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce comparateur remplace-t-il un conseil fiscal ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Les calculs sont déterministes et pédagogiques. Ils ne prennent pas en compte votre taux marginal d'imposition, vos autres revenus, votre situation patrimoniale ni les cas particuliers (primes avant le 27/09/2017, PEA ouvert avant 2018, non-résidents). Pour une décision, consultez un conseiller en gestion de patrimoine ou un avocat fiscaliste."
+          }
+        }
       ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Comparateur PEA vs assurance-vie vs CTO 2026",
+      "url": "https://fiscaliteepargne.fr/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "areaServed": "FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
     }
   ]
 }
 </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 </head>
 <body>
+<nav class="site-nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="/" class="nav-brand">📈 Fiscalité Épargne</a>
+    <details><summary>Menu ▾</summary></details>
+    <div class="nav-links">
+      <a href="/" aria-current="page">Accueil</a>
+      <a href="/pea/">PEA</a>
+      <a href="/compte-titres-fiscalite/">Compte-titres (PFU)</a>
+      <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a>
+      <a href="/interet-compose/">Intérêts composés</a>
+      <a href="/methodologie/">Méthodologie</a>
+    </div>
+  </div>
+</nav>
 <header>
   <div class="container">
     <span class="flag">🇫🇷</span>
-    <h1>Comparateur PEA vs Assurance-Vie vs CTO 2026</h1>
-    <p>Simulez vos gains nets d'impôts et de prélèvements sociaux selon votre durée de placement. 100% gratuit et instantané.</p>
+    <h1>Comparateur PEA vs assurance-vie vs CTO 2026</h1>
+    <p>Simulez vos gains nets d'impôt et de prélèvements sociaux selon la durée de placement. 100 % gratuit, instantané, sans inscription.</p>
     <span class="badge" id="date-badge">Source : LFSS 2026</span>
   </div>
 </header>
 
 <main class="container">
-  <div class="disclaimer-banner">⚠️ Estimateur pédagogique (non personnalisé). Simule un <strong>versement unique</strong> effectué à la date du calcul. Les contrats existants (notamment le plafond de 150 000 € en Assurance-Vie) et versements multiples modifieront l'imposition finale réelle.</div>
+  
+  <div class="disclaimer-banner">⚠️ Estimateur pédagogique (non personnalisé). Simule un <strong>versement unique</strong> capitalisé annuellement. Les contrats existants, versements multiples, frais et le plafond de 150 000 € de primes en assurance-vie modifient l'imposition réelle — voir <a href='/methodologie/'>méthodologie</a>.</div>
 
   <div class="card">
     <label for="montant">Montant du versement initial (€)</label>
     <input type="number" id="montant" value="100000" min="0">
-    
     <label for="duree">Durée d'investissement (années)</label>
     <input type="number" id="duree" value="10" min="1">
-    
     <label for="rendement">Rendement annuel estimé (%)</label>
     <input type="number" id="rendement" value="5" min="0" step="0.1">
-
-    <label for="situation">Situation familiale (pour abattement Assurance-Vie après 8 ans)</label>
-    <select id="situation">
-      <option value="seul">Personne seule</option>
-      <option value="couple">Couple marié/pacsé (imposition commune)</option>
-    </select>
-    
-    <button class="calc-btn" onclick="runComparison()">Comparer les 3 enveloppes</button>
-    
-    <div class="result" id="comparison-result">
-      <div class="result-grid three-cols" id="comparison-grid"></div>
-    </div>
+    <label for="situation">Situation familiale (abattement assurance-vie après 8 ans)</label>
+    <select id="situation"><option value="seul">Personne seule</option><option value="couple">Couple marié/pacsé (imposition commune)</option></select>
+    <button class="calc-btn" onclick="runCompare3()">Comparer les 3 enveloppes</button>
+    <div class="result" id="comparison-result"><div class="result-grid three-cols" id="comparison-grid"></div></div>
   </div>
-
   <div class="cross-link">📈 Mieux comprendre le calcul ? <a href="/interet-compose/">Calculez l'effet des intérêts composés →</a></div>
-  
-  <div class="eeat-section">
-    <h2>Détail de la fiscalité par enveloppe</h2>
-    <div class="eeat-grid">
-      <div class="eeat-item">
-        <h4><a href="/pea/">PEA (Plan d'Épargne en Actions)</a></h4>
-        <p>Exonération d'Impôt sur le Revenu après 5 ans. Plafond de versement. Univers restreint aux actions européennes.</p>
-      </div>
-      <div class="eeat-item">
-        <h4><a href="/pea-ou-assurance-vie/">Assurance-Vie</a></h4>
-        <p>Abattement annuel après 8 ans. Fiscalité dégressive. Univers large (Fonds euros sécurisés, UC).</p>
-      </div>
-      <div class="eeat-item">
-        <h4><a href="/compte-titres-fiscalite/">Compte-Titres Ordinaire (CTO)</a></h4>
-        <p>Soumis au PFU global par défaut. Aucun plafond de versement ni contrainte géographique.</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="eeat-section">
-    <h2>Comment fonctionne ce comparateur — Taux &amp; Constantes 2026</h2>
-    <p><em>Source : entreprendre.service-public.gouv.fr · LFSS 2026 · Calculs déterministes (sans IA).</em></p>
-    <div class="overflow-wrap">
+  <div class='eeat-section'><h2>Trois enveloppes, trois fiscalités</h2><div class='eeat-grid'><div class='eeat-item'><h4><a href='/pea/'>PEA</a></h4><p>Exonération d'impôt sur le revenu après 5 ans. Plafond de versements 150 000 €. Univers restreint aux actions et fonds européens. Prélèvements sociaux 18,6 % (LFSS 2026).</p></div><div class='eeat-item'><h4><a href='/assurance-vie-fiscalite/'>Assurance-vie</a></h4><p>Abattement annuel de 4 600 € / 9 200 € sur l'IR après 8 ans, taux d'IR réduit à 7,5 %. Prélèvements sociaux maintenus à 17,2 %. Avantage successoral (art. 990 I).</p></div><div class='eeat-item'><h4><a href='/compte-titres-fiscalite/'>Compte-titres (CTO)</a></h4><p>Prélèvement forfaitaire unique de 31,4 % par défaut, ou barème progressif sur option (abattement 40 % sur dividendes). Aucun plafond, aucune contrainte géographique.</p></div></div></div>
+
+  <div class="eeat-section"><h2>Comment fonctionne ce comparateur — taux &amp; constantes 2026</h2><p><em>Source : LFSS 2026 · service-public.fr · Légifrance · calculs déterministes (sans IA).</em></p><div class="overflow-wrap">
     <table class="const-table">
-      <thead><tr><th>Paramètre fiscal</th><th>Valeur 2026</th><th>Source</th></tr></thead>
-      <tbody id="const-table-body">
-        <tr><td>PFU - Impôt sur le Revenu (Flat tax IR)</td><td>12,8 %</td><td>LFSS 2026</td></tr>
-        <tr><td>Prélèvements Sociaux PEA &amp; CTO</td><td>18,6 %</td><td>LFSS 2026 (CSG 10,6%)</td></tr>
-        <tr><td>Prélèvements Sociaux Assurance-Vie</td><td>17,2 %</td><td>Régime spécifique AV</td></tr>
-        <tr><td>Plafond de versement PEA classique</td><td>150 000 €</td><td>Service-Public.gouv.fr</td></tr>
-        <tr><td>Plafond de versement PEA-PME</td><td>225 000 €</td><td>Service-Public.gouv.fr</td></tr>
-        <tr><td>Abattement annuel Assurance-Vie (> 8 ans)</td><td>4 600 € (seul) / 9 200 € (couple)</td><td>Code Général des Impôts</td></tr>
+      <thead><tr><th>Paramètre fiscal</th><th>Valeur 2026</th><th>Source</th><th>Révisé le</th></tr></thead>
+      <tbody>
+        <tr><td>PFU — impôt sur le revenu (flat tax IR)</td><td>12,8 %</td><td><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000" rel="noopener nofollow" target="_blank">Légifrance</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Prélèvements sociaux — PEA &amp; CTO</td><td>18,6 %</td><td><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000" rel="noopener nofollow" target="_blank">Légifrance</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Prélèvements sociaux — assurance-vie (maintenus)</td><td>17,2 %</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F14204" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>PFU global — CTO, dividendes, plus-values mobilières</td><td>31,4 %</td><td><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000" rel="noopener nofollow" target="_blank">Légifrance</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)</td><td>30,0 %</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F14204" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)</td><td>7,5 %</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F14204" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Plafond de versements — PEA classique</td><td>150 000 €</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F1662" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Plafond de versements — PEA + PEA-PME (cumulé)</td><td>225 000 €</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F1662" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Abattement annuel assurance-vie &gt; 8 ans</td><td>4 600 € seul / 9 200 € couple</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F14204" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Abattement dividendes au barème progressif</td><td>40 %</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F34913" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)</td><td>152 500 € / bénéficiaire</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F15393" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
+        <tr><td>Abattement transmission AV — primes après 70 ans (art. 757 B CGI)</td><td>30 500 € global</td><td><a href="https://www.service-public.fr/particuliers/vosdroits/F15393" rel="noopener nofollow" target="_blank">service-public.fr</a></td><td class="rate-note">2026-09-04</td></tr>
       </tbody>
     </table>
-    </div>
-  </div>
+    </div></div>
+
+  <div class='eeat-section'><h2>Comment lire le résultat</h2><p>Le comparateur applique à un même versement la fiscalité propre à chaque enveloppe à l'échéance choisie : capital brut capitalisé au taux annuel saisi, puis retrait de l'impôt sur le revenu et des prélèvements sociaux dus <em>au moment du retrait</em>. Sur le PEA, l'IR tombe à zéro dès 5 ans de détention ; sur l'assurance-vie, l'abattement des 8 ans réduit l'assiette de l'IR mais jamais celle des prélèvements sociaux ; sur le CTO, la totalité du gain est taxée à 31,4 % sauf option pour le barème. Le net affiché n'intègre pas les frais de gestion propres à chaque contrat, qui pèsent eux aussi sur le rendement composé — voir la <a href='/interet-compose/'>calculatrice d'intérêts composés</a>.</p></div>
 
   <div class="eeat-section">
-    <h2>Questions fréquentes</h2>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Quelle est la fiscalité du PEA en 2026 ?</button>
-      <div class="faq-a">Le PEA est exonéré d'impôt sur le revenu après 5 ans de détention. Seuls les prélèvements sociaux s'appliquent sur les gains lors des retraits.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Quelle est la différence entre PEA et assurance-vie ?</button>
-      <div class="faq-a">Le PEA permet d'investir principalement en actions européennes avec une exonération d'IR après 5 ans. L'assurance-vie offre un univers d'investissement plus large (fonds euros, obligations) et bénéficie d'un abattement fiscal annuel après 8 ans.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)">Faut-il choisir le barème progressif ou le PFU pour un CTO ?</button>
-      <div class="faq-a">Par défaut, le PFU s'applique. L'option pour le barème progressif peut être avantageuse si vous êtes non imposable, car elle permet de bénéficier d'un abattement de 40% sur les dividendes.</div>
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quelle enveloppe est la plus avantageuse fiscalement en 2026 ?</button>
+    <div class="faq-a"><p>Pour un placement en actions détenu plus de 5 ans, le PEA est le plus efficace : 0 % d'impôt sur le revenu, seulement 18,6 % de prélèvements sociaux sur le gain. L'assurance-vie devient compétitive après 8 ans grâce à l'abattement de 4 600 € / 9 200 € et au taux d'IR de 7,5 %, avec des prélèvements sociaux plus bas (17,2 %) et un cadre successoral privilégié. Le compte-titres, taxé à 31,4 %, se justifie pour investir hors zone euro ou sur des produits inéligibles au PEA.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Les prélèvements sociaux ont-ils augmenté en 2026 ?</button>
+    <div class="faq-a"><p>Oui. La loi de financement de la Sécurité sociale pour 2026 relève la CSG sur les revenus du capital de 9,2 % à 10,6 %, portant le taux global des prélèvements sociaux de 17,2 % à 18,6 %. Cette hausse s'applique au PEA, au compte-titres et aux plus-values mobilières. L'assurance-vie, le PEL, le CEL et les revenus fonciers restent au taux de 17,2 %.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Le PFU est-il passé à 31,4 % ?</button>
+    <div class="faq-a"><p>Oui, mécaniquement : le prélèvement forfaitaire unique combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Ces derniers passant à 18,6 %, le PFU global atteint 31,4 % en 2026 (contre 30 % jusqu'en 2025) pour les dividendes, les intérêts et les plus-values de cession de valeurs mobilières. Le PFU spécifique à l'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %).</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Le calcul tient-il compte des frais ?</button>
+    <div class="faq-a"><p>Non. Le comparateur applique uniquement la fiscalité. Les frais de gestion (souvent 0,5 % à 1 % par an sur une assurance-vie en unités de compte, quasi nuls sur un PEA en titres vifs) réduisent le rendement composé et peuvent inverser le classement sur longue durée. Comparez toujours le couple fiscalité + frais.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Peut-on cumuler les trois enveloppes ?</button>
+    <div class="faq-a"><p>Oui, et c'est la situation la plus courante : un PEA pour les actions européennes, une assurance-vie pour la poche sécurisée (fonds euros) et la transmission, un compte-titres pour tout le reste. Chaque enveloppe a son plafond et ses règles propres ; il n'existe aucune limite globale de détention.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Ce comparateur remplace-t-il un conseil fiscal ?</button>
+    <div class="faq-a"><p>Non. Les calculs sont déterministes et pédagogiques. Ils ne prennent pas en compte votre taux marginal d'imposition, vos autres revenus, votre situation patrimoniale ni les cas particuliers (primes avant le 27/09/2017, PEA ouvert avant 2018, non-résidents). Pour une décision, consultez un conseiller en gestion de patrimoine ou un avocat fiscaliste.</p></div>
+  </div>
+</div>
+
+  <div class="eeat-section">
+  <h2>Transparence, méthodologie &amp; sources</h2>
+  <div class="eeat-author">
+    <div class="avatar">FÉ</div>
+    <div>
+      <h4>La rédaction Fiscalité Épargne</h4>
+      <div class="role">Équipe éditoriale — fiscalité de l'épargne</div>
+      <p>Contenu rédigé à partir des textes officiels (LFSS 2026, Code général des impôts, BOFiP, service-public.fr). Les calculs sont déterministes : ils appliquent les taux et barèmes en vigueur, sans intelligence artificielle. Barèmes vérifiés le 2026-09-04 — <a href="/changelog/">journal des mises à jour</a>.</p>
+      
     </div>
   </div>
+  <div class="eeat-compliance">
+    <h4>Méthodologie &amp; limites</h4>
+    <p>Voir la <a href="/methodologie/">méthodologie complète</a> (formules, hypothèses, cas non modélisés). Pour une simulation officielle, utilisez le simulateur de l'administration sur <a href="https://www.impots.gouv.fr/" rel="noopener nofollow" target="_blank">impots.gouv.fr</a>.</p>
+    <h4>Conseil &amp; validation professionnelle</h4>
+    <p>Gesmine-Invest Limited n'est pas enregistré à l'ORIAS et n'a pas le statut de conseiller en investissements financiers (CIF). Les résultats ne constituent pas un conseil personnalisé. Avant toute décision, consultez un conseiller en gestion de patrimoine (annuaire de la <a href="https://www.cncgp.fr/trouver-un-conseiller/" rel="noopener nofollow" target="_blank">CNCGP</a>) ou un avocat fiscaliste.</p>
+    <h4>Code source auditable</h4>
+    <p>Les formules sont publiques sur le <a href="https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne" rel="noopener nofollow" target="_blank">dépôt GitHub</a>.</p>
+    
+  </div>
+</div>
+
+  
 </main>
 
 <footer>
-  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
-  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
-  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+  <div class="container">
+    <div class="footer-cols"><div><strong>Outils</strong><ul><li><a href="/">Comparateur d'enveloppes</a></li><li><a href="/pea/">Fiscalité du PEA</a></li><li><a href="/compte-titres-fiscalite/">Fiscalité du CTO</a></li><li><a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a></li><li><a href="/interet-compose/">Intérêts composés</a></li></ul></div><div><strong>Ressources</strong><ul><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/changelog/">Changelog</a></li></ul></div><div><strong>Légal</strong><ul><li><a href="/about/">À propos</a></li><li><a href="/privacy/">Confidentialité</a></li></ul></div></div>
+    <p style="margin-top:16px;">Une initiative de <strong>Gesmine-Invest Limited</strong>, société enregistrée au Royaume-Uni (n° 14120136), siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+    <p style="margin-top:8px;font-size:.8rem;">Certaines pages contiennent des liens d'affiliation vers des courtiers ou banques en ligne : Gesmine-Invest Limited peut percevoir une commission si vous ouvrez un compte, sans coût supplémentaire pour vous. Site indépendant, non enregistré à l'ORIAS, ne délivrant aucun conseil personnalisé. L'investissement comporte un risque de perte en capital.</p>
+    <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Estimations à titre purement indicatif — ne remplacent pas un conseil personnalisé.</p>
+  </div>
 </footer>
-
 <script>
-function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-function toggleFaq(btn){
-  btn.classList.toggle('open');
-  btn.nextElementSibling.classList.toggle('open');
-}
-
-async function runComparison() {
-  const montant = parseFloat(document.getElementById('montant').value) || 0;
-  const duree = parseFloat(document.getElementById('duree').value) || 0;
-  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
-  const situation = document.getElementById('situation').value;
-  
-  const pea = await calculPEA(montant, duree, rendement);
-  const av = await calculAssuranceVie(montant, duree, rendement, situation);
-  const cto = await calculCTO(montant, duree, rendement);
-  
-  const grid = document.getElementById('comparison-grid');
-  grid.innerHTML = `
-    <div class="stat" style="border-top: 4px solid var(--brand)">
-      <h3 style="margin-top:0">PEA</h3>
-      <div class="amount" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-dark)">${fmt(pea.net)}</div>
-      <div class="lbl">Net après impôts</div>
-      <hr style="margin: 10px 0; border: none; border-top: 1px solid var(--border)">
-      <div>Gain brut : <strong>${fmt(pea.gains)}</strong></div>
-      <div>Impôt sur le Revenu : <strong>${fmt(pea.ir)}</strong></div>
-      <div>Prélèvements Sociaux : <strong>${fmt(pea.ps)}</strong></div>
-      <a href="/pea/" style="display:block; margin-top:10px; font-size:0.9rem; color:var(--brand); text-decoration:none; font-weight:bold;">Voir le détail PEA →</a>
-    </div>
-    
-    <div class="stat" style="border-top: 4px solid var(--gold)">
-      <h3 style="margin-top:0">Assurance-Vie</h3>
-      <div class="amount" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-dark)">${fmt(av.net)}</div>
-      <div class="lbl">Net après impôts</div>
-      <hr style="margin: 10px 0; border: none; border-top: 1px solid var(--border)">
-      <div>Gain brut : <strong>${fmt(av.gains)}</strong></div>
-      <div>Impôt sur le Revenu : <strong>${fmt(av.ir)}</strong></div>
-      <div>Prélèvements Sociaux : <strong>${fmt(av.ps)}</strong></div>
-      <a href="/pea-ou-assurance-vie/" style="display:block; margin-top:10px; font-size:0.9rem; color:var(--brand); text-decoration:none; font-weight:bold;">Voir la comparaison →</a>
-    </div>
-    
-    <div class="stat" style="border-top: 4px solid var(--muted)">
-      <h3 style="margin-top:0">CTO</h3>
-      <div class="amount" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-dark)">${fmt(cto.net)}</div>
-      <div class="lbl">Net après impôts</div>
-      <hr style="margin: 10px 0; border: none; border-top: 1px solid var(--border)">
-      <div>Gain brut : <strong>${fmt(cto.gains)}</strong></div>
-      <div>Impôt sur le Revenu : <strong>${fmt(cto.ir)}</strong></div>
-      <div>Prélèvements Sociaux : <strong>${fmt(cto.ps)}</strong></div>
-      <a href="/compte-titres-fiscalite/" style="display:block; margin-top:10px; font-size:0.9rem; color:var(--brand); text-decoration:none; font-weight:bold;">Voir le détail CTO →</a>
-    </div>
-  `;
+function toggleFaq(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open');}
+</script>
+<script>
+async function runCompare3(){
+  const m=parseFloat(montant.value)||0,d=parseFloat(duree.value)||0,r=(parseFloat(rendement.value)||0)/100,s=situation.value;
+  const [pea,av,cto]=await Promise.all([calculPEA(m,d,r),calculAssuranceVie(m,d,r,s),calculCTO(m,d,r)]);
+  const card=(t,o,href,lbl,col)=>`<div class="stat" style="border-top:4px solid ${col}"><h3 style="margin-top:0">${t}</h3><div class="amount" style="font-size:1.5rem;font-weight:800;color:var(--brand-dark)">${fmtEUR(o.net)}</div><div class="lbl">Net après impôts</div><hr style="margin:10px 0;border:none;border-top:1px solid var(--border)"><div>Gain brut : <strong>${fmtEUR(o.gains)}</strong></div><div>Impôt sur le revenu : <strong>${fmtEUR(o.ir)}</strong></div><div>Prélèvements sociaux : <strong>${fmtEUR(o.ps)}</strong></div><a href="${href}" style="display:block;margin-top:10px;font-size:.9rem;color:var(--brand);text-decoration:none;font-weight:bold">${lbl} →</a></div>`;
+  document.getElementById('comparison-grid').innerHTML=card('PEA',pea,'/pea/','Voir le détail PEA','var(--brand)')+card('Assurance-Vie',av,'/assurance-vie-fiscalite/','Voir la fiscalité assurance-vie','var(--gold)')+card('CTO',cto,'/compte-titres-fiscalite/','Voir le détail CTO','var(--muted)');
   document.getElementById('comparison-result').classList.add('show');
 }
-
-// Load constants to update badge if needed
-window.onload = async function() {
-  const C = await loadConstants();
-  document.getElementById('date-badge').innerText = "Vérifié le : " + C.verifie_le + " (" + C.source_principale + ")";
-};
 </script>
+<script>window.addEventListener('DOMContentLoaded',function(){document.getElementById('date-badge').textContent='Vérifié le '+window.__CONSTS__.verifie_le+' — '+window.__CONSTS__.source_principale;});</script>
 </body>
 </html>

@@ -3,10 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculatrice d'Intérêts Composés : Capitalisez sur le long terme</title>
-<meta name="description" content="Simulez l'effet magique des intérêts composés sur votre épargne avec ou sans versements réguliers. Calculez votre capital final brut en quelques secondes.">
+<title>Calculatrice d'intérêts composés : capital final avec versements mensuels</title>
+<meta name="description" content="Calculez l'effet des intérêts composés sur votre épargne, avec ou sans versements mensuels. Formule, règle des 72, effet des frais et de l'inflation, et lien avec la fiscalité de l'épargne.">
 <link rel="canonical" href="https://fiscaliteepargne.fr/interet-compose/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calculatrice d'intérêts composés : capital final avec versements mensuels">
+<meta property="og:description" content="Calculez l'effet des intérêts composés sur votre épargne, avec ou sans versements mensuels. Formule, règle des 72, effet des frais et de l'inflation, et lien avec la fiscalité de l'épargne.">
+<meta property="og:url" content="https://fiscaliteepargne.fr/interet-compose/">
+<meta property="og:site_name" content="Fiscalité Épargne">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<script>window.__CONSTS__={"version":"2026-FR-v1","verifie_le":"2026-09-04","source_principale":"LFSS 2026, adoptée le 16/12/2025 — service-public.fr / Légifrance","pfu":{"ir_flat":0.128,"ps_standard":0.186,"ps_assurance_vie":0.172,"global_pea_cto":0.314,"global_av_avant_8_ans":0.3},"pea":{"plafond_versements":150000,"plafond_pea_pme":225000,"plafond_pea_jeune":20000,"duree_exoneration_ir":5,"ps_applicable":"ps_standard","hypothese_calculateur":"PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques","avertissement_pre_2018":"Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."},"assurance_vie":{"abattement_annuel_seul":4600,"abattement_annuel_couple":9200,"seuil_anciennete_ans":8,"seuil_primes_taux_reduit":150000,"taux_avant_8_ans":0.3,"taux_apres_8_ans_sous_seuil":0.075,"taux_apres_8_ans_au_dela_seuil":0.128,"pfl_historique":{"avant_4_ans":0.35,"de_4_a_8_ans":0.15,"apres_8_ans":0.075},"abattement_deces_avant_70_ans":152500,"abattement_deces_apres_70_ans":30500,"date_charniere_versements":"2017-09-27","ps_applicable":"ps_assurance_vie","hypothese_calculateur":"Le calculateur diagnostique simule l'imposition d'un rachat sur un contrat détenu. Le seuil de 150 000 € est apprécié selon une proratisation simplifiée sur le total des primes saisi."},"cto":{"pfu_applicable":"global_pea_cto","abattement_dividendes_bareme":0.4,"csg_deductible_bareme":0.068},"sources":{"lfss_2026":["Légifrance — LFSS 2026","https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000"],"sp_pea":["service-public.fr — Plan d'épargne en actions (PEA)","https://www.service-public.fr/particuliers/vosdroits/F1662"],"sp_av_rachat":["service-public.fr — Assurance-vie : imposition en cas de rachat","https://www.service-public.fr/particuliers/vosdroits/F14204"],"sp_av_deces":["service-public.fr — Assurance-vie : décès de l'assuré","https://www.service-public.fr/particuliers/vosdroits/F15393"],"sp_pfu":["service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)","https://www.service-public.fr/particuliers/vosdroits/F34913"],"impots_pv_mobilieres":["impots.gouv.fr — Plus-values de cession de valeurs mobilières","https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux"],"bofip_rcm":["BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)","https://bofip.impots.gouv.fr/bofip/3806-PGP.html"],"lafinancepourtous_pfu":["La finance pour tous — Le prélèvement forfaitaire unique","https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/"]},"table":[{"label":"PFU — impôt sur le revenu (flat tax IR)","value":"12,8 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — PEA &amp; CTO","value":"18,6 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — assurance-vie (maintenus)","value":"17,2 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"PFU global — CTO, dividendes, plus-values mobilières","value":"31,4 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)","value":"30,0 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)","value":"7,5 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Plafond de versements — PEA classique","value":"150 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Plafond de versements — PEA + PEA-PME (cumulé)","value":"225 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Abattement annuel assurance-vie &gt; 8 ans","value":"4 600 € seul / 9 200 € couple","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Abattement dividendes au barème progressif","value":"40 %","revise_le":"2026-09-04","source":"sp_pfu"},{"label":"Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)","value":"152 500 € / bénéficiaire","revise_le":"2026-09-04","source":"sp_av_deces"},{"label":"Abattement transmission AV — primes après 70 ans (art. 757 B CGI)","value":"30 500 € global","revise_le":"2026-09-04","source":"sp_av_deces"}]};</script>
+<script src="/assets/calculators.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -14,65 +25,206 @@
     {
       "@type": "Organization",
       "@id": "https://fiscaliteepargne.fr/#org",
-      "name": "Comparateur Épargne France"
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "legalName": "Gesmine-Invest Limited",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "UK Company Number",
+        "value": "14120136"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hardy House, 269 Poynders Gardens",
+        "addressLocality": "London",
+        "postalCode": "SW4 8PQ",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne"
+      ]
     },
     {
-      "@type": "WebApplication",
-      "name": "Calculatrice Intérêts Composés",
+      "@type": "WebSite",
+      "@id": "https://fiscaliteepargne.fr/#website",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://fiscaliteepargne.fr/interet-compose/#page",
       "url": "https://fiscaliteepargne.fr/interet-compose/",
-      "applicationCategory": "FinanceApplication",
-      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+      "name": "Calculatrice d'intérêts composés : capital final avec versements mensuels",
+      "headline": "Calculatrice d'intérêts composés",
+      "description": "Calculez l'effet des intérêts composés sur votre épargne, avec ou sans versements mensuels. Formule, règle des 72, effet des frais et de l'inflation, et lien avec la fiscalité de l'épargne.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://fiscaliteepargne.fr/#website"
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-07",
+      "author": {
+        "@type": "Organization",
+        "name": "La rédaction Fiscalité Épargne",
+        "url": "https://fiscaliteepargne.fr/about/"
+      },
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Intérêts composés"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Intérêts Composés", "item": "https://fiscaliteepargne.fr/interet-compose/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://fiscaliteepargne.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Intérêts composés",
+          "item": "https://fiscaliteepargne.fr/interet-compose/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Que sont les intérêts composés ?", "acceptedAnswer": { "@type": "Answer", "text": "Les intérêts composés sont le principe selon lequel les intérêts générés par un capital sont réinvestis pour générer à leur tour de nouveaux intérêts. C'est l'effet boule de neige de l'épargne sur le long terme." } },
-        { "@type": "Question", "name": "Pourquoi commencer à épargner tôt ?", "acceptedAnswer": { "@type": "Answer", "text": "Plus vous commencez tôt, plus l'effet des intérêts composés est puissant. Le temps est le facteur le plus important dans la formule des intérêts composés, bien plus que le capital initial investi." } }
+        {
+          "@type": "Question",
+          "name": "Que sont les intérêts composés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est le principe selon lequel les intérêts générés par un capital sont réinvestis et produisent à leur tour des intérêts. Sur longue durée, l'effet est exponentiel : la part d'intérêts dans le capital final croît beaucoup plus vite que la part des versements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment calculer les intérêts composés avec des versements mensuels ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On additionne deux termes : la valeur acquise du capital initial, C0 × (1 + i)^n, et la valeur acquise des versements, v × [(1 + t)^N − 1] ÷ t, où t est le taux mensuel équivalent (1 + i)^(1/12) − 1 et N le nombre de mois. La calculatrice ci-dessus effectue ce calcul automatiquement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que la règle des 72 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une approximation : la durée en années pour doubler un capital est environ égale à 72 divisé par le taux de rendement annuel. À 6 %, doublement en 12 ans ; à 8 %, en 9 ans. Elle est fiable pour des taux entre 4 % et 10 %."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi commencer à épargner tôt ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que le temps est le facteur le plus puissant de la formule des intérêts composés. Verser 200 €/mois pendant 40 ans à 5 % produit environ 306 000 € ; commencer 10 ans plus tard (30 ans de versements) ne donne que 167 000 €, alors qu'on n'a versé que 24 000 € de moins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les intérêts composés sont-ils imposés chaque année ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cela dépend de l'enveloppe. Dans un PEA ou une assurance-vie, la capitalisation est franche d'impôt tant qu'il n'y a pas de retrait. Sur un compte-titres, les dividendes distribués sont imposés chaque année, mais un ETF capitalisant n'est imposé qu'à la revente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel rendement annuel retenir pour une simulation prudente ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour un horizon long et un portefeuille diversifié en actions, 5 % à 7 % brut est un ordre de grandeur raisonnable, à minorer des frais et de la fiscalité. Pour un fonds en euros, retenez plutôt 2 % à 3 %. Raisonnez toujours net d'inflation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est l'impact des frais sur le capital final ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Considérable sur longue durée : 1 % de frais annuels sur un rendement brut de 6 % ampute le capital final d'environ 22 % au bout de 30 ans. C'est souvent plus lourd que l'écart de fiscalité entre deux enveloppes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il raisonner en rendement nominal ou réel ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En rendement réel, c'est-à-dire net d'inflation. Un placement à 5 % dans un environnement d'inflation à 2 % ne fait progresser le pouvoir d'achat que de 3 % par an. La calculatrice affiche un résultat nominal ; retranchez l'inflation anticipée pour juger du gain réel."
+          }
+        }
       ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Calculatrice d'intérêts composés",
+      "url": "https://fiscaliteepargne.fr/interet-compose/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "areaServed": "FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
     }
   ]
 }
 </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 </head>
 <body>
+<nav class="site-nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="/" class="nav-brand">📈 Fiscalité Épargne</a>
+    <details><summary>Menu ▾</summary></details>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/pea/">PEA</a>
+      <a href="/compte-titres-fiscalite/">Compte-titres (PFU)</a>
+      <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a>
+      <a href="/interet-compose/" aria-current="page">Intérêts composés</a>
+      <a href="/methodologie/">Méthodologie</a>
+    </div>
+  </div>
+</nav>
 <header>
   <div class="container">
     <span class="flag">📊</span>
-    <h1>Calculatrice d'Intérêts Composés</h1>
-    <p>Calculez l'évolution de votre épargne dans le temps grâce à l'effet boule de neige.</p>
+    <h1>Calculatrice d'intérêts composés</h1>
+    <p>L'effet boule de neige : capital initial, versements réguliers et durée. Résultat brut, avant impôt et frais.</p>
+    
   </div>
 </header>
 
 <main class="container">
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &rsaquo; <span>Intérêts composés</span></nav>
   <div class="card">
-    <h2>Simulateur Brut</h2>
+    <h2>Simulateur brut</h2>
     <label for="montant">Capital initial (€)</label>
     <input type="number" id="montant" value="10000" min="0">
-    
     <label for="versement">Versement mensuel régulier (€)</label>
     <input type="number" id="versement" value="200" min="0">
-
     <label for="duree">Durée du placement (années)</label>
     <input type="number" id="duree" value="20" min="1">
-    
     <label for="rendement">Rendement annuel estimé (%)</label>
     <input type="number" id="rendement" value="5" min="0" step="0.1">
-    
     <button class="calc-btn" onclick="runCompound()">Calculer le capital final</button>
-    
     <div class="result" id="compound-result">
-      <div class="result-hero">
-        <div class="amount" id="cmp-total-val"></div>
-        <div class="amount-label">Capital final estimé (Brut)</div>
-      </div>
+      <div class="result-hero"><div class="amount" id="cmp-total-val"></div><div class="amount-label">Capital final estimé (brut, avant impôt et frais)</div></div>
       <div class="result-grid">
         <div class="stat"><div class="val" id="cmp-versements-val"></div><div class="lbl">Total des versements</div></div>
         <div class="stat"><div class="val" id="cmp-interets-val"></div><div class="lbl">Intérêts générés</div></div>
@@ -80,58 +232,108 @@
     </div>
   </div>
 
-  <div class="eeat-section">
-    <h2>Qu'est-ce que la magie des intérêts composés ?</h2>
-    <p>Les intérêts composés interviennent lorsque les intérêts générés par votre placement sont réinvestis et s'ajoutent à votre capital initial. L'année suivante, ces intérêts génèrent eux-mêmes de nouveaux intérêts. C'est l'effet "boule de neige".</p>
-    <p>Sur le long terme, ce phénomène permet une croissance exponentielle de votre épargne.</p>
-    <h3>L'importance des versements réguliers</h3>
-    <p>Ajouter une somme chaque mois, même modeste, renforce considérablement la base sur laquelle les intérêts sont calculés, accélérant ainsi la croissance de votre portefeuille.</p>
-  </div>
+  <div class='eeat-section'><h2>La formule des intérêts composés</h2><p>Les intérêts composés désignent le réinvestissement des intérêts, qui produisent à leur tour des intérêts. Pour un capital unique, le capital au bout de <em>n</em> années s'écrit <code>Cn = C0 × (1 + i)^n</code>, où <em>i</em> est le taux annuel.</p><p>Avec des <strong>versements mensuels réguliers</strong>, on ajoute la valeur acquise d'une suite de versements (annuité de fin de période) : <code>V = v × [ (1 + t)^N − 1 ] ÷ t</code>, où <em>t</em> est le taux mensuel équivalent <code>(1 + i)^(1/12) − 1</code> et <em>N</em> le nombre de mois. Cette calculatrice capitalise <strong>mensuellement</strong>, au plus près d'un versement programmé réel — à la différence des calculateurs fiscaux du site (<a href='/pea/'>PEA</a>, <a href='/assurance-vie-fiscalite/'>assurance-vie</a>, <a href='/compte-titres-fiscalite/'>CTO</a>), qui capitalisent annuellement sur un versement unique.</p></div>
+
+  <div class='eeat-section'><h2>Exemples chiffrés</h2><p>200 € versés chaque mois, rendement 5 % par an :</p><div class='overflow-wrap'><table class='const-table'><thead><tr><th>Durée</th><th>Total versé</th><th>Capital final brut</th><th>Dont intérêts</th></tr></thead><tbody><tr><td>10 ans</td><td>24 000 €</td><td>≈ 31 100 €</td><td>≈ 7 100 €</td></tr><tr><td>20 ans</td><td>48 000 €</td><td>≈ 82 800 €</td><td>≈ 34 800 €</td></tr><tr><td>30 ans</td><td>72 000 €</td><td>≈ 167 000 €</td><td>≈ 95 000 €</td></tr><tr><td>40 ans</td><td>96 000 €</td><td>≈ 306 000 €</td><td>≈ 210 000 €</td></tr></tbody></table></div><p>À 40 ans, les intérêts représentent plus des deux tiers du capital : commencer tôt pèse davantage que verser beaucoup.</p></div>
+
+  <div class='eeat-section'><h2>La règle des 72</h2><p>Pour estimer mentalement la durée de doublement d'un capital, divisez 72 par le taux de rendement annuel. À 6 %, un capital double en ≈ 12 ans ; à 3 %, en ≈ 24 ans ; à 9 %, en ≈ 8 ans. Approximation valable pour des taux compris entre 4 % et 10 %.</p></div>
+
+  <div class='eeat-section'><h2>Intérêts composés et fiscalité</h2><p>Ce qui compose réellement, c'est le rendement <strong>net d'impôt et de frais</strong>. Deux exemples de l'impact sur 30 ans :</p><ul><li><strong>Frais :</strong> 1 % de frais annuels sur un rendement brut de 6 % réduit le capital final d'environ 22 %.</li><li><strong>Fiscalité :</strong> une enveloppe qui prélève 30 % des gains à la sortie fait perdre presque un tiers des intérêts accumulés, d'où l'intérêt du <a href='/pea/'>PEA</a> (0 % d'IR après 5 ans) ou de l'<a href='/assurance-vie-fiscalite/'>assurance-vie</a> après 8 ans.</li></ul></div>
+
+  <div class='eeat-section'><h2>Rendements réalistes et inflation</h2><p>Ordres de grandeur historiques de long terme, hors garantie de reproduction : fonds en euros 2 % à 3 %, obligations 2 % à 4 %, actions internationales 6 % à 8 % en moyenne annualisée sur 20-30 ans, avec une forte volatilité. Raisonnez toujours en <strong>rendement réel</strong> : à 5 % de rendement et 2 % d'inflation, le pouvoir d'achat ne progresse que d'environ 3 % par an.</p></div>
 
   <div class="eeat-section">
-    <h2>Quelle enveloppe fiscale choisir pour votre épargne ?</h2>
-    <p>Générer des intérêts bruts est une excellente première étape. Cependant, au moment de profiter de vos gains, la fiscalité viendra amputer une partie de votre rendement. Il est donc crucial d'optimiser votre enveloppe fiscale :</p>
-    <ul>
-      <li><a href="/pea/" style="font-weight:600; color:var(--brand-dark);">Le PEA</a> : L'arme fatale pour annuler l'impôt sur le revenu après 5 ans (investissement en actions européennes).</li>
-      <li><a href="/pea-ou-assurance-vie/" style="font-weight:600; color:var(--brand-dark);">L'Assurance-Vie</a> : Pour diversifier, sécuriser une partie de son épargne (fonds euros) et optimiser la transmission.</li>
-      <li><a href="/compte-titres-fiscalite/" style="font-weight:600; color:var(--brand-dark);">Le CTO</a> : Pour une liberté d'investissement totale (monde entier, tous types de produits), avec une fiscalité par défaut de 31,4%.</li>
-    </ul>
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Que sont les intérêts composés ?</button>
+    <div class="faq-a"><p>C'est le principe selon lequel les intérêts générés par un capital sont réinvestis et produisent à leur tour des intérêts. Sur longue durée, l'effet est exponentiel : la part d'intérêts dans le capital final croît beaucoup plus vite que la part des versements.</p></div>
   </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Comment calculer les intérêts composés avec des versements mensuels ?</button>
+    <div class="faq-a"><p>On additionne deux termes : la valeur acquise du capital initial, C0 × (1 + i)^n, et la valeur acquise des versements, v × [(1 + t)^N − 1] ÷ t, où t est le taux mensuel équivalent (1 + i)^(1/12) − 1 et N le nombre de mois. La calculatrice ci-dessus effectue ce calcul automatiquement.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que la règle des 72 ?</button>
+    <div class="faq-a"><p>Une approximation : la durée en années pour doubler un capital est environ égale à 72 divisé par le taux de rendement annuel. À 6 %, doublement en 12 ans ; à 8 %, en 9 ans. Elle est fiable pour des taux entre 4 % et 10 %.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Pourquoi commencer à épargner tôt ?</button>
+    <div class="faq-a"><p>Parce que le temps est le facteur le plus puissant de la formule des intérêts composés. Verser 200 €/mois pendant 40 ans à 5 % produit environ 306 000 € ; commencer 10 ans plus tard (30 ans de versements) ne donne que 167 000 €, alors qu'on n'a versé que 24 000 € de moins.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Les intérêts composés sont-ils imposés chaque année ?</button>
+    <div class="faq-a"><p>Cela dépend de l'enveloppe. Dans un PEA ou une assurance-vie, la capitalisation est franche d'impôt tant qu'il n'y a pas de retrait. Sur un compte-titres, les dividendes distribués sont imposés chaque année, mais un ETF capitalisant n'est imposé qu'à la revente.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quel rendement annuel retenir pour une simulation prudente ?</button>
+    <div class="faq-a"><p>Pour un horizon long et un portefeuille diversifié en actions, 5 % à 7 % brut est un ordre de grandeur raisonnable, à minorer des frais et de la fiscalité. Pour un fonds en euros, retenez plutôt 2 % à 3 %. Raisonnez toujours net d'inflation.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quel est l'impact des frais sur le capital final ?</button>
+    <div class="faq-a"><p>Considérable sur longue durée : 1 % de frais annuels sur un rendement brut de 6 % ampute le capital final d'environ 22 % au bout de 30 ans. C'est souvent plus lourd que l'écart de fiscalité entre deux enveloppes.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Faut-il raisonner en rendement nominal ou réel ?</button>
+    <div class="faq-a"><p>En rendement réel, c'est-à-dire net d'inflation. Un placement à 5 % dans un environnement d'inflation à 2 % ne fait progresser le pouvoir d'achat que de 3 % par an. La calculatrice affiche un résultat nominal ; retranchez l'inflation anticipée pour juger du gain réel.</p></div>
+  </div>
+</div>
+
+  <div class="eeat-section">
+  <h2>Transparence, méthodologie &amp; sources</h2>
+  <div class="eeat-author">
+    <div class="avatar">FÉ</div>
+    <div>
+      <h4>La rédaction Fiscalité Épargne</h4>
+      <div class="role">Équipe éditoriale — fiscalité de l'épargne</div>
+      <p>Contenu rédigé à partir des textes officiels (LFSS 2026, Code général des impôts, BOFiP, service-public.fr). Les calculs sont déterministes : ils appliquent les taux et barèmes en vigueur, sans intelligence artificielle. Barèmes vérifiés le 2026-09-04 — <a href="/changelog/">journal des mises à jour</a>.</p>
+      
+    </div>
+  </div>
+  <div class="eeat-compliance">
+    <h4>Méthodologie &amp; limites</h4>
+    <p>Voir la <a href="/methodologie/">méthodologie complète</a> (formules, hypothèses, cas non modélisés). Pour une simulation officielle, utilisez le simulateur de l'administration sur <a href="https://www.impots.gouv.fr/" rel="noopener nofollow" target="_blank">impots.gouv.fr</a>.</p>
+    <h4>Conseil &amp; validation professionnelle</h4>
+    <p>Gesmine-Invest Limited n'est pas enregistré à l'ORIAS et n'a pas le statut de conseiller en investissements financiers (CIF). Les résultats ne constituent pas un conseil personnalisé. Avant toute décision, consultez un conseiller en gestion de patrimoine (annuaire de la <a href="https://www.cncgp.fr/trouver-un-conseiller/" rel="noopener nofollow" target="_blank">CNCGP</a>) ou un avocat fiscaliste.</p>
+    <h4>Code source auditable</h4>
+    <p>Les formules sont publiques sur le <a href="https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne" rel="noopener nofollow" target="_blank">dépôt GitHub</a>.</p>
+    
+  </div>
+</div>
+
+  <div class="eeat-section">
+  <h2>À lire aussi</h2>
+  <div class="link-grid">
+    <a href="/pea/">Fiscalité du PEA 2026 →</a>
+    <a href="/assurance-vie-fiscalite/">Fiscalité de l'assurance-vie 2026 →</a>
+    <a href="/compte-titres-fiscalite/">Fiscalité du compte-titres (CTO) →</a>
+    <a href="/">Comparateur PEA / assurance-vie / CTO →</a>
+    <a href="/methodologie/">Méthodologie et sources →</a>
+  </div>
+</div>
 </main>
 
 <footer>
-  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
-  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
-  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations brutes à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+  <div class="container">
+    <div class="footer-cols"><div><strong>Outils</strong><ul><li><a href="/">Comparateur d'enveloppes</a></li><li><a href="/pea/">Fiscalité du PEA</a></li><li><a href="/compte-titres-fiscalite/">Fiscalité du CTO</a></li><li><a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a></li><li><a href="/interet-compose/">Intérêts composés</a></li></ul></div><div><strong>Ressources</strong><ul><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/changelog/">Changelog</a></li></ul></div><div><strong>Légal</strong><ul><li><a href="/about/">À propos</a></li><li><a href="/privacy/">Confidentialité</a></li></ul></div></div>
+    <p style="margin-top:16px;">Une initiative de <strong>Gesmine-Invest Limited</strong>, société enregistrée au Royaume-Uni (n° 14120136), siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+    <p style="margin-top:8px;font-size:.8rem;">Certaines pages contiennent des liens d'affiliation vers des courtiers ou banques en ligne : Gesmine-Invest Limited peut percevoir une commission si vous ouvrez un compte, sans coût supplémentaire pour vous. Site indépendant, non enregistré à l'ORIAS, ne délivrant aucun conseil personnalisé. L'investissement comporte un risque de perte en capital.</p>
+    <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Estimations à titre purement indicatif — ne remplacent pas un conseil personnalisé.</p>
+  </div>
 </footer>
-
 <script>
-function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-
-function runCompound() {
-  const montant = parseFloat(document.getElementById('montant').value) || 0;
-  const versement = parseFloat(document.getElementById('versement').value) || 0;
-  const duree = parseFloat(document.getElementById('duree').value) || 0;
-  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
-  
-  const totalVersements = montant + (versement * 12 * duree);
-  
-  // Calcul intérêts composés avec mensualités (fin de période)
-  const tauxMensuel = Math.pow(1 + rendement, 1/12) - 1;
-  const nbMois = duree * 12;
-  
-  const valeurCapital = montant * Math.pow(1 + tauxMensuel, nbMois);
-  const valeurVersements = versement > 0 && tauxMensuel > 0 
-    ? versement * ((Math.pow(1 + tauxMensuel, nbMois) - 1) / tauxMensuel) 
-    : versement * nbMois;
-    
-  const capitalFinalBrut = valeurCapital + valeurVersements;
-  const interets = capitalFinalBrut - totalVersements;
-  
-  document.getElementById('cmp-total-val').innerText = fmt(capitalFinalBrut);
-  document.getElementById('cmp-versements-val').innerText = fmt(totalVersements);
-  document.getElementById('cmp-interets-val').innerText = fmt(interets);
-  
+function toggleFaq(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open');}
+</script>
+<script>
+function runCompound(){
+  const c0=parseFloat(montant.value)||0,v=parseFloat(versement.value)||0,d=parseFloat(duree.value)||0,r=(parseFloat(rendement.value)||0)/100;
+  const totalVers=c0+v*12*d;
+  const tm=Math.pow(1+r,1/12)-1, n=d*12;
+  const vc=c0*Math.pow(1+tm,n);
+  const vv=(v>0&&tm>0)? v*((Math.pow(1+tm,n)-1)/tm) : v*n;
+  const brut=vc+vv;
+  document.getElementById('cmp-total-val').textContent=fmtEUR(brut);
+  document.getElementById('cmp-versements-val').textContent=fmtEUR(totalVers);
+  document.getElementById('cmp-interets-val').textContent=fmtEUR(brut-totalVers);
   document.getElementById('compound-result').classList.add('show');
 }
 </script>

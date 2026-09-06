@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fiscalité du PEA 2026 : Simulateur et Plafonds</title>
-<meta name="description" content="Simulez la fiscalité de votre PEA en 2026. Découvrez les plafonds (150 000 € et 225 000 €), l'exonération d'IR après 5 ans et les prélèvements sociaux.">
+<title>Fiscalité du PEA 2026 : plafonds, exonération après 5 ans, prélèvements sociaux</title>
+<meta name="description" content="Fiscalité du plan d'épargne en actions en 2026 : plafond de 150 000 €, exonération d'impôt sur le revenu après 5 ans, prélèvements sociaux 18,6 %, retrait anticipé. Simulateur de gain net.">
 <link rel="canonical" href="https://fiscaliteepargne.fr/pea/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fiscalité du PEA 2026 : plafonds, exonération après 5 ans, prélèvements sociaux">
+<meta property="og:description" content="Fiscalité du plan d'épargne en actions en 2026 : plafond de 150 000 €, exonération d'impôt sur le revenu après 5 ans, prélèvements sociaux 18,6 %, retrait anticipé. Simulateur de gain net.">
+<meta property="og:url" content="https://fiscaliteepargne.fr/pea/">
+<meta property="og:site_name" content="Fiscalité Épargne">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calculators.js"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<script>window.__CONSTS__={"version":"2026-FR-v1","verifie_le":"2026-09-04","source_principale":"LFSS 2026, adoptée le 16/12/2025 — service-public.fr / Légifrance","pfu":{"ir_flat":0.128,"ps_standard":0.186,"ps_assurance_vie":0.172,"global_pea_cto":0.314,"global_av_avant_8_ans":0.3},"pea":{"plafond_versements":150000,"plafond_pea_pme":225000,"plafond_pea_jeune":20000,"duree_exoneration_ir":5,"ps_applicable":"ps_standard","hypothese_calculateur":"PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques","avertissement_pre_2018":"Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."},"assurance_vie":{"abattement_annuel_seul":4600,"abattement_annuel_couple":9200,"seuil_anciennete_ans":8,"seuil_primes_taux_reduit":150000,"taux_avant_8_ans":0.3,"taux_apres_8_ans_sous_seuil":0.075,"taux_apres_8_ans_au_dela_seuil":0.128,"pfl_historique":{"avant_4_ans":0.35,"de_4_a_8_ans":0.15,"apres_8_ans":0.075},"abattement_deces_avant_70_ans":152500,"abattement_deces_apres_70_ans":30500,"date_charniere_versements":"2017-09-27","ps_applicable":"ps_assurance_vie","hypothese_calculateur":"Le calculateur diagnostique simule l'imposition d'un rachat sur un contrat détenu. Le seuil de 150 000 € est apprécié selon une proratisation simplifiée sur le total des primes saisi."},"cto":{"pfu_applicable":"global_pea_cto","abattement_dividendes_bareme":0.4,"csg_deductible_bareme":0.068},"sources":{"lfss_2026":["Légifrance — LFSS 2026","https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000"],"sp_pea":["service-public.fr — Plan d'épargne en actions (PEA)","https://www.service-public.fr/particuliers/vosdroits/F1662"],"sp_av_rachat":["service-public.fr — Assurance-vie : imposition en cas de rachat","https://www.service-public.fr/particuliers/vosdroits/F14204"],"sp_av_deces":["service-public.fr — Assurance-vie : décès de l'assuré","https://www.service-public.fr/particuliers/vosdroits/F15393"],"sp_pfu":["service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)","https://www.service-public.fr/particuliers/vosdroits/F34913"],"impots_pv_mobilieres":["impots.gouv.fr — Plus-values de cession de valeurs mobilières","https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux"],"bofip_rcm":["BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)","https://bofip.impots.gouv.fr/bofip/3806-PGP.html"],"lafinancepourtous_pfu":["La finance pour tous — Le prélèvement forfaitaire unique","https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/"]},"table":[{"label":"PFU — impôt sur le revenu (flat tax IR)","value":"12,8 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — PEA &amp; CTO","value":"18,6 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — assurance-vie (maintenus)","value":"17,2 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"PFU global — CTO, dividendes, plus-values mobilières","value":"31,4 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)","value":"30,0 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)","value":"7,5 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Plafond de versements — PEA classique","value":"150 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Plafond de versements — PEA + PEA-PME (cumulé)","value":"225 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Abattement annuel assurance-vie &gt; 8 ans","value":"4 600 € seul / 9 200 € couple","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Abattement dividendes au barème progressif","value":"40 %","revise_le":"2026-09-04","source":"sp_pfu"},{"label":"Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)","value":"152 500 € / bénéficiaire","revise_le":"2026-09-04","source":"sp_av_deces"},{"label":"Abattement transmission AV — primes après 70 ans (art. 757 B CGI)","value":"30 500 € global","revise_le":"2026-09-04","source":"sp_av_deces"}]};</script>
+<script src="/assets/calculators.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -15,160 +25,339 @@
     {
       "@type": "Organization",
       "@id": "https://fiscaliteepargne.fr/#org",
-      "name": "Comparateur Épargne France"
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "legalName": "Gesmine-Invest Limited",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "UK Company Number",
+        "value": "14120136"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hardy House, 269 Poynders Gardens",
+        "addressLocality": "London",
+        "postalCode": "SW4 8PQ",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne"
+      ]
     },
     {
-      "@type": "WebApplication",
-      "name": "Simulateur PEA",
+      "@type": "WebSite",
+      "@id": "https://fiscaliteepargne.fr/#website",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://fiscaliteepargne.fr/pea/#page",
       "url": "https://fiscaliteepargne.fr/pea/",
-      "applicationCategory": "FinanceApplication",
-      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+      "name": "Fiscalité du PEA 2026 : plafonds, exonération après 5 ans, prélèvements sociaux",
+      "headline": "Fiscalité du PEA 2026",
+      "description": "Fiscalité du plan d'épargne en actions en 2026 : plafond de 150 000 €, exonération d'impôt sur le revenu après 5 ans, prélèvements sociaux 18,6 %, retrait anticipé. Simulateur de gain net.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://fiscaliteepargne.fr/#website"
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-07",
+      "author": {
+        "@type": "Organization",
+        "name": "La rédaction Fiscalité Épargne",
+        "url": "https://fiscaliteepargne.fr/about/"
+      },
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Fiscalité du plan d'épargne en actions"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "PEA", "item": "https://fiscaliteepargne.fr/pea/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://fiscaliteepargne.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fiscalité du PEA",
+          "item": "https://fiscaliteepargne.fr/pea/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Quel est le plafond du PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Le plafond des versements sur un PEA classique est de 150 000 €. Pour un PEA-PME, il est de 225 000 €. Cumulés, la limite reste de 225 000 € au total par contribuable." } },
-        { "@type": "Question", "name": "Quand le PEA est-il exonéré d'impôt ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PEA bénéficie d'une exonération totale d'impôt sur le revenu (IR) sur les gains générés si vous ne faites aucun retrait avant le 5ème anniversaire du plan." } },
-        { "@type": "Question", "name": "Que se passe-t-il en cas de retrait avant 5 ans ?", "acceptedAnswer": { "@type": "Answer", "text": "Tout retrait avant 5 ans entraîne généralement la clôture du plan. Les gains sont alors soumis au prélèvement forfaitaire unique (PFU) ou à l'IR selon l'option choisie, en plus des prélèvements sociaux." } },
-        { "@type": "Question", "name": "Faut-il déclarer un PEA aux impôts ?", "acceptedAnswer": { "@type": "Answer", "text": "Les gains d'un PEA ne sont imposables que lors d'un retrait. Si vous ne retirez rien, vous n'avez pas de gains à déclarer annuellement, sauf règles spécifiques liées à l'ISF/IFI ou aux dividendes de titres non cotés." } },
-        { "@type": "Question", "name": "Quels sont les prélèvements sociaux sur un PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Lors d'un retrait après 5 ans, les gains sont exonérés d'impôt sur le revenu mais restent soumis aux prélèvements sociaux, qui s'appliquent au taux en vigueur au moment du retrait (sauf PEA très anciens)." } },
-        { "@type": "Question", "name": "Puis-je ouvrir plusieurs PEA ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, il n'est possible d'ouvrir qu'un seul PEA classique par personne majeure (et un PEA jeune pour les rattachés de 18 à 25 ans). Vous pouvez toutefois cumuler un PEA classique et un PEA-PME." } }
+        {
+          "@type": "Question",
+          "name": "Quel est le plafond du PEA en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "150 000 € de versements pour un PEA classique. Le PEA-PME permet 225 000 € supplémentaires, mais le total cumulé PEA + PEA-PME reste plafonné à 225 000 € par personne. Le PEA jeune (18-25 ans rattachés) est plafonné à 20 000 €. Ces plafonds portent sur les versements, jamais sur la valeur du plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand le PEA est-il exonéré d'impôt ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'exonération d'impôt sur le revenu sur les plus-values et dividendes est acquise dès lors qu'aucun retrait n'est effectué avant le 5e anniversaire du plan. Les prélèvements sociaux (18,6 % en 2026) restent dus lors des retraits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il en cas de retrait avant 5 ans ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le retrait entraîne la clôture du plan. Les gains sont soumis au PFU de 31,4 % (12,8 % d'IR + 18,6 % de prélèvements sociaux), ou au barème progressif sur option. Font exception le décès, l'invalidité, la mise à la retraite anticipée et la création/reprise d'entreprise, qui permettent un retrait sans imposition des gains à l'IR."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on encore verser sur un PEA après un retrait ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, depuis la loi PACTE, à condition que le retrait ait lieu après le 5e anniversaire du plan. Un retrait avant 5 ans entraîne la clôture et interdit donc tout nouveau versement. Le plafond de 150 000 € de versements cumulés reste la limite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le taux des prélèvements sociaux sur un PEA ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "18,6 % depuis le 1er janvier 2026 (contre 17,2 % auparavant), à la suite du relèvement de la CSG par la LFSS 2026. Le PEA n'est pas concerné par le maintien à 17,2 % réservé à l'assurance-vie, au PEL et au CEL. Les PEA ouverts avant 2018 relèvent d'un régime de taux historiques."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment sont imposés les prélèvements sociaux d'un PEA ouvert avant 2018 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selon la règle des « taux historiques » : chaque part de gain acquise avant le 5e anniversaire du plan est figée au taux de prélèvements sociaux de son année d'acquisition (10 %, 12,1 %, 13,5 %, 15,5 %…). Les gains acquis après le 5e anniversaire suivent le taux courant. Le calcul est fait automatiquement par la banque."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on avoir plusieurs PEA ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non : un seul PEA classique par personne majeure. Un couple peut détenir deux PEA (un chacun). Il est possible de cumuler un PEA classique et un PEA-PME, dans la limite globale de 225 000 € de versements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels titres sont éligibles au PEA ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les actions de sociétés ayant leur siège dans l'Union européenne ou l'Espace économique européen, les parts d'OPCVM (fonds, ETF) investis à 75 % au moins en titres éligibles, y compris certains ETF synthétiques répliquant des indices hors zone euro. Les obligations, les produits dérivés et les actions hors EEE en direct sont exclus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le transfert d'un PEA vers une autre banque fait-il perdre l'antériorité ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le transfert conserve la date d'ouverture d'origine et donc l'antériorité fiscale. Seuls des frais de transfert, plafonds réglementairement, sont facturés par l'établissement d'origine."
+          }
+        }
       ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Fiscalité du PEA 2026",
+      "url": "https://fiscaliteepargne.fr/pea/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "areaServed": "FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
     }
   ]
 }
 </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 </head>
 <body>
+<nav class="site-nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="/" class="nav-brand">📈 Fiscalité Épargne</a>
+    <details><summary>Menu ▾</summary></details>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/pea/" aria-current="page">PEA</a>
+      <a href="/compte-titres-fiscalite/">Compte-titres (PFU)</a>
+      <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a>
+      <a href="/interet-compose/">Intérêts composés</a>
+      <a href="/methodologie/">Méthodologie</a>
+    </div>
+  </div>
+</nav>
 <header>
   <div class="container">
     <span class="flag">🇫🇷</span>
     <h1>Fiscalité du PEA 2026</h1>
-    <p>Simulateur des gains nets et de l'impact des prélèvements sociaux après 5 ans.</p>
+    <p>Plafonds, exonération d'impôt après 5 ans, prélèvements sociaux et conséquences d'un retrait anticipé.</p>
+    
   </div>
 </header>
 
 <main class="container">
-  <div class="disclaimer-banner">⚠️ Le calculateur suppose un PEA ouvert après le 01/01/2018. Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire.</div>
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &rsaquo; <span>Fiscalité du PEA</span></nav>
+  <div class="disclaimer-banner">⚠️ Le calculateur suppose un PEA ouvert après le 01/01/2018. Pour un plan ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici.</div>
 
   <div class="card">
     <h2>Calculateur de rendement net PEA</h2>
     <label for="montant">Montant investi (€)</label>
-    <input type="number" id="montant" value="150000" min="0" max="150000">
-    
+    <input type="number" id="montant" value="150000" min="0">
     <label for="duree">Durée d'investissement (années)</label>
     <input type="number" id="duree" value="15" min="1">
-    
     <label for="rendement">Rendement annuel estimé (%)</label>
     <input type="number" id="rendement" value="5" min="0" step="0.1">
-    
     <button class="calc-btn" onclick="runPEA()">Calculer le gain net</button>
-    
     <div class="result" id="pea-result">
-      <div class="result-hero">
-        <div class="amount" id="pea-net-val"></div>
-        <div class="amount-label">Capital final net (après Prélèvements Sociaux)</div>
-      </div>
+      <div class="result-hero"><div class="amount" id="pea-net-val"></div><div class="amount-label">Capital final net (après prélèvements sociaux)</div></div>
       <div class="result-grid">
-        <div class="stat"><div class="val" id="pea-brut-val"></div><div class="lbl">Capital Brut</div></div>
+        <div class="stat"><div class="val" id="pea-brut-val"></div><div class="lbl">Capital brut</div></div>
         <div class="stat"><div class="val" id="pea-gains-val"></div><div class="lbl">Gains générés</div></div>
-        <div class="stat"><div class="val" id="pea-ps-val"></div><div class="lbl">Prélèvements Sociaux</div></div>
-        <div class="stat"><div class="val" id="pea-ir-val"></div><div class="lbl">Impôt sur le Revenu</div></div>
+        <div class="stat"><div class="val" id="pea-ps-val"></div><div class="lbl">Prélèvements sociaux</div></div>
+        <div class="stat"><div class="val" id="pea-ir-val"></div><div class="lbl">Impôt sur le revenu</div></div>
       </div>
       <div class="result-note" id="pea-note"></div>
     </div>
   </div>
 
-  <div class="eeat-section">
-    <h2>Les règles fiscales du PEA</h2>
-    <h3>L'exonération d'impôt sur le revenu</h3>
-    <p>Le grand avantage du PEA réside dans son exonération totale d'Impôt sur le Revenu (IR) sur les plus-values et dividendes. Cette exonération est acquise à condition qu'aucun retrait ne soit effectué avant le 5ème anniversaire de l'ouverture du plan. Seuls les prélèvements sociaux restent dus.</p>
-    
-    <h3>Les plafonds de versements</h3>
-    <p>Les versements sont plafonnés à :</p>
-    <ul>
-      <li id="text-plafond"><strong>PEA classique :</strong> [chargement...]</li>
-      <li id="text-plafond-pme"><strong>PEA-PME :</strong> [chargement...]</li>
-    </ul>
-    <p>Il est possible de cumuler un PEA classique et un PEA-PME, mais le total des versements sur les deux plans ne peut excéder le plafond maximum du PEA-PME (la mutualisation des plafonds).</p>
+  <div class='eeat-section'><h2>L'exonération d'impôt sur le revenu après 5 ans</h2><p>L'atout central du PEA est l'exonération totale d'<strong>impôt sur le revenu</strong> sur les plus-values et les dividendes, acquise dès lors qu'aucun retrait n'est effectué avant le 5<sup>e</sup> anniversaire du plan. Seuls les prélèvements sociaux restent dus.</p><p>Deux précisions : les dividendes de <strong>titres non cotés</strong> logés dans le PEA ne sont exonérés que dans la limite de 10 % par an de la valeur d'inscription de ces titres ; au-delà, la fraction excédentaire est imposable. Et depuis la loi PACTE, un <strong>retrait partiel après 5 ans n'entraîne plus la clôture</strong> du plan ni le blocage des versements — vous pouvez continuer à alimenter le PEA après avoir retiré.</p></div>
 
-    <h3>Conséquences d'un retrait anticipé</h3>
-    <p>Tout retrait effectué avant 5 ans entraîne la clôture du PEA. Les gains réalisés depuis l'ouverture sont alors soumis au Prélèvement Forfaitaire Unique (PFU) ou, sur option, au barème progressif de l'impôt sur le revenu, en plus des prélèvements sociaux.</p>
-  </div>
+  <div class='eeat-section'><h2>Les plafonds de versements</h2><p>Les plafonds portent sur les <strong>versements cumulés</strong>, pas sur la valeur atteinte par le plan : un PEA de 150 000 € de primes qui vaut 400 000 € reste parfaitement régulier.</p><ul><li id='text-plafond'><strong>PEA classique :</strong> 150 000 €</li><li id='text-plafond-pme'><strong>PEA + PEA-PME (cumulé) :</strong> 225 000 €</li><li><strong>PEA jeune</strong> (18-25 ans rattachés au foyer fiscal) : 20 000 €, transformé en PEA classique à la sortie du rattachement.</li></ul><p>On ne peut détenir qu'un seul PEA classique par personne. Un couple peut donc cumuler deux PEA, soit 300 000 € de versements. Le PEA-PME peut se cumuler avec le PEA classique, dans la limite globale de 225 000 €.</p></div>
+
+  <div class='eeat-section'><h2>Les prélèvements sociaux : 18,6 % depuis 2026</h2><p>Après 5 ans, l'impôt sur le revenu est nul mais les gains restent soumis aux <strong>prélèvements sociaux</strong>. La LFSS 2026 a porté leur taux de 17,2 % à <strong>18,6 %</strong> (relèvement de la CSG de 9,2 % à 10,6 %). Le PEA ne figure pas sur la liste des placements maintenus à 17,2 % — contrairement à l'assurance-vie.</p><p>Pour les PEA ouverts <strong>avant 2018</strong>, un régime de « taux historiques » s'applique : chaque fraction de gain est figée au taux de prélèvements sociaux en vigueur l'année où elle a été acquise (10 %, 12,1 %, 15,5 %, etc.), jusqu'au 5<sup>e</sup> anniversaire du plan ; au-delà, c'est le taux courant qui s'applique. Ce mécanisme, devenu résiduel, n'est pas modélisé par le calculateur — votre établissement gestionnaire le calcule automatiquement.</p></div>
+
+  <div class='eeat-section'><h2>Retrait ou clôture avant 5 ans</h2><p>Tout retrait avant le 5<sup>e</sup> anniversaire entraîne en principe la <strong>clôture du plan</strong>. Les gains constatés depuis l'ouverture sont alors soumis au <strong>prélèvement forfaitaire unique de 31,4 %</strong> (12,8 % d'IR + 18,6 % de prélèvements sociaux), ou au barème progressif sur option.</p><p>Certains événements permettent un retrait anticipé <strong>sans clôture ni imposition des gains à l'IR</strong> : décès du titulaire, invalidité (2<sup>e</sup> ou 3<sup>e</sup> catégorie) du titulaire ou de son conjoint, mise à la retraite anticipée, ou création / reprise d'entreprise dans les trois mois avec réemploi des fonds. Les prélèvements sociaux restent dus dans ces cas.</p></div>
+
+  <div class='eeat-section'><h2>Transfert, décès et expatriation</h2><p><strong>Transfert entre banques :</strong> le PEA se transfère d'un établissement à un autre en conservant son antériorité fiscale (la date d'ouverture ne change pas). Des frais de transfert plafonnés s'appliquent.</p><p><strong>Décès du titulaire :</strong> le PEA est clôturé. Les gains sont exonérés d'impôt sur le revenu quelle que soit l'ancienneté, mais les prélèvements sociaux restent dus. Les titres et liquidités intègrent la succession.</p><p><strong>Départ à l'étranger :</strong> le transfert du domicile fiscal hors de France n'entraîne plus la clôture du PEA (sauf transfert vers un État ou territoire non coopératif). Le plan continue de fonctionner ; l'imposition des retraits dépend de la convention fiscale applicable.</p></div>
 
   <div class="eeat-section">
-    <h2>Ouvrir un PEA : Comparaison des courtiers</h2>
-    <p>Si vous souhaitez investir via un PEA, voici trois des offres en ligne les plus compétitives du marché :</p>
-    <div class="affiliate-block">
-      <div class="broker-card">
-        <h4>BoursoBank</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">PEA profil Découverte idéal pour débuter. Aucun frais de garde.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-      <div class="broker-card">
-        <h4>Fortuneo</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">Tarifs très compétitifs sur Euronext. 100 ordres offerts.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-      <div class="broker-card">
-        <h4>Trade Republic</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">Non éligible PEA mais CTO attractif et plans d'investissement.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-    </div>
-    
-    <div class="transparency-banner">
-      <strong>Transparence & Risques :</strong> Les liens ci-dessus sont des liens d'affiliation. Ce site peut percevoir une rémunération si vous ouvrez un compte. Ceci n'est pas un conseil personnalisé en investissement. L'investissement en bourse présente un risque de perte en capital.
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quel est le plafond du PEA en 2026 ?</button>
+    <div class="faq-a"><p>150 000 € de versements pour un PEA classique. Le PEA-PME permet 225 000 € supplémentaires, mais le total cumulé PEA + PEA-PME reste plafonné à 225 000 € par personne. Le PEA jeune (18-25 ans rattachés) est plafonné à 20 000 €. Ces plafonds portent sur les versements, jamais sur la valeur du plan.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quand le PEA est-il exonéré d'impôt ?</button>
+    <div class="faq-a"><p>L'exonération d'impôt sur le revenu sur les plus-values et dividendes est acquise dès lors qu'aucun retrait n'est effectué avant le 5<sup>e</sup> anniversaire du plan. Les prélèvements sociaux (18,6 % en 2026) restent dus lors des retraits.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Que se passe-t-il en cas de retrait avant 5 ans ?</button>
+    <div class="faq-a"><p>Le retrait entraîne la clôture du plan. Les gains sont soumis au PFU de 31,4 % (12,8 % d'IR + 18,6 % de prélèvements sociaux), ou au barème progressif sur option. Font exception le décès, l'invalidité, la mise à la retraite anticipée et la création/reprise d'entreprise, qui permettent un retrait sans imposition des gains à l'IR.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Peut-on encore verser sur un PEA après un retrait ?</button>
+    <div class="faq-a"><p>Oui, depuis la loi PACTE, à condition que le retrait ait lieu après le 5<sup>e</sup> anniversaire du plan. Un retrait avant 5 ans entraîne la clôture et interdit donc tout nouveau versement. Le plafond de 150 000 € de versements cumulés reste la limite.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quel est le taux des prélèvements sociaux sur un PEA ?</button>
+    <div class="faq-a"><p>18,6 % depuis le 1<sup>er</sup> janvier 2026 (contre 17,2 % auparavant), à la suite du relèvement de la CSG par la LFSS 2026. Le PEA n'est pas concerné par le maintien à 17,2 % réservé à l'assurance-vie, au PEL et au CEL. Les PEA ouverts avant 2018 relèvent d'un régime de taux historiques.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Comment sont imposés les prélèvements sociaux d'un PEA ouvert avant 2018 ?</button>
+    <div class="faq-a"><p>Selon la règle des « taux historiques » : chaque part de gain acquise avant le 5<sup>e</sup> anniversaire du plan est figée au taux de prélèvements sociaux de son année d'acquisition (10 %, 12,1 %, 13,5 %, 15,5 %…). Les gains acquis après le 5<sup>e</sup> anniversaire suivent le taux courant. Le calcul est fait automatiquement par la banque.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Peut-on avoir plusieurs PEA ?</button>
+    <div class="faq-a"><p>Non : un seul PEA classique par personne majeure. Un couple peut détenir deux PEA (un chacun). Il est possible de cumuler un PEA classique et un PEA-PME, dans la limite globale de 225 000 € de versements.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quels titres sont éligibles au PEA ?</button>
+    <div class="faq-a"><p>Les actions de sociétés ayant leur siège dans l'Union européenne ou l'Espace économique européen, les parts d'OPCVM (fonds, ETF) investis à 75 % au moins en titres éligibles, y compris certains ETF synthétiques répliquant des indices hors zone euro. Les obligations, les produits dérivés et les actions hors EEE en direct sont exclus.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Le transfert d'un PEA vers une autre banque fait-il perdre l'antériorité ?</button>
+    <div class="faq-a"><p>Non. Le transfert conserve la date d'ouverture d'origine et donc l'antériorité fiscale. Seuls des frais de transfert, plafonds réglementairement, sont facturés par l'établissement d'origine.</p></div>
+  </div>
+</div>
+
+  <div class="eeat-section">
+  <h2>Transparence, méthodologie &amp; sources</h2>
+  <div class="eeat-author">
+    <div class="avatar">FÉ</div>
+    <div>
+      <h4>La rédaction Fiscalité Épargne</h4>
+      <div class="role">Équipe éditoriale — fiscalité de l'épargne</div>
+      <p>Contenu rédigé à partir des textes officiels (LFSS 2026, Code général des impôts, BOFiP, service-public.fr). Les calculs sont déterministes : ils appliquent les taux et barèmes en vigueur, sans intelligence artificielle. Barèmes vérifiés le 2026-09-04 — <a href="/changelog/">journal des mises à jour</a>.</p>
+      
     </div>
   </div>
+  <div class="eeat-compliance">
+    <h4>Méthodologie &amp; limites</h4>
+    <p>Voir la <a href="/methodologie/">méthodologie complète</a> (formules, hypothèses, cas non modélisés). Pour une simulation officielle, utilisez le simulateur de l'administration sur <a href="https://www.impots.gouv.fr/" rel="noopener nofollow" target="_blank">impots.gouv.fr</a>.</p>
+    <h4>Conseil &amp; validation professionnelle</h4>
+    <p>Gesmine-Invest Limited n'est pas enregistré à l'ORIAS et n'a pas le statut de conseiller en investissements financiers (CIF). Les résultats ne constituent pas un conseil personnalisé. Avant toute décision, consultez un conseiller en gestion de patrimoine (annuaire de la <a href="https://www.cncgp.fr/trouver-un-conseiller/" rel="noopener nofollow" target="_blank">CNCGP</a>) ou un avocat fiscaliste.</p>
+    <h4>Code source auditable</h4>
+    <p>Les formules sont publiques sur le <a href="https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne" rel="noopener nofollow" target="_blank">dépôt GitHub</a>.</p>
+    <h3>Sources officielles</h3>
+<ul class="sources-list"><li><a href="https://www.service-public.fr/particuliers/vosdroits/F1662" rel="noopener nofollow" target="_blank">service-public.fr — Plan d'épargne en actions (PEA)</a></li><li><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000" rel="noopener nofollow" target="_blank">Légifrance — LFSS 2026</a></li><li><a href="https://bofip.impots.gouv.fr/bofip/3806-PGP.html" rel="noopener nofollow" target="_blank">BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)</a></li></ul>
+  </div>
+</div>
 
-  <div class="cross-link">⚖️ Vous hésitez avec l'assurance-vie ? <a href="/pea-ou-assurance-vie/">Comparez PEA et Assurance-Vie →</a></div>
+  <div class="eeat-section">
+  <h2>À lire aussi</h2>
+  <div class="link-grid">
+    <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie : comment choisir →</a>
+    <a href="/assurance-vie-fiscalite/">Fiscalité de l'assurance-vie 2026 →</a>
+    <a href="/compte-titres-fiscalite/">Fiscalité du compte-titres (CTO) →</a>
+    <a href="/interet-compose/">Calculatrice d'intérêts composés →</a>
+    <a href="/methodologie/">Méthodologie et sources →</a>
+  </div>
+</div>
 </main>
 
 <footer>
-  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
-  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
-  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+  <div class="container">
+    <div class="footer-cols"><div><strong>Outils</strong><ul><li><a href="/">Comparateur d'enveloppes</a></li><li><a href="/pea/">Fiscalité du PEA</a></li><li><a href="/compte-titres-fiscalite/">Fiscalité du CTO</a></li><li><a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a></li><li><a href="/interet-compose/">Intérêts composés</a></li></ul></div><div><strong>Ressources</strong><ul><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/changelog/">Changelog</a></li></ul></div><div><strong>Légal</strong><ul><li><a href="/about/">À propos</a></li><li><a href="/privacy/">Confidentialité</a></li></ul></div></div>
+    <p style="margin-top:16px;">Une initiative de <strong>Gesmine-Invest Limited</strong>, société enregistrée au Royaume-Uni (n° 14120136), siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+    <p style="margin-top:8px;font-size:.8rem;">Certaines pages contiennent des liens d'affiliation vers des courtiers ou banques en ligne : Gesmine-Invest Limited peut percevoir une commission si vous ouvrez un compte, sans coût supplémentaire pour vous. Site indépendant, non enregistré à l'ORIAS, ne délivrant aucun conseil personnalisé. L'investissement comporte un risque de perte en capital.</p>
+    <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Estimations à titre purement indicatif — ne remplacent pas un conseil personnalisé.</p>
+  </div>
 </footer>
-
 <script>
-function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-
-async function runPEA() {
-  const montant = parseFloat(document.getElementById('montant').value) || 0;
-  const duree = parseFloat(document.getElementById('duree').value) || 0;
-  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
-  
-  const pea = await calculPEA(montant, duree, rendement);
-  
-  document.getElementById('pea-net-val').innerText = fmt(pea.net);
-  document.getElementById('pea-brut-val').innerText = fmt(pea.brut);
-  document.getElementById('pea-gains-val').innerText = fmt(pea.gains);
-  document.getElementById('pea-ps-val').innerText = fmt(pea.ps);
-  document.getElementById('pea-ir-val').innerText = fmt(pea.ir);
-  
-  if(pea.ir > 0) {
-    document.getElementById('pea-note').innerText = "Attention : La durée étant inférieure à 5 ans, les gains sont soumis à l'Impôt sur le Revenu.";
-  } else {
-    document.getElementById('pea-note').innerText = "Exonération d'Impôt sur le Revenu acquise (durée >= 5 ans).";
-  }
-  
+function toggleFaq(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open');}
+</script>
+<script>
+async function runPEA(){
+  const m=parseFloat(montant.value)||0,d=parseFloat(duree.value)||0,r=(parseFloat(rendement.value)||0)/100;
+  const o=await calculPEA(m,d,r);
+  document.getElementById('pea-net-val').textContent=fmtEUR(o.net);
+  document.getElementById('pea-brut-val').textContent=fmtEUR(o.brut);
+  document.getElementById('pea-gains-val').textContent=fmtEUR(o.gains);
+  document.getElementById('pea-ps-val').textContent=fmtEUR(o.ps);
+  document.getElementById('pea-ir-val').textContent=fmtEUR(o.ir);
+  document.getElementById('pea-note').textContent = o.ir>0
+    ? "Durée inférieure à 5 ans : retrait = clôture, les gains sont soumis au PFU (IR 12,8 % + PS 18,6 %)."
+    : "Exonération d'impôt sur le revenu acquise (durée ≥ 5 ans). Seuls les prélèvements sociaux 18,6 % restent dus.";
   document.getElementById('pea-result').classList.add('show');
 }
-
-window.onload = async function() {
-  const C = await loadConstants();
-  document.getElementById('text-plafond').innerHTML = `<strong>PEA classique :</strong> ${fmt(C.pea.plafond_versements)}`;
-  document.getElementById('text-plafond-pme').innerHTML = `<strong>PEA-PME :</strong> ${fmt(C.pea.plafond_pea_pme)}`;
-};
+window.addEventListener('DOMContentLoaded',function(){
+  var C=window.__CONSTS__;var p=document.getElementById('text-plafond');var pme=document.getElementById('text-plafond-pme');
+  if(p)p.innerHTML='<strong>PEA classique :</strong> '+fmtEUR(C.pea.plafond_versements);
+  if(pme)pme.innerHTML='<strong>PEA + PEA-PME (cumulé) :</strong> '+fmtEUR(C.pea.plafond_pea_pme);
+});
 </script>
 </body>
 </html>

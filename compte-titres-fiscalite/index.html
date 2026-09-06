@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fiscalité du Compte-Titres (CTO) 2026 : PFU ou Barème ?</title>
-<meta name="description" content="Découvrez la fiscalité du Compte-Titres Ordinaire (CTO) en 2026. Simulation PFU à 31,4% et analyse de l'option au barème progressif.">
+<title>Fiscalité du compte-titres (CTO) 2026 : PFU 31,4 % ou barème progressif ?</title>
+<meta name="description" content="Fiscalité du compte-titres ordinaire en 2026 : prélèvement forfaitaire unique de 31,4 %, option barème progressif, abattement 40 % sur dividendes, plus-values de cession. Simulateur de rendement net.">
 <link rel="canonical" href="https://fiscaliteepargne.fr/compte-titres-fiscalite/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fiscalité du compte-titres (CTO) 2026 : PFU 31,4 % ou barème progressif ?">
+<meta property="og:description" content="Fiscalité du compte-titres ordinaire en 2026 : prélèvement forfaitaire unique de 31,4 %, option barème progressif, abattement 40 % sur dividendes, plus-values de cession. Simulateur de rendement net.">
+<meta property="og:url" content="https://fiscaliteepargne.fr/compte-titres-fiscalite/">
+<meta property="og:site_name" content="Fiscalité Épargne">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <link rel="stylesheet" href="/assets/style.css">
-<script src="/assets/calculators.js"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<script>window.__CONSTS__={"version":"2026-FR-v1","verifie_le":"2026-09-04","source_principale":"LFSS 2026, adoptée le 16/12/2025 — service-public.fr / Légifrance","pfu":{"ir_flat":0.128,"ps_standard":0.186,"ps_assurance_vie":0.172,"global_pea_cto":0.314,"global_av_avant_8_ans":0.3},"pea":{"plafond_versements":150000,"plafond_pea_pme":225000,"plafond_pea_jeune":20000,"duree_exoneration_ir":5,"ps_applicable":"ps_standard","hypothese_calculateur":"PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques","avertissement_pre_2018":"Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."},"assurance_vie":{"abattement_annuel_seul":4600,"abattement_annuel_couple":9200,"seuil_anciennete_ans":8,"seuil_primes_taux_reduit":150000,"taux_avant_8_ans":0.3,"taux_apres_8_ans_sous_seuil":0.075,"taux_apres_8_ans_au_dela_seuil":0.128,"pfl_historique":{"avant_4_ans":0.35,"de_4_a_8_ans":0.15,"apres_8_ans":0.075},"abattement_deces_avant_70_ans":152500,"abattement_deces_apres_70_ans":30500,"date_charniere_versements":"2017-09-27","ps_applicable":"ps_assurance_vie","hypothese_calculateur":"Le calculateur diagnostique simule l'imposition d'un rachat sur un contrat détenu. Le seuil de 150 000 € est apprécié selon une proratisation simplifiée sur le total des primes saisi."},"cto":{"pfu_applicable":"global_pea_cto","abattement_dividendes_bareme":0.4,"csg_deductible_bareme":0.068},"sources":{"lfss_2026":["Légifrance — LFSS 2026","https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000"],"sp_pea":["service-public.fr — Plan d'épargne en actions (PEA)","https://www.service-public.fr/particuliers/vosdroits/F1662"],"sp_av_rachat":["service-public.fr — Assurance-vie : imposition en cas de rachat","https://www.service-public.fr/particuliers/vosdroits/F14204"],"sp_av_deces":["service-public.fr — Assurance-vie : décès de l'assuré","https://www.service-public.fr/particuliers/vosdroits/F15393"],"sp_pfu":["service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)","https://www.service-public.fr/particuliers/vosdroits/F34913"],"impots_pv_mobilieres":["impots.gouv.fr — Plus-values de cession de valeurs mobilières","https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux"],"bofip_rcm":["BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)","https://bofip.impots.gouv.fr/bofip/3806-PGP.html"],"lafinancepourtous_pfu":["La finance pour tous — Le prélèvement forfaitaire unique","https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/"]},"table":[{"label":"PFU — impôt sur le revenu (flat tax IR)","value":"12,8 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — PEA &amp; CTO","value":"18,6 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — assurance-vie (maintenus)","value":"17,2 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"PFU global — CTO, dividendes, plus-values mobilières","value":"31,4 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)","value":"30,0 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)","value":"7,5 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Plafond de versements — PEA classique","value":"150 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Plafond de versements — PEA + PEA-PME (cumulé)","value":"225 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Abattement annuel assurance-vie &gt; 8 ans","value":"4 600 € seul / 9 200 € couple","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Abattement dividendes au barème progressif","value":"40 %","revise_le":"2026-09-04","source":"sp_pfu"},{"label":"Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)","value":"152 500 € / bénéficiaire","revise_le":"2026-09-04","source":"sp_av_deces"},{"label":"Abattement transmission AV — primes après 70 ans (art. 757 B CGI)","value":"30 500 € global","revise_le":"2026-09-04","source":"sp_av_deces"}]};</script>
+<script src="/assets/calculators.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -15,158 +25,351 @@
     {
       "@type": "Organization",
       "@id": "https://fiscaliteepargne.fr/#org",
-      "name": "Comparateur Épargne France"
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "legalName": "Gesmine-Invest Limited",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "UK Company Number",
+        "value": "14120136"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hardy House, 269 Poynders Gardens",
+        "addressLocality": "London",
+        "postalCode": "SW4 8PQ",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne"
+      ]
     },
     {
-      "@type": "WebApplication",
-      "name": "Simulateur Fiscalité CTO",
+      "@type": "WebSite",
+      "@id": "https://fiscaliteepargne.fr/#website",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://fiscaliteepargne.fr/compte-titres-fiscalite/#page",
       "url": "https://fiscaliteepargne.fr/compte-titres-fiscalite/",
-      "applicationCategory": "FinanceApplication",
-      "author": { "@id": "https://fiscaliteepargne.fr/#org" }
+      "name": "Fiscalité du compte-titres (CTO) 2026 : PFU 31,4 % ou barème progressif ?",
+      "headline": "Fiscalité du compte-titres (CTO) 2026",
+      "description": "Fiscalité du compte-titres ordinaire en 2026 : prélèvement forfaitaire unique de 31,4 %, option barème progressif, abattement 40 % sur dividendes, plus-values de cession. Simulateur de rendement net.",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://fiscaliteepargne.fr/#website"
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-07",
+      "author": {
+        "@type": "Organization",
+        "name": "La rédaction Fiscalité Épargne",
+        "url": "https://fiscaliteepargne.fr/about/"
+      },
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Prélèvement forfaitaire unique"
+      }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://fiscaliteepargne.fr/" },
-        { "@type": "ListItem", "position": 2, "name": "Compte-Titres (CTO)", "item": "https://fiscaliteepargne.fr/compte-titres-fiscalite/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://fiscaliteepargne.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fiscalité du compte-titres (CTO)",
+          "item": "https://fiscaliteepargne.fr/compte-titres-fiscalite/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Qu'est-ce que le PFU ?", "acceptedAnswer": { "@type": "Answer", "text": "Le PFU (Prélèvement Forfaitaire Unique), ou flat tax, est le mode d'imposition par défaut des revenus du capital (dividendes et plus-values) sur un compte-titres ordinaire. Il englobe une part d'impôt sur le revenu et une part de prélèvements sociaux." } },
-        { "@type": "Question", "name": "Quel est le taux du PFU en 2026 ?", "acceptedAnswer": { "@type": "Answer", "text": "Sur un compte-titres ordinaire, le taux global du PFU applicable aux gains et dividendes s'élève à 31,4% (incluant l'impôt sur le revenu et les prélèvements sociaux)." } },
-        { "@type": "Question", "name": "Peut-on renoncer au PFU ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, il est possible d'opter pour l'imposition au barème progressif de l'impôt sur le revenu. Cette option est globale : elle s'applique à l'ensemble de vos revenus de capitaux mobiliers pour l'année concernée." } },
-        { "@type": "Question", "name": "Quel est l'avantage du barème progressif sur un CTO ?", "acceptedAnswer": { "@type": "Answer", "text": "Opter pour le barème progressif permet de bénéficier d'un abattement de 40% sur les dividendes perçus d'actions éligibles, ce qui peut être avantageux si vous êtes faiblement imposé." } }
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le prélèvement forfaitaire unique (PFU) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est le mode d'imposition par défaut des revenus du capital (dividendes, intérêts, plus-values mobilières). Il combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Sur un compte-titres, le taux global est de 31,4 % en 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le taux du PFU en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "31,4 % sur un compte-titres (12,8 % d'IR + 18,6 % de prélèvements sociaux), contre 30 % jusqu'en 2025. Le PFU applicable aux gains d'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le PFU a-t-il augmenté en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, mécaniquement : les prélèvements sociaux sur les revenus du capital sont passés de 17,2 % à 18,6 % (relèvement de la CSG par la LFSS 2026), ce qui porte le PFU global de 30 % à 31,4 % sur le compte-titres, les dividendes et les plus-values mobilières."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il choisir le PFU ou le barème progressif ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le PFU (31,4 %) est le plus souvent favorable. Le barème progressif n'a d'intérêt que si votre taux marginal d'imposition est de 0 % ou 11 %, notamment grâce à l'abattement de 40 % sur les dividendes et à la CSG partiellement déductible. L'option (case 2OP) est globale et vaut pour tous vos revenus de capitaux mobiliers de l'année."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que la dispense d'acompte de 12,8 % ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un acompte d'IR de 12,8 % est prélevé à la source sur les dividendes et intérêts. Les foyers dont le revenu fiscal de référence de l'avant-dernière année est inférieur à 50 000 € (personne seule) ou 75 000 € (couple) peuvent en être dispensés, en le demandant à leur banque avant le 30 novembre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le PFU s'applique-t-il à l'assurance-vie ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un PFU spécifique s'applique à l'assurance-vie, mais à un taux différent : 30 % (12,8 % + 17,2 %) avant 8 ans, et 7,5 % / 12,8 % + 17,2 % après 8 ans avec abattement. Le PFU de 31,4 % concerne le compte-titres, les dividendes et les plus-values mobilières. Voir la fiscalité de l'assurance-vie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment déclarer les revenus d'un compte-titres ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les dividendes, intérêts et plus-values sont pré-remplis à partir de l'IFU transmis par la banque, sur la déclaration 2042 (revenus de capitaux mobiliers) et, pour les plus-values, sur la 2074 le cas échéant. L'acompte de 12,8 % déjà prélevé est déduit. La case 2OP permet d'opter pour le barème."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment imputer une moins-value de cession ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les moins-values de cession de valeurs mobilières s'imputent d'abord sur les plus-values de même nature réalisées la même année, puis, en cas de reliquat, sont reportables sur les plus-values des 10 années suivantes. Elles ne s'imputent pas sur le revenu global."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La CSG est-elle déductible sur un compte-titres ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Uniquement en cas d'option pour le barème progressif : 6,8 points de CSG sur les 18,6 % de prélèvements sociaux sont alors déductibles du revenu imposable de l'année suivante. Au PFU, aucune fraction de CSG n'est déductible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les ETF capitalisants sont-ils imposés chaque année ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Un ETF capitalisant ne distribue pas de dividende : il n'y a donc pas d'imposition annuelle. La plus-value latente n'est imposée qu'au moment de la revente des parts, au PFU de 31,4 % ou au barème."
+          }
+        }
       ]
+    },
+    {
+      "@type": "WebApplication",
+      "name": "Fiscalité du compte-titres (CTO) 2026",
+      "url": "https://fiscaliteepargne.fr/compte-titres-fiscalite/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "areaServed": "FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
     }
   ]
 }
 </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
 </head>
 <body>
+<nav class="site-nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="/" class="nav-brand">📈 Fiscalité Épargne</a>
+    <details><summary>Menu ▾</summary></details>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/pea/">PEA</a>
+      <a href="/compte-titres-fiscalite/" aria-current="page">Compte-titres (PFU)</a>
+      <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a>
+      <a href="/interet-compose/">Intérêts composés</a>
+      <a href="/methodologie/">Méthodologie</a>
+    </div>
+  </div>
+</nav>
 <header>
   <div class="container">
     <span class="flag">🇫🇷</span>
-    <h1>Fiscalité du Compte-Titres (CTO) 2026</h1>
-    <p>Simulez le rendement de votre CTO soumis au Prélèvement Forfaitaire Unique (PFU).</p>
+    <h1>Fiscalité du compte-titres (CTO) 2026</h1>
+    <p>PFU de 31,4 %, option pour le barème progressif, abattement de 40 % sur les dividendes et traitement des plus-values.</p>
+    
   </div>
 </header>
 
 <main class="container">
-  <div class="disclaimer-banner">⚠️ Le calculateur simule une imposition par défaut au PFU. L'option pour le barème progressif n'est pas modélisée dynamiquement ici.</div>
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &rsaquo; <span>Fiscalité du compte-titres (CTO)</span></nav>
+  <div class="disclaimer-banner">⚠️ Le calculateur applique le PFU par défaut. L'option pour le barème progressif, qui dépend de votre taux marginal d'imposition, n'est pas modélisée dynamiquement.</div>
 
   <div class="card">
     <h2>Calculateur de rendement net CTO</h2>
     <label for="montant">Montant investi (€)</label>
     <input type="number" id="montant" value="10000" min="0">
-    
     <label for="duree">Durée d'investissement (années)</label>
     <input type="number" id="duree" value="10" min="1">
-    
     <label for="rendement">Rendement annuel estimé (%)</label>
     <input type="number" id="rendement" value="7" min="0" step="0.1">
-    
     <button class="calc-btn" onclick="runCTO()">Calculer le gain net au PFU</button>
-    
     <div class="result" id="cto-result">
-      <div class="result-hero">
-        <div class="amount" id="cto-net-val"></div>
-        <div class="amount-label">Capital final net (après Impôt et Prélèvements Sociaux)</div>
-      </div>
+      <div class="result-hero"><div class="amount" id="cto-net-val"></div><div class="amount-label">Capital final net (après impôt et prélèvements sociaux)</div></div>
       <div class="result-grid">
-        <div class="stat"><div class="val" id="cto-brut-val"></div><div class="lbl">Capital Brut</div></div>
+        <div class="stat"><div class="val" id="cto-brut-val"></div><div class="lbl">Capital brut</div></div>
         <div class="stat"><div class="val" id="cto-gains-val"></div><div class="lbl">Gains générés</div></div>
-        <div class="stat"><div class="val" id="cto-ps-val"></div><div class="lbl">Prélèvements Sociaux</div></div>
-        <div class="stat"><div class="val" id="cto-ir-val"></div><div class="lbl">Impôt sur le Revenu</div></div>
+        <div class="stat"><div class="val" id="cto-ps-val"></div><div class="lbl">Prélèvements sociaux</div></div>
+        <div class="stat"><div class="val" id="cto-ir-val"></div><div class="lbl">Impôt sur le revenu</div></div>
       </div>
-      <div class="result-note">Imposition modélisée : <strong id="cto-pfu-rate"></strong> (PFU global appliqué sur les plus-values).</div>
+      <div class="result-note">Imposition modélisée : <strong id="cto-pfu-rate"></strong> (PFU global sur les plus-values).</div>
     </div>
   </div>
+
+  <div class='eeat-section'><h2 id='prelevement-forfaitaire-unique'>Le prélèvement forfaitaire unique (PFU / flat tax) en 2026</h2><p>Le <strong>prélèvement forfaitaire unique</strong>, ou flat tax, est le mode d'imposition par défaut des revenus du capital : dividendes, intérêts, et plus-values de cession de valeurs mobilières réalisées sur un compte-titres ordinaire. Il combine deux composantes :</p><ul><li>une part d'impôt sur le revenu au taux forfaitaire de <strong id='pfu-ir-rate'>12,8 %</strong> ;</li><li>une part de prélèvements sociaux de <strong id='pfu-ps-rate'>18,6 %</strong> (CSG 10,6 % + CRDS 0,5 % + prélèvement de solidarité 7,5 %).</li></ul><p>Soit un taux global de <strong id='pfu-total-rate'>31,4 %</strong> en 2026, contre 30 % jusqu'en 2025. La hausse vient du relèvement de la CSG sur les revenus du capital opéré par la LFSS 2026. <strong>L'assurance-vie n'est pas concernée</strong> : son PFU spécifique reste à 30 % (12,8 % + 17,2 %) avant 8 ans.</p><div class='overflow-wrap'><table class='const-table'><thead><tr><th>Type de revenu</th><th>Imposition par défaut 2026</th></tr></thead><tbody><tr><td>Dividendes d'actions (CTO)</td><td>PFU 31,4 %</td></tr><tr><td>Intérêts d'obligations, de comptes à terme</td><td>PFU 31,4 %</td></tr><tr><td>Plus-values de cession de valeurs mobilières</td><td>PFU 31,4 %</td></tr><tr><td>Gains d'assurance-vie &lt; 8 ans</td><td>PFU 30 % (12,8 % + 17,2 %)</td></tr><tr><td>Livret A, LDDS, LEP</td><td>Exonérés</td></tr></tbody></table></div><p>Un <strong>acompte d'impôt sur le revenu de 12,8 %</strong> est prélevé à la source par l'établissement payeur l'année de perception des dividendes et intérêts, puis régularisé l'année suivante lors de la déclaration. Les foyers dont le revenu fiscal de référence de l'avant-dernière année est inférieur à <strong>50 000 €</strong> (personne seule) ou <strong>75 000 €</strong> (couple) peuvent demander une <strong>dispense d'acompte</strong>, à formuler avant le 30 novembre auprès de la banque.</p></div>
+
+  <div class='eeat-section'><h2>Barème progressif : quand y opter</h2><p>Vous pouvez renoncer au PFU et soumettre l'ensemble de vos revenus de capitaux mobiliers au <strong>barème progressif de l'impôt sur le revenu</strong>, en cochant la case <strong>2OP</strong> de la déclaration. L'option est <strong>globale</strong> (tous les revenus concernés de l'année) et se reconduit tant que vous ne la révoquez pas.</p><p>Elle devient intéressante quand votre <strong>taux marginal d'imposition</strong> est bas :</p><ul><li>TMI 0 % → l'IR est nul, seuls les 18,6 % de prélèvements sociaux restent dus (contre 31,4 % au PFU) ;</li><li>TMI 11 % → 11 % d'IR + 18,6 % de PS ≈ 29,6 %, légèrement mieux que 31,4 %, et l'abattement de 40 % sur dividendes creuse l'écart ;</li><li>TMI 30 % ou plus → le PFU (31,4 %) est presque toujours plus favorable.</li></ul><p>Au barème, une fraction de la CSG (6,8 points) est <strong>déductible</strong> du revenu imposable de l'année suivante.</p></div>
+
+  <div class='eeat-section'><h2>L'abattement de 40 % sur les dividendes</h2><p>Réservé à l'option barème, l'abattement de <strong>40 %</strong> s'applique aux dividendes d'actions de sociétés soumises à l'impôt sur les sociétés (françaises ou étrangères éligibles). Seuls 60 % du dividende brut sont alors soumis au barème de l'IR. Les <strong>prélèvements sociaux de 18,6 % restent calculés sur 100 %</strong> du dividende. Cet abattement ne s'applique pas aux plus-values de cession ni aux intérêts.</p></div>
+
+  <div class='eeat-section'><h2>Plus-values de cession sur CTO</h2><p>La plus-value se calcule par différence entre le prix de cession et le <strong>prix moyen pondéré d'acquisition</strong> (PMP) des titres vendus. Elle est imposée au PFU de 31,4 %, ou au barème sur option.</p><p>Les <strong>abattements pour durée de détention</strong> (50 % à 65 %) ne subsistent que pour les titres <strong>acquis avant le 1<sup>er</sup> janvier 2018</strong> et uniquement en cas d'option pour le barème. Les <strong>moins-values</strong> s'imputent sur les plus-values de même nature de l'année, puis sont reportables pendant <strong>10 ans</strong>.</p></div>
+
+  <div class='eeat-section'><h2>Cas particuliers</h2><ul><li><strong>PEA clôturé avant 5 ans</strong> : les gains basculent au régime du compte-titres, imposés au PFU de 31,4 % (ou barème) — voir <a href='/pea/'>fiscalité du PEA</a>.</li><li><strong>Titres étrangers</strong> : les dividendes subissent d'abord une retenue à la source dans le pays d'origine (souvent 15 % avec les États-Unis via le formulaire W-8BEN). Un crédit d'impôt conventionnel, imputable sur l'IR français, évite la double imposition dans la limite prévue par la convention.</li><li><strong>Compte joint</strong> : les revenus sont réputés partagés entre les cotitulaires selon leur quote-part et déclarés par chaque foyer fiscal.</li><li><strong>Non-résidents</strong> : les plus-values de cession de valeurs mobilières sont en principe exonérées en France (hors participations substantielles) ; les dividendes de source française subissent une retenue à la source.</li></ul></div>
+
+  <div class='eeat-section'><h2>Exemple chiffré : PFU contre barème</h2><p>10 000 € investis, +7 %/an pendant 10 ans → capital brut ≈ 19 672 €, plus-value ≈ 9 672 € à la revente.</p><ul><li><strong>PFU 31,4 %</strong> : impôt ≈ 3 037 € → net ≈ 16 635 €.</li><li><strong>Barème, TMI 11 %</strong> : IR 11 % sur 9 672 € = 1 064 € + PS 18,6 % = 1 799 € → impôt ≈ 2 863 € → net ≈ 16 809 €.</li><li><strong>Barème, TMI 30 %</strong> : IR 2 902 € + PS 1 799 € = 4 701 € → net ≈ 14 971 €. Le PFU l'emporte largement.</li></ul></div>
 
   <div class="eeat-section">
-    <h2>Le Prélèvement Forfaitaire Unique (PFU)</h2>
-    <p>Le PFU, aussi appelé "flat tax", est le régime d'imposition par défaut appliqué aux revenus et aux plus-values générés sur un Compte-Titres Ordinaire (CTO).</p>
-    <p>Ce prélèvement global se décompose en deux parties :</p>
-    <ul>
-      <li>Une part d'Impôt sur le Revenu (IR) : <strong id="pfu-ir-rate">[chargement...]</strong></li>
-      <li>Une part de Prélèvements Sociaux (PS) : <strong id="pfu-ps-rate">[chargement...]</strong></li>
-    </ul>
-    <p>Soit un taux global de <strong id="pfu-total-rate">[chargement...]</strong> retenu par défaut sur vos gains réalisés.</p>
-
-    <h3>L'option pour le barème progressif</h3>
-    <p>Si vous y trouvez un intérêt, vous pouvez renoncer au PFU et opter pour l'imposition au <strong>barème progressif</strong> de l'impôt sur le revenu. Attention, cette option est globale et irrévocable pour l'année fiscale en cours, elle s'appliquera à tous vos revenus de capitaux mobiliers.</p>
-    
-    <h3>L'abattement de 40% sur les dividendes</h3>
-    <p>Le principal intérêt d'opter pour le barème progressif est qu'il permet d'appliquer un <strong>abattement de 40%</strong> sur les revenus distribués (dividendes) provenant d'actions d'entreprises éligibles. L'imposition (selon votre tranche marginale d'imposition) ne portera alors que sur 60% du montant du dividende. Les prélèvements sociaux, eux, restent dus sur la totalité (100%) du gain ou du dividende.</p>
+  <h2>Questions fréquentes</h2>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que le prélèvement forfaitaire unique (PFU) ?</button>
+    <div class="faq-a"><p>C'est le mode d'imposition par défaut des revenus du capital (dividendes, intérêts, plus-values mobilières). Il combine 12,8 % d'impôt sur le revenu et les prélèvements sociaux. Sur un compte-titres, le taux global est de 31,4 % en 2026.</p></div>
   </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Quel est le taux du PFU en 2026 ?</button>
+    <div class="faq-a"><p>31,4 % sur un compte-titres (12,8 % d'IR + 18,6 % de prélèvements sociaux), contre 30 % jusqu'en 2025. Le PFU applicable aux gains d'assurance-vie de moins de 8 ans reste à 30 % (12,8 % + 17,2 %).</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Le PFU a-t-il augmenté en 2026 ?</button>
+    <div class="faq-a"><p>Oui, mécaniquement : les prélèvements sociaux sur les revenus du capital sont passés de 17,2 % à 18,6 % (relèvement de la CSG par la LFSS 2026), ce qui porte le PFU global de 30 % à 31,4 % sur le compte-titres, les dividendes et les plus-values mobilières.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Faut-il choisir le PFU ou le barème progressif ?</button>
+    <div class="faq-a"><p>Le PFU (31,4 %) est le plus souvent favorable. Le barème progressif n'a d'intérêt que si votre taux marginal d'imposition est de 0 % ou 11 %, notamment grâce à l'abattement de 40 % sur les dividendes et à la CSG partiellement déductible. L'option (case 2OP) est globale et vaut pour tous vos revenus de capitaux mobiliers de l'année.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Qu'est-ce que la dispense d'acompte de 12,8 % ?</button>
+    <div class="faq-a"><p>Un acompte d'IR de 12,8 % est prélevé à la source sur les dividendes et intérêts. Les foyers dont le revenu fiscal de référence de l'avant-dernière année est inférieur à 50 000 € (personne seule) ou 75 000 € (couple) peuvent en être dispensés, en le demandant à leur banque avant le 30 novembre.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Le PFU s'applique-t-il à l'assurance-vie ?</button>
+    <div class="faq-a"><p>Un PFU spécifique s'applique à l'assurance-vie, mais à un taux différent : 30 % (12,8 % + 17,2 %) avant 8 ans, et 7,5 % / 12,8 % + 17,2 % après 8 ans avec abattement. Le PFU de 31,4 % concerne le compte-titres, les dividendes et les plus-values mobilières. Voir la <a href='/assurance-vie-fiscalite/'>fiscalité de l'assurance-vie</a>.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Comment déclarer les revenus d'un compte-titres ?</button>
+    <div class="faq-a"><p>Les dividendes, intérêts et plus-values sont pré-remplis à partir de l'IFU transmis par la banque, sur la déclaration 2042 (revenus de capitaux mobiliers) et, pour les plus-values, sur la 2074 le cas échéant. L'acompte de 12,8 % déjà prélevé est déduit. La case 2OP permet d'opter pour le barème.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Comment imputer une moins-value de cession ?</button>
+    <div class="faq-a"><p>Les moins-values de cession de valeurs mobilières s'imputent d'abord sur les plus-values de même nature réalisées la même année, puis, en cas de reliquat, sont reportables sur les plus-values des 10 années suivantes. Elles ne s'imputent pas sur le revenu global.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">La CSG est-elle déductible sur un compte-titres ?</button>
+    <div class="faq-a"><p>Uniquement en cas d'option pour le barème progressif : 6,8 points de CSG sur les 18,6 % de prélèvements sociaux sont alors déductibles du revenu imposable de l'année suivante. Au PFU, aucune fraction de CSG n'est déductible.</p></div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-q" onclick="toggleFaq(this)">Les ETF capitalisants sont-ils imposés chaque année ?</button>
+    <div class="faq-a"><p>Non. Un ETF capitalisant ne distribue pas de dividende : il n'y a donc pas d'imposition annuelle. La plus-value latente n'est imposée qu'au moment de la revente des parts, au PFU de 31,4 % ou au barème.</p></div>
+  </div>
+</div>
 
   <div class="eeat-section">
-    <h2>Ouvrir un Compte-Titres : Notre sélection de courtiers</h2>
-    <p>Voici des courtiers compétitifs pour ouvrir un CTO :</p>
-    <div class="affiliate-block">
-      <div class="broker-card">
-        <h4>BoursoBank</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">Une offre complète de banque en ligne avec un CTO accessible.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-      <div class="broker-card">
-        <h4>Fortuneo</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">Des tarifs avantageux pour trader sur les places boursières.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-      <div class="broker-card">
-        <h4>Trade Republic</h4>
-        <p style="font-size: 0.85rem; color: var(--muted);">L'idéal pour l'investissement programmé (ETF) à frais très bas.</p>
-        <a href="#" class="btn">Voir l'offre</a>
-      </div>
-    </div>
-    
-    <div class="transparency-banner">
-      <strong>Transparence & Risques :</strong> Les liens ci-dessus sont des liens d'affiliation. Ce site peut percevoir une rémunération si vous ouvrez un compte. Ceci n'est pas un conseil personnalisé en investissement. L'investissement en bourse présente un risque de perte en capital.
+  <h2>Transparence, méthodologie &amp; sources</h2>
+  <div class="eeat-author">
+    <div class="avatar">FÉ</div>
+    <div>
+      <h4>La rédaction Fiscalité Épargne</h4>
+      <div class="role">Équipe éditoriale — fiscalité de l'épargne</div>
+      <p>Contenu rédigé à partir des textes officiels (LFSS 2026, Code général des impôts, BOFiP, service-public.fr). Les calculs sont déterministes : ils appliquent les taux et barèmes en vigueur, sans intelligence artificielle. Barèmes vérifiés le 2026-09-04 — <a href="/changelog/">journal des mises à jour</a>.</p>
+      
     </div>
   </div>
+  <div class="eeat-compliance">
+    <h4>Méthodologie &amp; limites</h4>
+    <p>Voir la <a href="/methodologie/">méthodologie complète</a> (formules, hypothèses, cas non modélisés). Pour une simulation officielle, utilisez le simulateur de l'administration sur <a href="https://www.impots.gouv.fr/" rel="noopener nofollow" target="_blank">impots.gouv.fr</a>.</p>
+    <h4>Conseil &amp; validation professionnelle</h4>
+    <p>Gesmine-Invest Limited n'est pas enregistré à l'ORIAS et n'a pas le statut de conseiller en investissements financiers (CIF). Les résultats ne constituent pas un conseil personnalisé. Avant toute décision, consultez un conseiller en gestion de patrimoine (annuaire de la <a href="https://www.cncgp.fr/trouver-un-conseiller/" rel="noopener nofollow" target="_blank">CNCGP</a>) ou un avocat fiscaliste.</p>
+    <h4>Code source auditable</h4>
+    <p>Les formules sont publiques sur le <a href="https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne" rel="noopener nofollow" target="_blank">dépôt GitHub</a>.</p>
+    <h3>Sources officielles</h3>
+<ul class="sources-list"><li><a href="https://www.service-public.fr/particuliers/vosdroits/F34913" rel="noopener nofollow" target="_blank">service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)</a></li><li><a href="https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux" rel="noopener nofollow" target="_blank">impots.gouv.fr — Plus-values de cession de valeurs mobilières</a></li><li><a href="https://bofip.impots.gouv.fr/bofip/3806-PGP.html" rel="noopener nofollow" target="_blank">BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)</a></li><li><a href="https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/" rel="noopener nofollow" target="_blank">La finance pour tous — Le prélèvement forfaitaire unique</a></li></ul>
+  </div>
+</div>
 
-  <div class="cross-link">✨ Prêt à simuler l'impact des intérêts composés sur le long terme ? <a href="/interet-compose/">Testez notre calculatrice d'intérêts composés →</a></div>
+  <div class="eeat-section">
+  <h2>À lire aussi</h2>
+  <div class="link-grid">
+    <a href="/pea/">Fiscalité du PEA 2026 →</a>
+    <a href="/assurance-vie-fiscalite/">Fiscalité de l'assurance-vie 2026 →</a>
+    <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie : comment choisir →</a>
+    <a href="/interet-compose/">Calculatrice d'intérêts composés →</a>
+    <a href="/methodologie/">Méthodologie et sources →</a>
+  </div>
+</div>
 </main>
 
 <footer>
-  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
-  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
-  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Ce site fournit des estimations à titre purement indicatif et ne remplace en aucun cas un conseil personnalisé.</p>
+  <div class="container">
+    <div class="footer-cols"><div><strong>Outils</strong><ul><li><a href="/">Comparateur d'enveloppes</a></li><li><a href="/pea/">Fiscalité du PEA</a></li><li><a href="/compte-titres-fiscalite/">Fiscalité du CTO</a></li><li><a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a></li><li><a href="/interet-compose/">Intérêts composés</a></li></ul></div><div><strong>Ressources</strong><ul><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/changelog/">Changelog</a></li></ul></div><div><strong>Légal</strong><ul><li><a href="/about/">À propos</a></li><li><a href="/privacy/">Confidentialité</a></li></ul></div></div>
+    <p style="margin-top:16px;">Une initiative de <strong>Gesmine-Invest Limited</strong>, société enregistrée au Royaume-Uni (n° 14120136), siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+    <p style="margin-top:8px;font-size:.8rem;">Certaines pages contiennent des liens d'affiliation vers des courtiers ou banques en ligne : Gesmine-Invest Limited peut percevoir une commission si vous ouvrez un compte, sans coût supplémentaire pour vous. Site indépendant, non enregistré à l'ORIAS, ne délivrant aucun conseil personnalisé. L'investissement comporte un risque de perte en capital.</p>
+    <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Estimations à titre purement indicatif — ne remplacent pas un conseil personnalisé.</p>
+  </div>
 </footer>
-
 <script>
-function fmt(n){ return '€' + n.toLocaleString('fr-FR', {minimumFractionDigits:0, maximumFractionDigits:0}); }
-
-async function runCTO() {
-  const montant = parseFloat(document.getElementById('montant').value) || 0;
-  const duree = parseFloat(document.getElementById('duree').value) || 0;
-  const rendement = parseFloat(document.getElementById('rendement').value) / 100 || 0;
-  
-  const cto = await calculCTO(montant, duree, rendement);
-  
-  document.getElementById('cto-net-val').innerText = fmt(cto.net);
-  document.getElementById('cto-brut-val').innerText = fmt(cto.brut);
-  document.getElementById('cto-gains-val').innerText = fmt(cto.gains);
-  document.getElementById('cto-ps-val').innerText = fmt(cto.ps);
-  document.getElementById('cto-ir-val').innerText = fmt(cto.ir);
-  
+function toggleFaq(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open');}
+</script>
+<script>
+async function runCTO(){
+  const m=parseFloat(montant.value)||0,d=parseFloat(duree.value)||0,r=(parseFloat(rendement.value)||0)/100;
+  const o=await calculCTO(m,d,r);
+  document.getElementById('cto-net-val').textContent=fmtEUR(o.net);
+  document.getElementById('cto-brut-val').textContent=fmtEUR(o.brut);
+  document.getElementById('cto-gains-val').textContent=fmtEUR(o.gains);
+  document.getElementById('cto-ps-val').textContent=fmtEUR(o.ps);
+  document.getElementById('cto-ir-val').textContent=fmtEUR(o.ir);
   document.getElementById('cto-result').classList.add('show');
 }
-
-window.onload = async function() {
-  const C = await loadConstants();
-  const ir = (C.pfu.ir_flat * 100).toFixed(1) + "%";
-  const ps = (C.pfu.ps_standard * 100).toFixed(1) + "%";
-  const total = (C.pfu.global_pea_cto * 100).toFixed(1) + "%";
-  
-  document.getElementById('pfu-ir-rate').innerText = ir;
-  document.getElementById('pfu-ps-rate').innerText = ps;
-  document.getElementById('pfu-total-rate').innerText = total;
-  document.getElementById('cto-pfu-rate').innerText = total;
-};
+window.addEventListener('DOMContentLoaded',function(){
+  var C=window.__CONSTS__;
+  var set=function(id,v){var e=document.getElementById(id);if(e)e.textContent=v;};
+  set('pfu-ir-rate',pct(C.pfu.ir_flat));set('pfu-ps-rate',pct(C.pfu.ps_standard));
+  set('pfu-total-rate',pct(C.pfu.global_pea_cto));set('cto-pfu-rate',pct(C.pfu.global_pea_cto));
+});
 </script>
 </body>
 </html>

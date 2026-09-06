@@ -3,62 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Méthodologie du Comparateur : Sources et Formules</title>
-<meta name="description" content="Découvrez la méthodologie, les sources juridiques et les limites du comparateur d'enveloppes fiscales.">
+<title>Méthodologie : sources, formules et limites des calculateurs</title>
+<meta name="description" content="Sources officielles, formules de calcul, hypothèses et cas non modélisés des simulateurs de fiscalité de l'épargne (PEA, assurance-vie, CTO, intérêts composés).">
 <link rel="canonical" href="https://fiscaliteepargne.fr/methodologie/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Méthodologie : sources, formules et limites des calculateurs">
+<meta property="og:description" content="Sources officielles, formules de calcul, hypothèses et cas non modélisés des simulateurs de fiscalité de l'épargne (PEA, assurance-vie, CTO, intérêts composés).">
+<meta property="og:url" content="https://fiscaliteepargne.fr/methodologie/">
+<meta property="og:site_name" content="Fiscalité Épargne">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <link rel="stylesheet" href="/assets/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<script>window.__CONSTS__={"version":"2026-FR-v1","verifie_le":"2026-09-04","source_principale":"LFSS 2026, adoptée le 16/12/2025 — service-public.fr / Légifrance","pfu":{"ir_flat":0.128,"ps_standard":0.186,"ps_assurance_vie":0.172,"global_pea_cto":0.314,"global_av_avant_8_ans":0.3},"pea":{"plafond_versements":150000,"plafond_pea_pme":225000,"plafond_pea_jeune":20000,"duree_exoneration_ir":5,"ps_applicable":"ps_standard","hypothese_calculateur":"PEA ouvert à partir du 01/01/2018 — taux de PS à date, pas de régime de taux historiques","avertissement_pre_2018":"Pour un PEA ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux — non modélisé ici, consultez votre établissement gestionnaire."},"assurance_vie":{"abattement_annuel_seul":4600,"abattement_annuel_couple":9200,"seuil_anciennete_ans":8,"seuil_primes_taux_reduit":150000,"taux_avant_8_ans":0.3,"taux_apres_8_ans_sous_seuil":0.075,"taux_apres_8_ans_au_dela_seuil":0.128,"pfl_historique":{"avant_4_ans":0.35,"de_4_a_8_ans":0.15,"apres_8_ans":0.075},"abattement_deces_avant_70_ans":152500,"abattement_deces_apres_70_ans":30500,"date_charniere_versements":"2017-09-27","ps_applicable":"ps_assurance_vie","hypothese_calculateur":"Le calculateur diagnostique simule l'imposition d'un rachat sur un contrat détenu. Le seuil de 150 000 € est apprécié selon une proratisation simplifiée sur le total des primes saisi."},"cto":{"pfu_applicable":"global_pea_cto","abattement_dividendes_bareme":0.4,"csg_deductible_bareme":0.068},"sources":{"lfss_2026":["Légifrance — LFSS 2026","https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000"],"sp_pea":["service-public.fr — Plan d'épargne en actions (PEA)","https://www.service-public.fr/particuliers/vosdroits/F1662"],"sp_av_rachat":["service-public.fr — Assurance-vie : imposition en cas de rachat","https://www.service-public.fr/particuliers/vosdroits/F14204"],"sp_av_deces":["service-public.fr — Assurance-vie : décès de l'assuré","https://www.service-public.fr/particuliers/vosdroits/F15393"],"sp_pfu":["service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)","https://www.service-public.fr/particuliers/vosdroits/F34913"],"impots_pv_mobilieres":["impots.gouv.fr — Plus-values de cession de valeurs mobilières","https://www.impots.gouv.fr/particulier/les-plus-values-de-cession-de-valeurs-mobilieres-et-de-droits-sociaux"],"bofip_rcm":["BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)","https://bofip.impots.gouv.fr/bofip/3806-PGP.html"],"lafinancepourtous_pfu":["La finance pour tous — Le prélèvement forfaitaire unique","https://www.lafinancepourtous.com/decryptages/impots/calcul-de-l-impot/le-prelevement-forfaitaire-unique-pfu-ou-flat-tax/"]},"table":[{"label":"PFU — impôt sur le revenu (flat tax IR)","value":"12,8 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — PEA &amp; CTO","value":"18,6 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"Prélèvements sociaux — assurance-vie (maintenus)","value":"17,2 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"PFU global — CTO, dividendes, plus-values mobilières","value":"31,4 %","revise_le":"2026-09-04","source":"lfss_2026"},{"label":"PFU assurance-vie &lt; 8 ans (IR 12,8 % + PS 17,2 %)","value":"30,0 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Taux IR réduit assurance-vie &gt; 8 ans (primes ≤ 150 000 €)","value":"7,5 %","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Plafond de versements — PEA classique","value":"150 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Plafond de versements — PEA + PEA-PME (cumulé)","value":"225 000 €","revise_le":"2026-09-04","source":"sp_pea"},{"label":"Abattement annuel assurance-vie &gt; 8 ans","value":"4 600 € seul / 9 200 € couple","revise_le":"2026-09-04","source":"sp_av_rachat"},{"label":"Abattement dividendes au barème progressif","value":"40 %","revise_le":"2026-09-04","source":"sp_pfu"},{"label":"Abattement transmission AV — primes avant 70 ans (art. 990 I CGI)","value":"152 500 € / bénéficiaire","revise_le":"2026-09-04","source":"sp_av_deces"},{"label":"Abattement transmission AV — primes après 70 ans (art. 757 B CGI)","value":"30 500 € global","revise_le":"2026-09-04","source":"sp_av_deces"}]};</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fiscaliteepargne.fr/#org",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "legalName": "Gesmine-Invest Limited",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "UK Company Number",
+        "value": "14120136"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hardy House, 269 Poynders Gardens",
+        "addressLocality": "London",
+        "postalCode": "SW4 8PQ",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fiscaliteepargne.fr/#website",
+      "name": "Fiscalité Épargne",
+      "url": "https://fiscaliteepargne.fr/",
+      "inLanguage": "fr-FR",
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://fiscaliteepargne.fr/methodologie/#page",
+      "url": "https://fiscaliteepargne.fr/methodologie/",
+      "name": "Méthodologie : sources, formules et limites des calculateurs",
+      "headline": "Méthodologie &amp; sources",
+      "description": "Sources officielles, formules de calcul, hypothèses et cas non modélisés des simulateurs de fiscalité de l'épargne (PEA, assurance-vie, CTO, intérêts composés).",
+      "inLanguage": "fr-FR",
+      "isPartOf": {
+        "@id": "https://fiscaliteepargne.fr/#website"
+      },
+      "datePublished": "2026-09-04",
+      "dateModified": "2026-09-07",
+      "author": {
+        "@type": "Organization",
+        "name": "La rédaction Fiscalité Épargne",
+        "url": "https://fiscaliteepargne.fr/about/"
+      },
+      "publisher": {
+        "@id": "https://fiscaliteepargne.fr/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://fiscaliteepargne.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Méthodologie",
+          "item": "https://fiscaliteepargne.fr/methodologie/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<nav class="site-nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="/" class="nav-brand">📈 Fiscalité Épargne</a>
+    <details><summary>Menu ▾</summary></details>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="/pea/">PEA</a>
+      <a href="/compte-titres-fiscalite/">Compte-titres (PFU)</a>
+      <a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a>
+      <a href="/interet-compose/">Intérêts composés</a>
+      <a href="/methodologie/" aria-current="page">Méthodologie</a>
+    </div>
+  </div>
+</nav>
 <header>
   <div class="container">
-    <h1>Méthodologie & Sources</h1>
-    <p>Transparence totale sur les calculs fiscaux de nos simulateurs.</p>
+    
+    <h1>Méthodologie &amp;amp; sources</h1>
+    <p>Transparence totale sur les données, les formules et les limites de nos calculateurs.</p>
+    
   </div>
 </header>
 
 <main class="container">
-  <div class="disclaimer-banner">
-    ⚠️ <strong>Avertissement Légal :</strong> Les calculs fournis par ce site constituent des estimations à visée strictement pédagogique et informative. Ils ne sauraient se substituer à une consultation avec un conseiller en gestion de patrimoine, un avocat fiscaliste ou un professionnel habilité (ORIAS). Les règles fiscales peuvent comporter des exceptions liées à des situations particulières non modélisées par ce calculateur (handicap, primes historiques, transferts).
-  </div>
+  <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &rsaquo; <span>Méthodologie</span></nav>
+  <div class="disclaimer-banner">⚠️ <strong>Avertissement.</strong> Les calculs de ce site sont des estimations pédagogiques. Ils ne se substituent pas à une consultation avec un conseiller en gestion de patrimoine, un avocat fiscaliste ou un professionnel habilité. Des exceptions existent (handicap, primes historiques, transferts, non-résidents) qui ne sont pas modélisées.</div>
+
+  <div class='eeat-section'><h2>Sources et données en vigueur</h2><ul><li><strong>Source primaire :</strong> service-public.fr, impots.gouv.fr, BOFiP et Légifrance.</li><li><strong>Texte de référence :</strong> loi de financement de la Sécurité sociale (LFSS) 2026, adoptée définitivement le 16 décembre 2025, en vigueur au 1<sup>er</sup> janvier 2026.</li><li><strong>Dernière vérification des barèmes :</strong> 4 septembre 2026.</li><li><strong>Version de la base de constantes :</strong> 2026-FR-v1 (voir <a href='/changelog/'>changelog</a>).</li></ul><p>Chaque taux affiché dans le tableau « Taux &amp; constantes » de la <a href='/'>page d'accueil</a> est daté et lié à sa source. Les valeurs sont stockées dans un fichier unique (<code>constants.json</code>) : toute mise à jour se répercute simultanément sur l'ensemble des pages et des calculateurs.</p></div>
+
+  <div class='eeat-section'><h2>Formules de calcul</h2><h3>Compte-titres (CTO)</h3><p>Plus-value = capital brut − montant investi. Imposition par défaut au PFU : 12,8 % d'IR + 18,6 % de prélèvements sociaux = 31,4 % de la plus-value. L'option barème n'est pas modélisée dynamiquement.</p><h3>PEA</h3><p>Durée ≥ 5 ans : IR = 0, prélèvements sociaux = 18,6 % de la plus-value. Durée &lt; 5 ans : alignement sur le régime du CTO (PFU 31,4 %). Le régime des taux historiques (PEA ouverts avant 2018) n'est pas modélisé.</p><h3>Assurance-vie — calculateur prospectif (page « PEA ou assurance-vie »)</h3><p>Versement unique, capitalisation annuelle. Durée &lt; 8 ans : IR 12,8 % sur la totalité du gain. Durée ≥ 8 ans : abattement (4 600 € seul / 9 200 € couple) sur l'assiette IR, puis 7,5 % jusqu'à 150 000 € de primes et 12,8 % au-delà (prorata). Prélèvements sociaux 17,2 % sur l'intégralité du gain.</p><h3>Assurance-vie — calculateur diagnostique (page « Fiscalité de l'assurance-vie »)</h3><p>Modélise l'imposition d'un rachat sur un <strong>contrat existant</strong>. Part de produits imposables = rachat − primes × rachat ÷ valeur du contrat. Le toggle « date des versements » active, pour les primes antérieures au 27/09/2017, le régime PFL historique (7,5 % après 8 ans sans plafond de 150 000 € ; 35 % avant 4 ans, 15 % de 4 à 8 ans). Prélèvements sociaux 17,2 %.</p><h3>Intérêts composés</h3><p>Capitalisation <strong>mensuelle</strong> : taux mensuel équivalent (1 + i)^(1/12) − 1, versements traités en annuité de fin de période. Résultat brut, hors impôt et frais. Ce modèle diffère volontairement de la capitalisation annuelle des calculateurs fiscaux.</p></div>
+
+  <div class='eeat-section'><h2>Deux modèles de calculateur pour l'assurance-vie</h2><p>Le site propose deux outils distincts, avec des hypothèses différentes assumées :</p><ul><li><strong>« PEA ou assurance-vie »</strong> — modèle <strong>prospectif</strong> : un versement fait aujourd'hui, donc nécessairement postérieur au 27/09/2017. Pas de branche PFL historique.</li><li><strong>« Fiscalité de l'assurance-vie » et sa sous-page « après 8 ans »</strong> — modèle <strong>diagnostique</strong> : l'imposition d'un rachat sur un contrat que vous détenez déjà, avec toggle de la date des versements et branche PFL historique.</li></ul><p>Les deux outils peuvent donc afficher des résultats différents pour un même contrat : c'est voulu, chacun répond à une question différente.</p></div>
+
+  <div class='eeat-section'><h2>Le seuil de 150 000 € de primes</h2><p>Le taux d'IR réduit de 7,5 % après 8 ans ne s'applique qu'à la fraction de produits rattachée aux 150 000 premiers euros de primes nettes de rachats, tous contrats confondus, versées depuis le 27/09/2017. Les calculateurs appliquent une <strong>proratisation simplifiée</strong> à partir du total de primes saisi. Le décompte exact, contrat par contrat et net des rachats antérieurs, est tenu par l'assureur et l'administration ; il peut différer du résultat affiché.</p></div>
+
+  <div class='eeat-section'><h2>Cas non modélisés</h2><ul><li>PEA ouverts avant 2018 (taux historiques de prélèvements sociaux).</li><li>Assurance-vie : primes versées avant le 27/09/2017 pour le calculateur prospectif ; contrats DSK/NSK ; produits attachés à des primes versées avant 1998.</li><li>Option pour le barème progressif de l'impôt sur le revenu (calcul dépendant du taux marginal et des autres revenus du foyer).</li><li>Frais d'entrée, de gestion et d'arbitrage propres à chaque contrat.</li><li>Situations particulières : handicap, non-résidents, IFI, démembrement de la clause bénéficiaire, transferts.</li></ul></div>
 
   <div class="eeat-section">
-    <h2>Nos sources et données en vigueur</h2>
-    <p>Toutes les données de ce site (taux, abattements, plafonds) ont été validées selon les éléments suivants :</p>
-    <ul>
-      <li><strong>Source primaire :</strong> entreprendre.service-public.gouv.fr et Légifrance.</li>
-      <li><strong>Texte de référence :</strong> Projet de Loi de Financement de la Sécurité Sociale (LFSS) 2026, adopté définitivement le 16/12/2025.</li>
-      <li><strong>Date de dernière vérification :</strong> 04 Septembre 2026.</li>
-      <li><strong>Version interne de la base de constantes :</strong> 2026-FR-v1.</li>
-    </ul>
-    
-    <h3>Hypothèses globales du calculateur</h3>
-    <p>Le calculateur modélise exclusivement des <strong>nouveaux versements</strong> effectués à la date du calcul. Par conséquent :</p>
-    <ul>
-      <li><strong>Assurance-vie :</strong> Le simulateur ne s'applique qu'au régime dit "post-27/09/2017" (PFU). Les contrats détenant des primes versées avant cette date charnière suivent un régime distinct (PFL) qui n'est pas modélisé ici.</li>
-      <li><strong>PEA :</strong> Les calculs s'appliquent à un plan ouvert à partir de 2018. Pour un plan ouvert avant 2018, un régime de taux historiques par tranche s'applique aux prélèvements sociaux. Ce cas particulier, devenu résiduel, n'est pas modélisé.</li>
-    </ul>
+  <h2>Transparence, méthodologie &amp; sources</h2>
+  <div class="eeat-author">
+    <div class="avatar">FÉ</div>
+    <div>
+      <h4>La rédaction Fiscalité Épargne</h4>
+      <div class="role">Équipe éditoriale — fiscalité de l'épargne</div>
+      <p>Contenu rédigé à partir des textes officiels (LFSS 2026, Code général des impôts, BOFiP, service-public.fr). Les calculs sont déterministes : ils appliquent les taux et barèmes en vigueur, sans intelligence artificielle. Barèmes vérifiés le 2026-09-04 — <a href="/changelog/">journal des mises à jour</a>.</p>
+      
+    </div>
   </div>
-
-  <div class="eeat-section">
-    <h2>Formules de calcul</h2>
-    <h3>Compte-Titres Ordinaire (CTO)</h3>
-    <p>Les plus-values sont soumises par défaut au Prélèvement Forfaitaire Unique (PFU). Le calcul est direct sur la base des gains réalisés : 12,8 % au titre de l'Impôt sur le Revenu + 18,6 % au titre des prélèvements sociaux (taux LFSS 2026), soit un taux global de 31,4 %.</p>
-
-    <h3>PEA (Plan d'Épargne en Actions)</h3>
-    <p>En supposant aucun retrait avant 5 ans, l'Impôt sur le Revenu est de 0 %. Seuls les prélèvements sociaux s'appliquent sur la plus-value constatée lors du retrait. Le taux appliqué par le simulateur est de 18,6 %.</p>
-    <p>En cas de simulation sur une durée inférieure à 5 ans, l'imposition repasse à un alignement sur le CTO (PFU 31,4 %).</p>
-
-    <h3>Assurance-Vie</h3>
-    <p>Le calcul applique l'abattement annuel en fonction de la situation de famille (4 600 € pour un célibataire, 9 200 € pour un couple) uniquement lorsque la durée de placement excède 8 ans. L'assiette imposable est réduite d'autant. Les prélèvements sociaux (17,2 % sur l'assurance-vie) s'appliquent quant à eux sur l'intégralité de la plus-value avant tout abattement.</p>
-    <p><strong>Avertissement sur le calcul du seuil de 150 000 € :</strong> Le calculateur simule un versement unique effectué à la date du calcul. Le seuil de 150 000 € est appliqué selon une proratisation simplifiée. Les contrats existants, les versements multiples et les situations fiscales particulières peuvent produire un résultat différent. Cette modélisation ne constitue pas un calcul fiscal exhaustif de la situation du contribuable.</p>
+  <div class="eeat-compliance">
+    <h4>Méthodologie &amp; limites</h4>
+    <p>Voir la <a href="/methodologie/">méthodologie complète</a> (formules, hypothèses, cas non modélisés). Pour une simulation officielle, utilisez le simulateur de l'administration sur <a href="https://www.impots.gouv.fr/" rel="noopener nofollow" target="_blank">impots.gouv.fr</a>.</p>
+    <h4>Conseil &amp; validation professionnelle</h4>
+    <p>Gesmine-Invest Limited n'est pas enregistré à l'ORIAS et n'a pas le statut de conseiller en investissements financiers (CIF). Les résultats ne constituent pas un conseil personnalisé. Avant toute décision, consultez un conseiller en gestion de patrimoine (annuaire de la <a href="https://www.cncgp.fr/trouver-un-conseiller/" rel="noopener nofollow" target="_blank">CNCGP</a>) ou un avocat fiscaliste.</p>
+    <h4>Code source auditable</h4>
+    <p>Les formules sont publiques sur le <a href="https://github.com/sadiyaqeen92639572-cloud/fiscaliteepargne" rel="noopener nofollow" target="_blank">dépôt GitHub</a>.</p>
+    <h3>Sources officielles</h3>
+<ul class="sources-list"><li><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000050800000" rel="noopener nofollow" target="_blank">Légifrance — LFSS 2026</a></li><li><a href="https://www.service-public.fr/particuliers/vosdroits/F1662" rel="noopener nofollow" target="_blank">service-public.fr — Plan d'épargne en actions (PEA)</a></li><li><a href="https://www.service-public.fr/particuliers/vosdroits/F14204" rel="noopener nofollow" target="_blank">service-public.fr — Assurance-vie : imposition en cas de rachat</a></li><li><a href="https://www.service-public.fr/particuliers/vosdroits/F34913" rel="noopener nofollow" target="_blank">service-public.fr — Prélèvement forfaitaire unique (PFU / flat tax)</a></li><li><a href="https://bofip.impots.gouv.fr/bofip/3806-PGP.html" rel="noopener nofollow" target="_blank">BOFiP — Revenus de capitaux mobiliers (BOI-RPPM-RCM)</a></li></ul>
   </div>
+</div>
+
+  
 </main>
 
 <footer>
-  <p>Une initiative de Gesmine-Invest Limited, société enregistrée au Royaume-Uni (n° 14120136), dont le siège social est situé Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
-  <p style="margin-top:8px;"><a href="/">Accueil</a> · <a href="/methodologie/">Méthodologie</a> · <a href="/changelog/">Changelog</a> · <a href="/about/">À propos</a> · <a href="/privacy/">Confidentialité</a></p>
-  <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited.</p>
+  <div class="container">
+    <div class="footer-cols"><div><strong>Outils</strong><ul><li><a href="/">Comparateur d'enveloppes</a></li><li><a href="/pea/">Fiscalité du PEA</a></li><li><a href="/compte-titres-fiscalite/">Fiscalité du CTO</a></li><li><a href="/pea-ou-assurance-vie/">PEA ou assurance-vie</a></li><li><a href="/interet-compose/">Intérêts composés</a></li></ul></div><div><strong>Ressources</strong><ul><li><a href="/methodologie/">Méthodologie</a></li><li><a href="/changelog/">Changelog</a></li></ul></div><div><strong>Légal</strong><ul><li><a href="/about/">À propos</a></li><li><a href="/privacy/">Confidentialité</a></li></ul></div></div>
+    <p style="margin-top:16px;">Une initiative de <strong>Gesmine-Invest Limited</strong>, société enregistrée au Royaume-Uni (n° 14120136), siège social : Hardy House, 269 Poynders Gardens, Londres, SW4 8PQ.</p>
+    <p style="margin-top:8px;font-size:.8rem;">Certaines pages contiennent des liens d'affiliation vers des courtiers ou banques en ligne : Gesmine-Invest Limited peut percevoir une commission si vous ouvrez un compte, sans coût supplémentaire pour vous. Site indépendant, non enregistré à l'ORIAS, ne délivrant aucun conseil personnalisé. L'investissement comporte un risque de perte en capital.</p>
+    <p style="margin-top:8px;">© 2026 Gesmine-Invest Limited. Estimations à titre purement indicatif — ne remplacent pas un conseil personnalisé.</p>
+  </div>
 </footer>
+<script>
+function toggleFaq(b){b.classList.toggle('open');b.nextElementSibling.classList.toggle('open');}
+</script>
 </body>
 </html>
