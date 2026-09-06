@@ -10,7 +10,7 @@ Bienvenue sur le dépôt source de **[Fiscalité Epargne](https://fiscaliteeparg
 
 Dans un écosystème web souvent dominé par des frameworks lourds (React, Vue, Next.js) et des chaînes de compilation complexes (Webpack, Vite), ce projet a fait un choix radical : **le retour aux sources**. 
 
-L'architecture de `fiscaliteepargne.fr` repose sur une approche **"Zero Build Step"** (sans étape de compilation). Le code que vous lisez dans ce dépôt est exactement le code exécuté par le navigateur de l'utilisateur.
+L'architecture de `fiscaliteepargne.fr` est **statique côté hébergeur** : Cloudflare Pages sert directement le HTML commité, sans aucune étape de build. Les pages sont générées en local par `build.js` à partir de `data/pages.json` (contenu) et `assets/constants.json` (taux, source unique de vérité), puis committées. Lancer `node build.js` avant chaque commit ; aucune dépendance npm.
 
 ### Pourquoi ce choix technique ?
 
@@ -44,20 +44,28 @@ L'hébergement repose sur l'infrastructure Edge de Cloudflare. Les fichiers stat
 
 ```text
 /
-├── index.html                 # Hub et comparateur principal 3 colonnes
-├── pea/                       # Détail de la fiscalité du PEA
-├── pea-ou-assurance-vie/      # Comparatif net-à-net détaillé PEA vs AV
-├── compte-titres-fiscalite/   # Simulateur PFU vs Barème progressif CTO
-├── interet-compose/           # Calculatrice financière agnostique
-├── methodologie/              # Sources juridiques (LFSS) et hypothèses
+├── build.js                   # Générateur (local, zéro dépendance)
+├── data/
+│   ├── pages.json             # Contenu de toutes les pages (sections, FAQ, méta)
+│   └── calc-widgets.js        # Markup + script de chaque calculateur
 ├── assets/
-│   ├── constants.json         # Base de données des taux (31,4%, 18,6%, etc.)
-│   ├── calculators.js         # Moteur de calcul déterministe
-│   └── style.css              # Design system
-├── llms.txt                   # Contexte technique pour les LLMs (IA)
-├── sitemap.xml                # Sitemap complet
-└── wrangler.toml              # Configuration Cloudflare Pages
+│   ├── constants.json         # Taux + table datée + sources (source unique de vérité)
+│   ├── calculators.js         # Moteur déterministe (fmtEUR, imposeApres8Ans, calculAvRachat…)
+│   └── style.css              # Design system + breakpoints
+├── index.html                 # Hub + comparateur 3 enveloppes            ┐
+├── pea/                        # Fiscalité du PEA                          │
+├── assurance-vie-fiscalite/   # Fiscalité de l'assurance-vie (+ apres-8-ans/) │ générés
+├── pea-ou-assurance-vie/      # Comparatif PEA vs AV (prospectif)         │ par
+├── compte-titres-fiscalite/   # PFU / barème progressif CTO               │ build.js
+├── interet-compose/           # Calculatrice d'intérêts composés          │
+├── methodologie/ changelog/ about/ privacy/                              ┘
+├── llms.txt  sitemap.xml      # émis par build.js
+└── wrangler.toml              # Cloudflare Pages (pages_build_output_dir = ".")
 ```
+
+> `assurance-vie-fiscalite/` et `assurance-vie-fiscalite/apres-8-ans/` sont générées avec
+> `published:false` (méta `robots noindex`, hors sitemap et navigation) en attendant une
+> relecture par un professionnel (CGP / avocat fiscaliste) avant mise en index.
 
 ## ⚖️ Avertissement Légal
 
